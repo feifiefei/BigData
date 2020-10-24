@@ -7,7 +7,9 @@ flink_study:fink的有关java代码
 
 sping：mybatis、spingboot和spingcloud的一些知识
 
-实时架构：hbase、hdfs、kafka、MapReduce、redis
+实时架构：hbase、hdfs、kafka、MapReduce、redis的相关jdbc
+
+
 
 
 
