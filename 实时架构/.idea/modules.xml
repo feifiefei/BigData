@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HBASE/HBASE.iml" filepath="$PROJECT_DIR$/HBASE/HBASE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HDFS/HDFS.iml" filepath="$PROJECT_DIR$/HDFS/HDFS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MapReduce/MapReduce.iml" filepath="$PROJECT_DIR$/MapReduce/MapReduce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MapReduce_2/MapReduce_2.iml" filepath="$PROJECT_DIR$/MapReduce_2/MapReduce_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/bingdata.iml" filepath="$PROJECT_DIR$/.idea/bingdata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka/kafka.iml" filepath="$PROJECT_DIR$/kafka/kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redies/redies.iml" filepath="$PROJECT_DIR$/redies/redies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shuffle/shuffle.iml" filepath="$PROJECT_DIR$/shuffle/shuffle.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.mapper.UserMapper">
+    <!--根据id查询-->
+    <select id="queryUserById" resultType="com.itheima.pojo.User0">
+        select * from user where id = #{id}
+    </select>
+    <!--查询所有-->
+    <select id="queryUserByUsernameAndPassword" resultType="com.itheima.pojo.User0">
+       select * from user0where username = #{uname} and password = #{upwd}
+    </select>
+    <!--根据id更新数据-->
+    <update id="updateUser">
+        update user set username = #{username},
+        password = #{password},
+        name = #{name},
+        birthday = #{birthday},
+        sex = #{sex},
+        address = #{address}
+        where id = #{id}
+    </update>
+    <!--删除用户根据id-->
+    <delete id="deleteById">
+        delete from user where id = #{id}
+    </delete>
+    <!--添加用户-->
+    <insert id="insertUser">
+        insert into user values (
+        null,
+        #{username},
+        #{password},
+        #{name},
+        #{birthday},
+        #{sex},
+        #{address}
+        )
+    </insert>
+    <!--查询全部-->
+    <select id="queryAll" resultType="com.itheima.pojo.User0">
+        select * from user
+    </select>
+</mapper>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.mapper.UserMapper">
+    <!-- 定义user表-->
+    <resultMap id="userMapping" type="com.itheima.pojo.User" autoMapping="true">
+        <!-- 主键必须手动定义封装-->
+        <id property="id" column="id"></id>
+    </resultMap>
+    <!--定义userinfo表-->
+    <resultMap id="userInfoMapping" type="com.itheima.pojo.Userinfo" autoMapping="true">
+        <id property="id" column="id"></id>
+    </resultMap>
+    <!--组合两个表-->
+    <resultMap id="userAndUserInfoMapping" type="com.itheima.pojo.User" extends="userMapping" autoMapping="true">
+        <association property="userinfo" resultMap="userInfoMapping"></association>
+    </resultMap>
+    <!--查询的SQL的操作-->
+    <select id="findUserWithInfoById" resultMap="userAndUserInfoMapping">
+        select * from user u join user_info ui on u.id = ui.id where u.id = #{id};
+    </select>
+    <!--设置orderForm表-->
+    <resultMap id="orderFormMapping" type="com.itheima.pojo.Orderform" autoMapping="true">
+        <id property="oid" column="oid"></id>
+        <result property="userid" column="user_id"></result>
+        <result property="createtime" column="create_time"></result>
+    </resultMap>
+    <!--将两个表的结果合并集-->
+    <resultMap id="userAndOrderFormMapping" type="com.itheima.pojo.User" extends="userMapping" autoMapping="true">
+        <collection property="orderformList" resultMap="orderFormMapping" autoMapping="true"></collection>
+    </resultMap>
+    <!-- 定义SQL-->
+    <select id="findUserAndOrderFormById" resultMap="userAndOrderFormMapping">
+         SELECT  * FROM USER u JOIN order_form ii ON u.id = ii.user_id WHERE u.id = #{id};
+    </select>
+
+</mapper>

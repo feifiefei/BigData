@@ -1,0 +1,260 @@
+今日内容:
+1) springcloud的熔断器: 
+2) springcloud的远程调用: feign
+3) springcloud的网关: gateway
+
+
+1) springCloud的熔断器:Hystrix
+	Hystrix主要作用:  
+		当服务出现异常或者阻塞现象等一些异常状态的时候, 可以让服务进行降级处理(让其跳转到一个新的操作中..)
+		以避免让用户看到异常的页面, 保证用户及时写错了, 依然有正常页面响应给用户
+
+	如何为微服务项目配置熔断操作:  
+		1_ 首先检测最前面的微服务项目是否添加熔断的依赖包: 
+				<!--熔断 Hystrix starter-->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+			</dependency>
+		2) 在引导类中, 开启熔断注解: @SpringCloudApplication 
+				此注解: 相当于三个注解   @SpringBootApplication  @EnableEurekaClient @EnableDiscoveryClient @EnableCircuitBreaker
+		3) 在需要进行熔断处理的controller中, 添加熔断处理的方法: 
+			    // 熔断后, 服务降级执行方法
+		    public TbUser error(Integer id){
+		        TbUser tbUser = new TbUser();
+		        tbUser.setId(id);
+		        tbUser.setNote("在处理:"+id+"时候, 触发了熔断措施");
+		        return tbUser;
+		    }
+
+		    要求: 熔断方法, 要与需要进行熔断处理的接口的返回值类型保存一致
+		4) 给进行熔断的接口方法, 添加熔断处理的注解: @HystrixCommand(fallbackMethod = "熔断方法")
+
+		以下为controller完整代码:
+			package com.itheima.controller;
+
+			import com.itheima.pojo.TbUser;
+			import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+			import org.springframework.beans.factory.annotation.Autowired;
+			import org.springframework.cloud.client.discovery.DiscoveryClient;
+			import org.springframework.web.bind.annotation.GetMapping;
+			import org.springframework.web.bind.annotation.PathVariable;
+			import org.springframework.web.bind.annotation.RequestMapping;
+			import org.springframework.web.bind.annotation.RestController;
+			import org.springframework.web.client.RestTemplate;
+
+			@RestController
+			@RequestMapping("/consumer")
+			public class ConsumerController {
+			    @Autowired
+			    private RestTemplate restTemplate;
+
+			    @Autowired
+			    private DiscoveryClient discoveryClient;
+
+			    @GetMapping("/findById/{id}")
+			    @HystrixCommand(fallbackMethod = "error")
+			    public TbUser findById(@PathVariable("id") Integer id){
+
+			        // discoveryClient.getInstances("USER-SERVER")；
+			        String url = "http://USER-SERVER/tbUser/findById/"+id;
+			        TbUser user = restTemplate.getForObject(url, TbUser.class);
+
+			        return user;
+			    }
+
+			    // 熔断后, 服务降级执行方法
+			    public TbUser error(Integer id){
+			        TbUser tbUser = new TbUser();
+			        tbUser.setId(id);
+			        tbUser.setNote("在处理:"+id+"时候, 触发了熔断措施");
+			        return tbUser;
+			    }
+
+			}
+		5) 在application.yml配置熔断措施:
+			hystrix:
+			  command:
+			    default:
+			      circuitBreaker:
+			        forceOpen: false # 强制打开熔断器 默认false关闭的
+			        errorThresholdPercentage: 50 # 触发熔断错误比例阈值，默认值50%
+			        sleepWindowInMilliseconds: 5000  # 熔断后休眠时长，默认值5秒
+			        requestVolumeThreshold: 20  # 熔断触发最小请求次数，默认值是20
+			      execution:
+			        isolation:
+			          thread:
+			            timeoutInMilliseconds: 1000  # 熔断超时设置，默认为1秒
+		6) 测试熔断:  
+			让服务宕机 或者 让服务超时
+2. 远程调用: springCloud feign 
+	feign提供了一种全新的远程调用方案(会让用户感觉像是在调用本地的方法一样操作), 要比之前采用restTemplate更加的简单, 而且可以直接通过
+		feign实现负载均衡 和 熔断器支持
+
+	feign的操作使用: 准备工作  直接通过课件操作即可 7.2
+
+	如何使用feign实现基本远程调用操作:  
+		1) 确定在消费端项目的pom文件中是否已经导入了feign的依赖
+			<!--配置feign-->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-openfeign</artifactId>
+			</dependency>
+		2) 需要调度那个服务, 就需要在引导类下构建service包, 在此包下创建调用服务的接口: 命名规则: 服务名称+Service
+			package com.itheima.service;
+
+			import com.itheima.pojo.TbUser;
+			import org.springframework.cloud.openfeign.FeignClient;
+			import org.springframework.web.bind.annotation.PathVariable;
+			import org.springframework.web.bind.annotation.RequestMapping;
+
+			@FeignClient("USER-SERVER") // 此注解用于指定当前这个接口对应调用那个服务操作
+			public interface UserServerService {
+				// 通过编写接口方法操作, 指定要调用这个服务中那个接口路径操作
+			    @RequestMapping("/tbUser/findById/{id}")
+			    public TbUser findById(@PathVariable("id") Integer id);  // 方法的返回值 和参数类型 都要和 服务中对应接口返回值类型和参数类型一致
+			}
+		3) 在消费端的controller中, 通过@Autowrid 注入这个接口, 然后调用这个接口中方法即可
+			底层: feign 通过 这个接口, 就知道要调用那个服务, 以及服务上那个接口路径
+		4) 在引导类中, 开启reign的支持: 如果忘记开启, 启动就会包一个注入service失败的错误
+			package com.itheima;
+
+
+			@SpringBootApplication
+			@EnableDiscoveryClient
+			@EnableFeignClients
+			public class Day06SpringcloudConsumerFeignApplication {
+
+				public static void main(String[] args) {
+					SpringApplication.run(Day06SpringcloudConsumerFeignApplication.class, args);
+				}
+
+			}
+	如何在feign中使用负载均衡和熔断器操作: 
+		1) 负载均衡: 默认直接支持了, 当检测有多个服务的时候, 自动进行负载均衡
+		2) 熔断器如何处理: 
+			2.1: 给调用服务的接口定义实现类, 在重写的方法中, 直接编写熔断的操作即可
+			2.2: 在接口的 @FeignClient 指定 熔断的实现类即可:
+					@FeignClient(value = "USER-SERVER", fallback = UserServerImpl.class)
+			2.3: 在application.yml中开启reign的熔断措施:
+				feign:
+				  hystrix:
+				    enabled: true
+			2.4: 启动测试即可:
+	可以通过feign配置对远程调用过程中数据进行压缩操作: 从而解压数据传输量  优化操作
+		feign:
+		  compression:
+		    response:  
+		      enabled: true # 开启响应压缩
+		    request:
+		      enabled: true # 开启请求压缩
+		      mime-types: text/xml,application/xml,application/json # 设置压缩的数据类型
+		      min-request-size: 2028  # 设置触发压缩大小的下限
+
+	可以通过feign配置日志操作: 从而查看到每一次远程调用的状态,如果报错了, 也可以通过日志查询到具体报了什么错误
+		第一步: 在application.yml中配置日志打印级别:  
+			logging:
+			  level:
+			    cn.itcast: debug
+		第二步: 在引导类下创建conf目录, 构建配置类, 在配置类指定feign在进行日志打印的方式
+			package com.itheima.conf;
+
+			import feign.Logger;
+			import org.springframework.context.annotation.Bean;
+			import org.springframework.context.annotation.Configuration;
+
+			@Configuration
+			public class FeignLogLevelConfig {
+
+			    @Bean
+			    public Logger.Level config(){
+			        return Logger.Level.FULL; // 打印日志的数据, 请求 响应所有的内容都要打印出来
+			    }
+			}
+		第三步: 在调用服务的接口中, 指定配置类:
+			@FeignClient(value = "USER-SERVER", fallback = UserServerImpl.class ,configuration = FeignLogLevelConfig.class)
+		第四步: 测试访问, 查看日志, 即可看到每一次远程调用的日志显示操作...	
+
+
+3. springcloud的网关: gateway
+	作用: 位于项目的最前面, 所有的请求都需要经过网关才能进入到项目内部, 由网关提供统一访问入口
+		这样就可以通过网关, 对请求进行管理(权限校验, 登录校验, 动态路由...)
+
+	本质上:就是一个springboot的项目 也需要注册到eureka中
+
+	3.1: 网关的基本使用操作配置
+		第一步: 创建一个子项目: day06_springcloud_gateway_server 
+			依赖: eureka的client  和  gateway
+		第二步: 删除原有的application.properties, 创建application.yml配置: 内容如下
+			server:
+			  port: 10010
+			spring:
+			  application:
+			    name: gateway-server
+			  cloud:
+			    gateway:
+			      routes:
+			        - id: consumer-service-route
+			          uri: http://127.0.0.1:8081
+			          predicates:
+			            - Path=/**
+*/
+			eureka:
+			  client:
+			    service-url:
+			      defaultZone: http://eureka1:8761/eureka,http://eureka2:8762/eureka
+			  instance:
+			    prefer-ip-address: true
+			    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+		第三步:  在引导类上添加 @EnableDiscoveryClient
+			package com.itheima;
+
+			import org.springframework.boot.SpringApplication;
+			import org.springframework.boot.autoconfigure.SpringBootApplication;
+			import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+
+			@SpringBootApplication
+			@EnableDiscoveryClient
+			public class Day06SpringcloudGatewayServerApplication {
+
+				public static void main(String[] args) {
+					SpringApplication.run(Day06SpringcloudGatewayServerApplication.class, args);
+				}
+
+			}
+		第四步: 启动网关即可:  测试即可
+			测试: 需要先启动eureka集群 然后启动服务 接着启动服务消费者 最后启动网关
+
+
+	3.2: 动态路由的配置: 当服务消费者有多台的时候, 如何对多台服务消费者进行负载均衡呢, 采用动态路由来解决
+		第一步: 
+			更改网关项目的application.yml: 
+				将  uri 的值更改为:  lb://服务消费者名称 
+
+			网关会自动进行动态路由(负载均衡)
+		第二步: 将消费者启动多次
+			注意: 不要忘记修改端口号
+		第三步: 单独将网关重启 测试即可
+
+		注意: 为了让效果明显一些, 所在在消费者的controller上添加端口号, 表示访问那个端口的消费者
+			package com.itheima.controller;
+
+			@RestController
+			@RequestMapping("/consumer")
+			public class ConsumerController {
+			    @Autowired
+			    private UserServer userServer;
+			    @Value("${server.port}")
+			    private  Integer port;
+
+			    @GetMapping("/findById/{id}")
+			    public TbUser findById(@PathVariable("id") Integer id) {
+			        TbUser user = userServer.findById(id);
+			        user.setNote(user.getNote() + "; 服务消费者的端口号为:"+port);
+
+			        return user;
+			    }
+
+
+			}
+

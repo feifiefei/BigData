@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="redies" />
+        <module name="shuffle" />
+        <module name="kafka" />
+        <module name="MapReduce" />
+        <module name="MapReduce_2" />
+        <module name="HDFS" />
+        <module name="HBASE" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bingdata" target="1.5" />
+      <module name="HBASE" target="1.5" />
+      <module name="HDFS" target="1.5" />
+      <module name="hiveda" target="1.5" />
+      <module name="hivedaobao" target="1.5" />
+      <module name="kafka" target="1.5" />
+      <module name="MapReduce" target="1.5" />
+      <module name="MapReduce_2" target="1.5" />
+      <module name="redies" target="1.5" />
+      <module name="shuffle" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

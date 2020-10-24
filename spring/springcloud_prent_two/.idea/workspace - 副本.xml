@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cab4c83f-46c8-4af4-bb7e-f00658077c79" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="springcloud_db: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="springcloud_prent_two" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/biancheng/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\biancheng\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1iz5C0va3WIsoBPjAESUyGbZlt9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/springcloud_consumer - feign/pom.xml" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.itheima" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.itheima.pojo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\bianchengxuexi\springcloud_prent_two\springcloud_eureka_server\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringcloudUserServerApplication-9092">
+    <configuration name="SpringcloudConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud_consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.SpringcloudConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudConsumerFeignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springcloud_consumer - feign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.SpringcloudConsumerFeignApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudEurekaServerApplication-8761" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud_eureka_server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.SpringcloudEurekaServerApplication" />
+      <option name="ACTIVE_PROFILES" value="eureka1" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudEurekaServerApplication-8762" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud_eureka_server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.SpringcloudEurekaServerApplication" />
+      <option name="ACTIVE_PROFILES" value="eureka2" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudUserProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud_user_producer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.SpringcloudUserProducerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudUserServerApplication-9091" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud_user_server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.SpringcloudUserServerApplication" />
+      <option name="PROGRAM_PARAMETERS" value="--server.port=9091" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudUserServerApplication-9092" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud_user_server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.SpringcloudUserServerApplication" />
+      <option name="PROGRAM_PARAMETERS" value="--server.port=9092" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.SpringcloudConsumerApplication" />
+      <item itemvalue="Spring Boot.SpringcloudEurekaServerApplication-8761" />
+      <item itemvalue="Spring Boot.SpringcloudEurekaServerApplication-8762" />
+      <item itemvalue="Spring Boot.SpringcloudUserProducerApplication" />
+      <item itemvalue="Spring Boot.SpringcloudUserServerApplication-9091" />
+      <item itemvalue="Spring Boot.SpringcloudUserServerApplication-9092" />
+      <item itemvalue="Spring Boot.SpringcloudConsumerFeignApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SpringcloudConsumerFeignApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.5014409" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="com.intellij.database.console.DatabaseServiceViewContributor@26b0dc7b" type="d2cb1801:ServiceModel$ContributorNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="com.intellij.database.console.DatabaseServiceViewContributor@26b0dc7b" type="d2cb1801:ServiceModel$ContributorNode" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="com.intellij.database.console.DatabaseServiceViewContributor@26b0dc7b" type="d2cb1801:ServiceModel$ContributorNode" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@41f19191" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+          <option name="groupByContributor" value="true" />
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cab4c83f-46c8-4af4-bb7e-f00658077c79" name="默认更改列表" comment="" />
+      <created>1602897448412</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602897448412</updated>
+      <workItem from="1602897449735" duration="8252000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="722" y="93" key="#New_Docker_Connection" timestamp="1602905759350">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="722" y="93" key="#New_Docker_Connection/0.0.1536.864@0.0.1536.864" timestamp="1602905759350" />
+    <state x="447" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602899775784">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="447" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1602899775784" />
+    <state x="958" y="140" key="#com.intellij.ide.util.MemberChooser" timestamp="1602906958400">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="958" y="140" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1602906958400" />
+    <state x="530" y="360" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1602906373813">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="530" y="360" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.864@0.0.1536.864" timestamp="1602906373813" />
+    <state x="861" y="320" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1602906375859">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="861" y="320" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.864@0.0.1536.864" timestamp="1602906375859" />
+    <state x="933" y="190" key="FileChooserDialogImpl" timestamp="1602905072874">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="933" y="190" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1602905072874" />
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1602907507074">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1602907507074" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1602907507074">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1602907507074" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1602907507074">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1602907507074" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1602907507074">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1602907507074" />
+    <state width="1493" height="223" key="GridCell.Tab.1.bottom" timestamp="1602907507074">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1602907507074" />
+    <state width="1493" height="223" key="GridCell.Tab.1.center" timestamp="1602907507074">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1602907507074" />
+    <state width="1493" height="223" key="GridCell.Tab.1.left" timestamp="1602907507074">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1602907507074" />
+    <state width="1493" height="223" key="GridCell.Tab.1.right" timestamp="1602907507074">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1602907507074" />
+    <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1602898426036">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="212" height="477" key="HiddenNamespacesPopup/0.0.1536.864@0.0.1536.864" timestamp="1602898426036" />
+    <state x="663" y="44" width="852" height="592" key="new project wizard" timestamp="1602898932476">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="663" y="44" width="852" height="592" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1602898932476" />
+  </component>
+</project>

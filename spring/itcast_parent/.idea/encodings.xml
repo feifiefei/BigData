@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/msybatis_01_xml/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_comment_select/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mysbatis_multi_table_xml/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_01_xml/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_02_xml_and_commentary/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_03_commentary/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_mybatis_annotion/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_mybatis_xmlAndAnnotion/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_userAndOrder/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

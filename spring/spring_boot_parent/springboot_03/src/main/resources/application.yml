@@ -1,0 +1,27 @@
+#在相同缩进的数据，都属于同列数据，冒号后一定要有一个空格
+server:
+  port: 9500
+
+name: 张三
+address: 2020.10.08
+
+#定义对象
+person:
+  username: 李四
+  password: 123456
+  sex: 男
+  address: 北京市
+#定义数组 或者list集合 或者set集合
+hobby:
+  hobby:
+    - 爱学习
+    - 爱打LOL
+    - 爱睡觉
+
+#定义map
+books:
+  books:
+    - name: 红楼梦
+      writer: 曹雪芹
+    - name: 水浒传
+      writer: 施耐庵

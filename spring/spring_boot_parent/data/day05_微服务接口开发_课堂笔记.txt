@@ -1,0 +1,571 @@
+今日内容:
+1) 系统架构演变之路-- 了解
+2) 模拟微服务业务场景 -- 会操作
+3) springCloud基本介绍 -- 知道就行 了解
+4) springcloud的组件之一_注册中心 eureka --- 什么是注册中心, 会使用 会操作
+5) springcloud负载均衡措施 -- 理解什么是负载均衡, 然后会操作会使用
+
+1) 系统架构演变之路: 
+	单一应用架构--> 垂直应用架构 --> 分布式服务架构 --> SOA面向于服务架构
+
+2) 总结: 模拟微服务业务场景
+	2.1: 在数据库中创建库和表以及添加数据操作
+		create database springcloud_db ;
+
+		use springcloud_db ;
+
+		DROP TABLE if EXISTS tb_user ;
+
+		CREATE TABLE `tb_user` (
+		  `id` int (11) NOT NULL AUTO_INCREMENT,
+		  `username` varchar (100) DEFAULT NULL COMMENT '用户名',
+		  `password` varchar (100) DEFAULT NULL COMMENT '密码',
+		  `name` varchar (100) DEFAULT NULL COMMENT '姓名',
+		  `age` int (11) DEFAULT NULL COMMENT '年龄',
+		  `sex` int (11) DEFAULT NULL COMMENT '性别，1男，2女',
+		  `birthday` date DEFAULT NULL COMMENT '出生日期',
+		  `created` date DEFAULT NULL COMMENT '创建时间',
+		  `updated` date DEFAULT NULL COMMENT '更新时间',
+		  `note` varchar (1000) DEFAULT NULL COMMENT '备注',
+		  PRIMARY KEY (`id`)
+		) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8 COMMENT = '用户信息表' ;
+
+		-- ----------------------------
+		-- Records of tb_user
+		-- ----------------------------
+		INSERT INTO `tb_user` 
+		VALUES
+		  (
+		    '1',
+		    'zhangsan',
+		    '123456',
+		    '张三',
+		    '13',
+		    '1',
+		    '2006-08-01',
+		    '2019-05-16',
+		    '2019-05-16',
+		    '张三'
+		  ) ;
+
+		INSERT INTO `tb_user` 
+		VALUES
+		  (
+		    '2',
+		    'lisi',
+		    '123456',
+		    '李四',
+		    '13',
+		    '1',
+		    '2006-08-01',
+		    '2019-05-16',
+		    '2019-05-16',
+		    '李四'
+		  ) ;
+
+		-- ----------------------------
+		-- select tb_user
+		-- ----------------------------
+		SELECT 
+		  * 
+		FROM
+		  tb_user ;
+	2.2: 在shBigData23_springboot_parent上创建子项目: day05_springcloud_user_producer
+		使用依赖: lombok , spring web , mybatis ,MySQL Driver
+	2.3: 删除原来的application.properties 构建一个application.yml, 并在其内容添加以下内容:
+		spring:
+		  application:
+		    name: user-service
+		  datasource:
+		    driver-class-name: com.mysql.cj.jdbc.Driver
+		    url: jdbc:mysql://localhost:3306/springcloud_db?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+		    username: root
+		    password: 123456
+
+		server:
+		  port: 9091
+
+		mybatis:
+		  mapper-locations: classpath:mapper/*.xml
+*/
+	2.4: 通过 database的窗口中, 选择要操作的表,然后使用easycode, 进行模板化代码生成操作 --此操作在此省略
+		注意:
+			有可能会出现 data日期无法映射问题, 需要点击yes, 然后进行手动设置
+	2.5: 在生成代码中, 找到TbUserController 类, 然后修改方法名称为 findById 并且将访问路径修改为:  @GetMapping("/findById/{id}")	
+		样例如下:
+		package com.itheima.controller;
+
+		import com.itheima.entity.TbUser;
+		import com.itheima.service.TbUserService;
+		import org.springframework.web.bind.annotation.GetMapping;
+		import org.springframework.web.bind.annotation.PathVariable;
+		import org.springframework.web.bind.annotation.RequestMapping;
+		import org.springframework.web.bind.annotation.RestController;
+
+		import javax.annotation.Resource;
+
+		/**
+		 * 用户信息表(TbUser)表控制层
+		 *
+		 * @author jiale
+		 * @since 2020-10-16 10:47:13
+		 */
+		@RestController
+		@RequestMapping("tbUser")
+		public class TbUserController {
+		    /**
+		     * 服务对象
+		     */
+		    @Resource
+		    private TbUserService tbUserService;
+
+		    /**
+		     * 通过主键查询单条数据
+		     *
+		     * @param id 主键
+		     * @return 单条数据
+		     */
+		    @GetMapping("/findById/{id}") // restful风格的请求方式
+		    public TbUser findById(@PathVariable("id") Integer id) {
+		        return this.tbUserService.queryById(id);
+		    }
+
+		}
+	2.6:启动测试: 启动引导类, 访问controller对应接口, 查看是否可以正常获取到数据
+		访问路径: http://localhost:9091/tbUser/findById/1
+	--------------------------------------------------------------------
+	2.7:构建另一个子项目: day05_springcloud_consumer
+		选择依赖: lombok 和 spring web
+	2.8: 删除原来的application.properties ,创建application.yml,在此文件中,添加以下内容:
+		server:
+		  port: 8081
+		spring:
+		  application:
+		    name: consumer-service
+	2.9: 在引导类下, 创建一个pojo包, 在pojo包, 创建TbUser类: 
+		package com.itheima.pojo;
+
+		import lombok.Data;
+
+		import java.util.Date;
+
+		@Data
+		public class TbUser {
+		    private Integer id;
+		    /**
+		     * 用户名
+		     */
+		    private String username;
+		    /**
+		     * 密码
+		     */
+		    private String password;
+		    /**
+		     * 姓名
+		     */
+		    private String name;
+		    /**
+		     * 年龄
+		     */
+		    private Integer age;
+		    /**
+		     * 性别，1男，2女
+		     */
+		    private Integer sex;
+		    /**
+		     * 出生日期
+		     */
+		    private Date birthday;
+		    /**
+		     * 创建时间
+		     */
+		    private Date created;
+		    /**
+		     * 更新时间
+		     */
+		    private Date updated;
+		    /**
+		     * 备注
+		     */
+		    private String note;
+		}
+	2.10: 在引导类中, 添加生成RestTemplate模板类 的代码:
+		package com.itheima;
+
+		import org.springframework.boot.SpringApplication;
+		import org.springframework.boot.autoconfigure.SpringBootApplication;
+		import org.springframework.context.annotation.Bean;
+		import org.springframework.web.client.RestTemplate;
+
+		@SpringBootApplication
+		public class Day05SpringcloudConsumerApplication {
+
+			public static void main(String[] args) {
+				SpringApplication.run(Day05SpringcloudConsumerApplication.class, args);
+			}
+
+			@Bean
+			public RestTemplate getRestTemplate(){
+
+				return  new RestTemplate();
+			}
+		}
+
+
+	2.11: 在引导类下, 创建controller包,在此包下创建一个ConsumerController类
+		package com.itheima.controller;
+
+		import com.itheima.pojo.TbUser;
+		import org.springframework.beans.factory.annotation.Autowired;
+		import org.springframework.web.bind.annotation.GetMapping;
+		import org.springframework.web.bind.annotation.PathVariable;
+		import org.springframework.web.bind.annotation.RequestMapping;
+		import org.springframework.web.bind.annotation.RestController;
+		import org.springframework.web.client.RestTemplate;
+
+		@RestController
+		@RequestMapping("/consumer")
+		public class ConsumerController {
+		    @Autowired
+		    private RestTemplate restTemplate;
+		    @GetMapping("/user/{id}")
+		    public TbUser findById(@PathVariable("id") Integer id){
+		        String url = "http://localhost:9091/tbUser/findById/"+id;
+		        TbUser tbUser = restTemplate.getForObject(url, TbUser.class);
+		        return  tbUser;
+		    }
+		}
+	2.12: 在static目录中, 创建一个页面: index.html
+		<!DOCTYPE html>
+		<html lang="en">
+		<head>
+		    <meta charset="UTF-8">
+		    <title>消费端-页面</title>
+		</head>
+		<body>
+		    <h1>consumer 消费者操作页面: </h1>
+		    <!--此路径为, 项目中controller的访问路径-->
+		    <a href="/consumer/user/1">点击查询用户数据</a>
+		</body>
+		</html>
+	2.13: 启动引导类, 访问页面, 通过页面点击即可  查询是否可以远程调用到另一个项目中数据
+
+3. springCloud基本介绍： 用于实现微服务的框架, 提供 注册中心, 配置中心 以及 网关
+	注册中心:  负责服务的注册与发现，很好的将服务连接起来  进行服务治理工作
+	配置中心:  提供统一的配置信息管理服务, 可以实时通知各个服务加载最新的配置信息 (动态改配置)
+	网关: 所有请求的转发的窗口, 所有请求都需要经过网关进行转发, 从而进入项目内部
+		网关: 理解为拦截器
+
+	注意:
+		如果在springcloud中使用eureka作为注册中心, 要求springboot项目必须采用restFull风格请求方式
+
+4. 注册中心: eureka 
+	常见的注册中心:
+		zookeeper , eureka , Consul, Nacos
+
+	注册中心流程: 
+		服务的提供方在启动的时候, 向注册中心进行注册(向注册中心, 报告自己的地址,以及提供何种服务)
+		服务的消费方在启动的时候, 向注册中心拉取相关的服务列表(根据自己想要的服务, 拉取操作)
+		服务的消费方获取到服务列表后 , 根据服务地址, 调用对应服务, 获取相关的数据即可
+
+		同时:
+			服务的提供方会和注册中心保持心跳机制, 以确保自己的健康状态
+	
+	4.1: 如何构建注册中心的步骤:
+		第一步: 创建一个子项目: day05_springcloud_eureka_server
+		第二步: 删除application.properties文件, 然后重新创建application.yml文件, 并在其文件中添加以下内容:
+			server:
+			  port: 8761
+			spring:
+			  application:
+			    name: eureka-server
+			eureka:
+			  client:
+			    service-url:
+			      defaultZone: http://localhost:8761/eureka
+			# 在单机版本的注册中心, 一般要设置为false
+			    fetch-registry: false # 是否抓取注册列表
+			    register-with-eureka: false # 是否注册服务中心 Eureka
+		第三步:在启动类引导类上, 添加一个 @EnableEurekaServer  用于标识当前为eureka的服务端
+			package com.itheima;
+
+			import org.springframework.boot.SpringApplication;
+			import org.springframework.boot.autoconfigure.SpringBootApplication;
+			import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+
+			@SpringBootApplication
+			@EnableEurekaServer // 用于 标识当前为eureka的服务端
+			public class Day05SpringcloudEurekaServerApplication {
+
+				public static void main(String[] args) {
+					SpringApplication.run(Day05SpringcloudEurekaServerApplication.class, args);
+				}
+
+			}
+		第四步: 启动引导类, 即可, 然后在页面访问 localhost:8761  即可看到注册中心页面
+
+	4.2: 让服务提供者向注册中心进行注册操作: 
+		第一步: 确认服务提供者是否导入eureka client的依赖包: 需要在pom中确定有一下内容存在:
+			内容一: <properties>标签中需要有: <spring-cloud.version>Greenwich.SR5</spring-cloud.version>
+
+			内容二: 在 <dependencies>标签中, 导入eureka客户端依赖: 
+				<dependency>
+					<groupId>org.springframework.cloud</groupId>
+					<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+				</dependency>  
+			内容三: 配置springCloud的依赖版本管理操作: 确定在 <dependencyManagement>是否存在一下内容
+				<dependencyManagement>
+					<dependencies>
+						<dependency>
+							<groupId>org.springframework.cloud</groupId>
+							<artifactId>spring-cloud-dependencies</artifactId>
+							<version>${spring-cloud.version}</version>
+							<type>pom</type>
+							<scope>import</scope>
+						</dependency>
+					</dependencies>
+
+				</dependencyManagement>
+
+		第二步:  在引导类上面标识为当前是注册中心的客户端: @EnableDiscoveryClient
+
+			package com.itheima;
+
+			import org.springframework.boot.SpringApplication;
+			import org.springframework.boot.autoconfigure.SpringBootApplication;
+			import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+			import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+
+			@SpringBootApplication
+			@EnableDiscoveryClient // 支持多种注册中心 , 比如 zookeeper eureka ....
+			// @EnableEurekaClient
+			public class Day05SpringcloudUserProducerApplication {
+
+				public static void main(String[] args) {
+					SpringApplication.run(Day05SpringcloudUserProducerApplication.class, args);
+				}
+
+			}
+
+		第三步: 在application.yml中指定, 注册中心的地址: 
+			.....
+			# 以下内容, 为定义注册中心的地址: 
+			eureka:
+			  client:
+			    service-url:
+			      defaultZone: http://localhost:8761/eureka
+		第四步: 启动引导类, 启动后, 到注册中心的页面中, 查看是否有服务注册到了注册中心
+
+	4.3: 让服务的消费者也向注册中心进行注册: 整个步骤与4.2步骤一模一样
+
+	4.4: 让服务的消费者从注册中心获取服务提供者的地址: 
+		第一步: 在需要进行获取服务的类(被spring所管理的类)上, 添加一个成员变量: 
+			@Autowired
+    		private DiscoveryClient discoveryClient;
+
+    	第二步: 通过此对象, 即可获取到指定服务的URI地址: 
+    		List<ServiceInstance> instanceList = discoveryClient.getInstances("USER-SERVICE");
+	        ServiceInstance serviceInstance = instanceList.get(0);
+	        URI uri = serviceInstance.getUri();  // 包含 host 和 port
+
+	使用eureka的小的问题: 
+		1) 问题一: 在注册中心中, 看到注册的服务的地址 不是ip 而是主机名称
+			有可能会导致, 远程调用失败
+			解决方案:
+				在每个注册到注册中心的服务项目, 在application.yml中添加一下内容: 
+					eureka:  
+					  instance:
+				        prefer-ip-address: true
+				        instance-id: ${spring.cloud.client.ip-address}:${server.port}
+
+	4.5: eureka的高可用的架构操作:  
+		第一步: 修改window的hosts文件 : C:\Windows\System32\drivers\etc
+			在hosts文件中, 添加以下内容: 
+				127.0.0.1 eureka1 eureka2
+		第二步: 在eureka-server的项目中, 修改配置文件(application.yml): 复制两个新的配置文件
+			application-eureka1.yml:  内容如下: 
+				server:
+				  port: 8761
+
+				eureka:
+				  client:
+				    service-url:
+				      defaultZone: http://eureka2:8762/eureka
+				  instance:
+				      prefer-ip-address: true
+				      instance-id: ${spring.cloud.client.ip-address}:${server.port}
+				      hostname: eureka1
+
+			application-eureka2.yml: 内容如下
+				server:
+				  port: 8762
+
+				eureka:
+				  client:
+				    service-url:
+				      defaultZone: http://eureka1:8761/eureka
+				  instance:
+				      prefer-ip-address: true
+				      instance-id: ${spring.cloud.client.ip-address}:${server.port}
+				      hostname: eureka2
+			application.yml : 
+				spring:
+				  application:
+				    name: eureka-server
+		第三步: 配置启动操作:  看图即可  
+
+		第四步: 即可运行:  指定对应的运行配置点击运行即可
+
+		第五步: 在页面中 查看 http://localhost:8761  即可 观察Availability Zones 中是否标识为 (2)
+
+	4.6: 如何让服务向这注册中心集群注册呢? 
+		第一步: 修改每个服务的配置文件: 将注册地址更为多个即可:
+			eureka:
+			  client:
+			    service-url:
+			      # 在此处 配置多台注册中心地址即可
+			      defaultZone: http://eureka1:8761/eureka,http://eureka2:8762/eureka
+		第二步: 重新启动 注册中心, 以及所有的服务, 然后测试是否正常访问到
+
+5. 负载均衡的操作:  
+	当服务工程并发量很大的时候, 单台节点并发能力有限, 让服务工程启动多次, 形成一个服务工程集群, 
+		这样当客户端在访问的时候, 将请求均匀打向不同的服务工程上, 称为负载均衡
+
+	如何在springCloud中使用负载均衡策略呢?  
+		1) 先保证让服务工程启动多次: 最起码要启动2次  
+			注意: 具体如何启动多次, 可查阅课件 5.2.2.1 部分讲解
+		2) 在服务的消费端生成restTemplate对象的方法上, 添加 @LoadBalanced 注解  开启负载均衡
+			package com.itheima;
+
+			import org.springframework.boot.SpringApplication;
+			import org.springframework.boot.autoconfigure.SpringBootApplication;
+			import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+			import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+			import org.springframework.context.annotation.Bean;
+			import org.springframework.web.client.RestTemplate;
+
+			@SpringBootApplication
+			@EnableDiscoveryClient
+			public class Day05SpringcloudConsumerApplication {
+
+				public static void main(String[] args) {
+					SpringApplication.run(Day05SpringcloudConsumerApplication.class, args);
+				}
+
+				@LoadBalanced // 开启负载均衡
+				@Bean
+				public RestTemplate getRestTemplate(){
+
+					return  new RestTemplate();
+				}
+			}
+		3) 在调用的代码中, 使用服务名称直接调用即可: 
+			package com.itheima.controller;
+
+			import com.itheima.pojo.TbUser;
+			import org.springframework.beans.factory.annotation.Autowired;
+			import org.springframework.cloud.client.ServiceInstance;
+			import org.springframework.cloud.client.discovery.DiscoveryClient;
+			import org.springframework.web.bind.annotation.GetMapping;
+			import org.springframework.web.bind.annotation.PathVariable;
+			import org.springframework.web.bind.annotation.RequestMapping;
+			import org.springframework.web.bind.annotation.RestController;
+			import org.springframework.web.client.RestTemplate;
+
+			import java.net.URI;
+			import java.util.List;
+
+			@RestController
+			@RequestMapping("/consumer")
+			public class ConsumerController {
+			    @Autowired
+			    private RestTemplate restTemplate;
+
+			    @Autowired
+			    private DiscoveryClient discoveryClient;
+
+
+			    @GetMapping("/user/{id}")
+			    public TbUser findById(@PathVariable("id") Integer id){
+			        // 原生的第一种方式:
+			        /*String url = "http://localhost:9091/tbUser/findById/"+id;
+			        TbUser tbUser = restTemplate.getForObject(url, TbUser.class);*/
+
+			        // 第二种方式: 没有使用负载
+			        /*List<ServiceInstance> instanceList = discoveryClient.getInstances("USER-SERVICE");
+			        ServiceInstance serviceInstance = instanceList.get(0);
+			        URI uri = serviceInstance.getUri();
+
+
+			        String url = uri+"/tbUser/findById/"+id;
+			        System.out.println(url);
+			        TbUser tbUser = restTemplate.getForObject(url, TbUser.class);*/
+
+			        //第三步方式:
+			        String url = "http://USER-SERVICE/tbUser/findById/"+id;
+			        TbUser tbUser = restTemplate.getForObject(url, TbUser.class);
+
+			        return  tbUser;
+			    }
+			    @GetMapping("/instance")
+			    public  List<ServiceInstance> getDiscovery(){
+
+			        List<ServiceInstance> instanceList = discoveryClient.getInstances("USER-SERVICE");
+			        List<String> services = discoveryClient.getServices();
+			        System.out.println("===================");
+			        System.out.println(services);
+			        return instanceList;
+			    }
+			}
+		4) 为了让负载效果明显一些, 所以在producer中, 添加一个Port成员变量, 从而检测出数据从按个端口查询出来:
+			day05_springcloud_user_producer的项目的controller中编写以下内容: 
+			package com.itheima.controller;
+
+			import com.itheima.entity.TbUser;
+			import com.itheima.service.TbUserService;
+			import org.springframework.beans.factory.annotation.Value;
+			import org.springframework.web.bind.annotation.GetMapping;
+			import org.springframework.web.bind.annotation.PathVariable;
+			import org.springframework.web.bind.annotation.RequestMapping;
+			import org.springframework.web.bind.annotation.RestController;
+
+			import javax.annotation.Resource;
+
+			/**
+			 * 用户信息表(TbUser)表控制层
+			 *
+			 * @author jiale
+			 * @since 2020-10-16 10:47:13
+			 */
+			@RestController
+			@RequestMapping("tbUser")
+			public class TbUserController {
+			    /**
+			     * 服务对象
+			     */
+			    @Resource
+			    private TbUserService tbUserService;
+
+			    @Value("${server.port}")
+			    private  Integer port;
+			    /**
+			     * 通过主键查询单条数据
+			     *
+			     * @param id 主键
+			     * @return 单条数据
+			     */
+			    @GetMapping("/findById/{id}") // restful风格的请求方式
+			    public TbUser findById(@PathVariable("id") Integer id) {
+			        TbUser tbUser = this.tbUserService.queryById(id);
+			        tbUser.setNote("从端口号为:"+port+"获取的数据");
+			        return tbUser;
+			    }
+
+			}
+
+		启动测试:  先启动两个注册中心, 然后启动两个服务工程 , 最后启动服务消费工程
+			启动后, 首先访问 注册中心, 查看相关的服务是否已经成功注册了
+			如果成功了, 访问服务的消费工程, 进行操作测试, 看结果即可
+		
+		注意: 默认情况下,负载策略是轮询策略
+

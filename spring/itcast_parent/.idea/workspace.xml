@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dfcf08e3-a05f-43e2-8543-1668e904abf0" name="默认的" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/biancheng/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\biancheng\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ifXn8KLlmaR3IBPk2w22ClXvSi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring_userAndOrder/src/main/resources" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.31369662" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.itheima.server" />
+      <recent name="com.itheima.service" />
+      <recent name="com.itheima.Dao" />
+      <recent name="com.itheima.mapper" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\bianchengxuexi\itcast_parent\msybatis_multi_table_xml\src\main\resources\com\itheima" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.itheima" />
+      <recent name="com" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.itheima.mapper" />
+      <recent name="mapper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\bianchengxuexi\itcast_parent\spring_userAndOrder\src\main\resources" />
+      <recent name="G:\bianchengxuexi\itcast_parent\spring_userAndOrder\src\main\java\com\itheima" />
+      <recent name="G:\bianchengxuexi\itcast_parent\spring_userAndOrder\src\main\java\com\itheima\pojo" />
+      <recent name="G:\bianchengxuexi\itcast_parent\文档" />
+      <recent name="G:\bianchengxuexi\itcast_parent\spring_mybatis_xmlAndAnnotion\src\main\resources\com\itheima\mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TbAccountServiceTest.insertCell">
+    <configuration name="SpringDaoTest.test01 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_mybatis_annotion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima.test" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.test.SpringDaoTest" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringJdbcTest.test01 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_mybatis_annotion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima.test" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.test.SpringJdbcTest" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TbAccountServiceTest.insertCell" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_userAndOrder" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima.server" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.server.TbAccountServiceTest" />
+      <option name="METHOD_NAME" value="insertCell" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TbAccountServiceTest.zhuanzhang (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_mybatis_annotion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima.server" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.server.TbAccountServiceTest" />
+      <option name="METHOD_NAME" value="zhuanzhang" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TbAccountServiceTest.zhuanzhang" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_mybatis_xmlAndAnnotion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima.server" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.server.TbAccountServiceTest" />
+      <option name="METHOD_NAME" value="zhuanzhang" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TbAccountServiceTest.insertCell" />
+        <item itemvalue="JUnit.SpringDaoTest.test01 (1)" />
+        <item itemvalue="JUnit.TbAccountServiceTest.zhuanzhang (1)" />
+        <item itemvalue="JUnit.SpringJdbcTest.test01 (1)" />
+        <item itemvalue="JUnit.TbAccountServiceTest.zhuanzhang" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dfcf08e3-a05f-43e2-8543-1668e904abf0" name="默认的" comment="" />
+      <created>1602299783525</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602299783525</updated>
+      <workItem from="1602299786741" duration="629000" />
+      <workItem from="1602300455395" duration="2098000" />
+      <workItem from="1602302609287" duration="145000" />
+      <workItem from="1602310717187" duration="84000" />
+      <workItem from="1602310832720" duration="61000" />
+      <workItem from="1602310922451" duration="204000" />
+      <workItem from="1602311150164" duration="1896000" />
+      <workItem from="1602313727485" duration="788000" />
+      <workItem from="1602314710823" duration="3967000" />
+      <workItem from="1602319161921" duration="2179000" />
+      <workItem from="1602321600448" duration="2623000" />
+      <workItem from="1602324628747" duration="8868000" />
+      <workItem from="1602335031979" duration="230000" />
+      <workItem from="1602335285188" duration="485000" />
+      <workItem from="1602335891090" duration="2388000" />
+      <workItem from="1602339928938" duration="369000" />
+      <workItem from="1602340322313" duration="137000" />
+      <workItem from="1602340484160" duration="107000" />
+      <workItem from="1602340628120" duration="196000" />
+      <workItem from="1602340937355" duration="501000" />
+      <workItem from="1602341463237" duration="3206000" />
+      <workItem from="1602344721008" duration="894000" />
+      <workItem from="1602346374292" duration="47000" />
+      <workItem from="1602346452947" duration="34000" />
+      <workItem from="1602346511246" duration="18000" />
+      <workItem from="1602377760862" duration="61000" />
+      <workItem from="1602380048511" duration="8976000" />
+      <workItem from="1602397873996" duration="20568000" />
+      <workItem from="1602427701519" duration="1800000" />
+      <workItem from="1602510013175" duration="474000" />
+      <workItem from="1602510511799" duration="675000" />
+      <workItem from="1602511218016" duration="71000" />
+      <workItem from="1602511335384" duration="632000" />
+      <workItem from="1602551614617" duration="138000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="392" y="16" key="#Custom_Plugin_Repositories" timestamp="1602340046708">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="392" y="16" key="#Custom_Plugin_Repositories/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602340046708" />
+    <state x="392" y="16" key="#HTTP_Proxy" timestamp="1602344692989">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="392" y="16" key="#HTTP_Proxy/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602344692989" />
+    <state x="361" y="73" key="#Plugins" timestamp="1602310868002">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="73" key="#Plugins/0.0.1536.864@0.0.1536.864" timestamp="1602310868002" />
+    <state x="552" y="201" key="#Project_Structure" timestamp="1602342337147">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="201" key="#Project_Structure/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602342337147" />
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602326980480">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1602326980480" />
+    <state x="958" y="143" key="#com.intellij.ide.util.MemberChooser" timestamp="1602419543816">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="958" y="143" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1602419543816" />
+    <state x="498" y="221" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1602315675786">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="498" y="221" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.864@0.0.1536.864" timestamp="1602315675786" />
+    <state x="375" y="355" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1602416033219">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="375" y="355" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.864@0.0.1536.864" timestamp="1602416033219" />
+    <state x="498" y="312" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1602329653648">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="498" y="312" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.864@0.0.1536.864" timestamp="1602329653648" />
+    <state x="343" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602329144767">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="343" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.864@0.0.1536.864" timestamp="1602329144767" />
+    <state x="883" y="184" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602420524275">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="883" y="184" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1602420524275" />
+    <state x="311" y="8" key="#项目结构" timestamp="1602510607321">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="311" y="8" key="#项目结构/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602510607321" />
+    <state x="249" y="6" key="#项目结构/0.0.1536.864@0.0.1536.864" timestamp="1602422249656" />
+    <state x="549" y="186" key="FileChooserDialogImpl" timestamp="1602311181272">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="186" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1602311181272" />
+    <state width="1877" height="303" key="GridCell.Tab.0.bottom" timestamp="1602510488132">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="303" key="GridCell.Tab.0.bottom/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602510488132" />
+    <state width="1493" height="230" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1602425990279" />
+    <state width="1877" height="303" key="GridCell.Tab.0.center" timestamp="1602510488132">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="303" key="GridCell.Tab.0.center/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602510488132" />
+    <state width="1493" height="230" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1602425990279" />
+    <state width="1877" height="303" key="GridCell.Tab.0.left" timestamp="1602510488132">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="303" key="GridCell.Tab.0.left/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602510488132" />
+    <state width="1493" height="230" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1602425990279" />
+    <state width="1877" height="303" key="GridCell.Tab.0.right" timestamp="1602510488132">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="303" key="GridCell.Tab.0.right/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602510488132" />
+    <state width="1493" height="230" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1602425990279" />
+    <state width="194" height="477" key="HiddenNamespacesPopup" timestamp="1602326994793">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="194" height="477" key="HiddenNamespacesPopup/0.0.1536.864@0.0.1536.864" timestamp="1602326994793" />
+    <state x="242" y="0" width="994" height="869" key="SettingsEditor" timestamp="1602551710073">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="295" y="161" width="994" height="869" key="SettingsEditor/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602511289527" />
+    <state x="242" y="0" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1602551710073" />
+    <state x="838" y="245" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1602425064212">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="1048" y="306" key="com.intellij.testIntegration.createTest.CreateTestDialog/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602342343828" />
+    <state x="838" y="245" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.864@0.0.1536.864" timestamp="1602425064212" />
+    <state x="794" y="164" width="603" height="536" key="find.popup" timestamp="1602325016234">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="794" y="164" width="603" height="536" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1602325016234" />
+    <state x="158" y="98" key="new project wizard" timestamp="1602422200962">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="158" y="98" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1602422200962" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1602415192711">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1602415192711" />
+    <state x="773" y="127" key="spring file set editor" timestamp="1602409387426">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="773" y="127" key="spring file set editor/0.0.1536.864@0.0.1536.864" timestamp="1602409387426" />
+  </component>
+</project>

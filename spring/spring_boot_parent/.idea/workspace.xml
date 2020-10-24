@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ae6f2e6e-078c-49e6-835c-772203ff7970" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="benji" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="benji" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="benji" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="springboot_db: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="benji" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="springcloud_db: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Arquillian JUnit Test Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/biancheng/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\biancheng\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1intyh3y1fcTHYcauBPxoDiMvGx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.24300441" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.itheima.mapper" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\bianchengxuexi\spring_boot_parent\springboot_07\src\main\resources\mapper" />
+      <recent name="G:\bianchengxuexi\spring_boot_parent\springboot_05\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ieheima.pojo" />
+      <recent name="com.itheima.pojo" />
+      <recent name="com.itheima.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\bianchengxuexi\spring_boot_parent\data" />
+      <recent name="G:\bianchengxuexi\spring_boot_parent\springcloud_eureka-server\src\main\resources" />
+      <recent name="G:\bianchengxuexi\spring_boot_parent\springboot_wook\src\main\resources" />
+      <recent name="G:\bianchengxuexi\spring_boot_parent\springboot_wook\src\main\resources\static" />
+      <recent name="G:\bianchengxuexi\spring_boot_parent\springboot_temprest\src\main\java\com\itheima" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ithema.pojo" />
+      <recent name="com.itheima.pojo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Springboot05Application">
+    <configuration name="SpringbootDatajpa10ApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_datajpa_10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.SpringbootDatajpa10ApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootDatajpa10ApplicationTests.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_datajpa_10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.SpringbootDatajpa10ApplicationTests" />
+      <option name="METHOD_NAME" value="test02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootDatajpa10ApplicationTests.test04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_datajpa_10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.SpringbootDatajpa10ApplicationTests" />
+      <option name="METHOD_NAME" value="test04" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootWookApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_wook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.SpringbootWookApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootWookApplicationTests.transfer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_wook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.SpringbootWookApplicationTests" />
+      <option name="METHOD_NAME" value="transfer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot02Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_02" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.Springboot02Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot03Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_03" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.Springboot03Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot04Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_04" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.Springboot04Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot05Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_05" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.Springboot05Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot06Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_06" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ithema.Springboot06Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot07Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_07" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.Springboot07Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootDataJpa010Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_data_jpa_010" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.SpringbootDataJpa010Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootDatajpa10Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_datajpa_10" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.SpringbootDatajpa10Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootDatajpa10Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_datajpa_10" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.springboot_datajpa_10.SpringbootDatajpa10Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootEasyCode09Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_easy_code_09" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.SpringbootEasyCode09Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootRestTemplate08Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_rest_template_08" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.SpringbootRestTemplate08Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootWookApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_wook" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.SpringbootWookApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud_consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ieheima.SpringcloudConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudEurekaServerApplication-eureka1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud_eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.SpringcloudEurekaServerApplication" />
+      <option name="ACTIVE_PROFILES" value="eureka1" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudEurekaServerApplication-eureka2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud_eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.SpringcloudEurekaServerApplication" />
+      <option name="ACTIVE_PROFILES" value="eureka2" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudUserProduceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud_user_produce" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.SpringcloudUserProduceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudUserPruducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud_user_pruducer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.SpringcloudUserPruducerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudUserServiceApplication-9091" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud_user_service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.SpringcloudUserServiceApplication" />
+      <option name="PROGRAM_PARAMETERS" value="--server.port=9091" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudUserServiceApplication-9092" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud_user_service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.SpringcloudUserServiceApplication" />
+      <option name="PROGRAM_PARAMETERS" value="--server.port=9092" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.SpringbootDatajpa10ApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.SpringbootDatajpa10ApplicationTests.test02" />
+      <item itemvalue="JUnit.SpringbootDatajpa10ApplicationTests.test04" />
+      <item itemvalue="JUnit.SpringbootWookApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.SpringbootWookApplicationTests.transfer" />
+      <item itemvalue="Spring Boot.Springboot02Application" />
+      <item itemvalue="Spring Boot.Springboot03Application" />
+      <item itemvalue="Spring Boot.Springboot04Application" />
+      <item itemvalue="Spring Boot.Springboot05Application" />
+      <item itemvalue="Spring Boot.Springboot06Application" />
+      <item itemvalue="Spring Boot.Springboot07Application" />
+      <item itemvalue="Spring Boot.SpringbootDatajpa10Application" />
+      <item itemvalue="Spring Boot.SpringbootDatajpa10Application (1)" />
+      <item itemvalue="Spring Boot.SpringbootDataJpa010Application" />
+      <item itemvalue="Spring Boot.SpringbootEasyCode09Application" />
+      <item itemvalue="Spring Boot.SpringbootRestTemplate08Application" />
+      <item itemvalue="Spring Boot.SpringbootWookApplication" />
+      <item itemvalue="Spring Boot.SpringcloudConsumerApplication" />
+      <item itemvalue="Spring Boot.SpringcloudEurekaServerApplication-eureka1" />
+      <item itemvalue="Spring Boot.SpringcloudEurekaServerApplication-eureka2" />
+      <item itemvalue="Spring Boot.SpringcloudUserProduceApplication" />
+      <item itemvalue="Spring Boot.SpringcloudUserPruducerApplication" />
+      <item itemvalue="Spring Boot.SpringcloudUserServiceApplication-9091" />
+      <item itemvalue="Spring Boot.SpringcloudUserServiceApplication-9092" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SpringbootWookApplicationTests.transfer" />
+        <item itemvalue="JUnit.SpringbootWookApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.SpringbootDatajpa10ApplicationTests.test04" />
+        <item itemvalue="JUnit.SpringbootDatajpa10ApplicationTests.test02" />
+        <item itemvalue="JUnit.SpringbootDatajpa10ApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.13661203" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="运行" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="完成" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae6f2e6e-078c-49e6-835c-772203ff7970" name="默认更改列表" comment="" />
+      <created>1602555440394</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602555440394</updated>
+      <workItem from="1602555443400" duration="1975000" />
+      <workItem from="1602557857441" duration="5135000" />
+      <workItem from="1602570640113" duration="2323000" />
+      <workItem from="1602573004347" duration="7888000" />
+      <workItem from="1602582522238" duration="9992000" />
+      <workItem from="1602594384330" duration="430000" />
+      <workItem from="1602595191254" duration="1842000" />
+      <workItem from="1602637892571" duration="9978000" />
+      <workItem from="1602648094980" duration="1369000" />
+      <workItem from="1602656413400" duration="11596000" />
+      <workItem from="1602680411289" duration="1792000" />
+      <workItem from="1602682923972" duration="897000" />
+      <workItem from="1602742307005" duration="5812000" />
+      <workItem from="1602748441649" duration="4743000" />
+      <workItem from="1602814463720" duration="265000" />
+      <workItem from="1602815944817" duration="6012000" />
+      <workItem from="1602829178744" duration="17141000" />
+      <workItem from="1602852118843" duration="1082000" />
+      <workItem from="1602853646848" duration="90000" />
+      <workItem from="1602853775699" duration="173000" />
+      <workItem from="1602854091499" duration="51000" />
+      <workItem from="1602854387938" duration="471000" />
+      <workItem from="1602860899492" duration="143000" />
+      <workItem from="1602896242661" duration="650000" />
+      <workItem from="1603352883532" duration="457000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="93" key="#Assign_Data_Sources" timestamp="1602674709999">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="93" key="#Assign_Data_Sources/0.0.1536.864@0.0.1536.864" timestamp="1602674709999" />
+    <state x="447" y="113" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602839071353">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="447" y="113" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1602839071353" />
+    <state x="955" y="240" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602819215332">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="955" y="240" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1602819215332" />
+    <state x="958" y="143" key="#com.intellij.ide.util.MemberChooser" timestamp="1602745228498">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="958" y="143" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1602745228498" />
+    <state x="361" y="93" key="#项目结构" timestamp="1602675976820">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="93" key="#项目结构/0.0.1536.864@0.0.1536.864" timestamp="1602675976820" />
+    <state width="242" height="189" key="DatabaseViewActions_Filter" timestamp="1602648737034">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="242" height="189" key="DatabaseViewActions_Filter/0.0.1536.864@0.0.1536.864" timestamp="1602648737034" />
+    <state width="1263" height="198" key="GridCell.Tab.0.bottom" timestamp="1603353341312">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="998" height="259" key="GridCell.Tab.0.bottom/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602861042074" />
+    <state width="1263" height="198" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1603353341312" />
+    <state width="1263" height="198" key="GridCell.Tab.0.center" timestamp="1603353341312">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="998" height="259" key="GridCell.Tab.0.center/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602861042074" />
+    <state width="1263" height="198" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1603353341312" />
+    <state width="1263" height="198" key="GridCell.Tab.0.left" timestamp="1603353341312">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="998" height="259" key="GridCell.Tab.0.left/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602861042074" />
+    <state width="1263" height="198" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1603353341312" />
+    <state width="1263" height="198" key="GridCell.Tab.0.right" timestamp="1603353341312">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="998" height="259" key="GridCell.Tab.0.right/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602861042074" />
+    <state width="1263" height="198" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1603353341312" />
+    <state width="1263" height="198" key="GridCell.Tab.1.bottom" timestamp="1603353341312">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="998" height="259" key="GridCell.Tab.1.bottom/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602861042074" />
+    <state width="1263" height="198" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1603353341312" />
+    <state width="1263" height="198" key="GridCell.Tab.1.center" timestamp="1603353341312">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="998" height="259" key="GridCell.Tab.1.center/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602861042074" />
+    <state width="1263" height="198" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1603353341312" />
+    <state width="1263" height="198" key="GridCell.Tab.1.left" timestamp="1603353341312">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="998" height="259" key="GridCell.Tab.1.left/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602861042074" />
+    <state width="1263" height="198" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1603353341312" />
+    <state width="1263" height="198" key="GridCell.Tab.1.right" timestamp="1603353341312">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="998" height="259" key="GridCell.Tab.1.right/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1602861042074" />
+    <state width="1263" height="198" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1603353341312" />
+    <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1602816337952">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="212" height="477" key="HiddenNamespacesPopup/0.0.1536.864@0.0.1536.864" timestamp="1602816337952" />
+    <state x="272" y="77" key="SettingsEditor" timestamp="1602854460429">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="272" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1602854460429" />
+    <state x="638" y="307" width="333" height="250" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1602679410891">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="638" y="307" width="333" height="250" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.864@0.0.1536.864" timestamp="1602679410891" />
+    <state x="485" y="80" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1602743374139">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="485" y="80" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.864@0.0.1536.864" timestamp="1602743374139" />
+    <state x="540" y="150" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1602595724608">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="540" y="150" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.864@0.0.1536.864" timestamp="1602595724608" />
+    <state x="409" y="28" width="718" height="807" key="find.popup" timestamp="1602678123355">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="409" y="28" width="718" height="807" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1602678123355" />
+    <state x="91" y="35" width="1419" height="700" key="new project wizard" timestamp="1602821460782">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="91" y="35" width="1419" height="700" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1602821460782" />
+    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1602674500220">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1602674500220" />
+  </component>
+</project>

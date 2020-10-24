@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="867364be-d57a-432e-b5b4-982de83a6387" name="默认的" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="G:\bianchengxuexi\Factorystorehouse" />
+        <option name="mavenHome" value="D:/biancheng/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\biancheng\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+  </component>
+  <component name="ProjectId" id="1gGe8dnIfwjJ8PvopQrnz8LJ37f" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/HBASE/src/main/java/com/itheima" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="库" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.itheima.count" />
+      <recent name="com.itheima.driver" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\bianchengxuexi\bingdata\HBASE\src\main\java\com\itheima" />
+      <recent name="G:\bianchengxuexi\bingdata\HBASE\src\main\resources" />
+      <recent name="G:\bianchengxuexi\bingdata\shuffle\src\main\resources" />
+      <recent name="G:\bianchengxuexi\bingdata\shuffle\src\main\java" />
+      <recent name="G:\bianchengxuexi\bingdata\MapReduce_2\datas" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="takeTheTopThree" />
+      <recent name="HourlyUA" />
+      <recent name="secondhouse" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\bianchengxuexi\bingdata\datas" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.KafkaProducerClient">
+    <configuration name="HbaseDDLTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itheima.HbaseDDLTest" />
+      <module name="HBASE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.MRtohbase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HbaseDMLTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itheima.HbaseDMLTest" />
+      <module name="HBASE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.MRtohbase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaConsumerClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KafkaConsumerClient" />
+      <module name="kafka" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaProducerClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KafkaProducerClient" />
+      <module name="kafka" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HbaseDMLTest.putData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HBASE" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HbaseDMLTest" />
+      <option name="METHOD_NAME" value="putData" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.KafkaConsumerClient" />
+        <item itemvalue="应用程序.KafkaProducerClient" />
+        <item itemvalue="JUnit.HbaseDMLTest.putData" />
+        <item itemvalue="应用程序.HbaseDMLTest" />
+        <item itemvalue="应用程序.HbaseDDLTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="867364be-d57a-432e-b5b4-982de83a6387" name="默认的" comment="" />
+      <created>1597745197665</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597745197665</updated>
+      <workItem from="1597745200988" duration="6369000" />
+      <workItem from="1597754291251" duration="240000" />
+      <workItem from="1597991178228" duration="185000" />
+      <workItem from="1598009843044" duration="5179000" />
+      <workItem from="1598015427974" duration="1365000" />
+      <workItem from="1598077418114" duration="1110000" />
+      <workItem from="1598090920675" duration="10847000" />
+      <workItem from="1598104648666" duration="114000" />
+      <workItem from="1598106713644" duration="4116000" />
+      <workItem from="1598170123960" duration="51000" />
+      <workItem from="1598173443935" duration="131000" />
+      <workItem from="1598232007775" duration="62000" />
+      <workItem from="1598234234370" duration="876000" />
+      <workItem from="1598242114905" duration="1171000" />
+      <workItem from="1598249700201" duration="7521000" />
+      <workItem from="1598265274925" duration="3850000" />
+      <workItem from="1598269711081" duration="6053000" />
+      <workItem from="1598281532137" duration="3535000" />
+      <workItem from="1598285808909" duration="722000" />
+      <workItem from="1598317387521" duration="4209000" />
+      <workItem from="1598346173185" duration="4619000" />
+      <workItem from="1598350837297" duration="10503000" />
+      <workItem from="1598363558645" duration="568000" />
+      <workItem from="1598368873108" duration="4229000" />
+      <workItem from="1598417737445" duration="7844000" />
+      <workItem from="1598430400538" duration="5363000" />
+      <workItem from="1598439946840" duration="3728000" />
+      <workItem from="1598526832195" duration="687000" />
+      <workItem from="1598532109166" duration="172000" />
+      <workItem from="1598534295097" duration="1187000" />
+      <workItem from="1600160384742" duration="3438000" />
+      <workItem from="1600669190490" duration="944000" />
+      <workItem from="1600680141643" duration="7175000" />
+      <workItem from="1600689751368" duration="229000" />
+      <workItem from="1600690010948" duration="6370000" />
+      <workItem from="1600757739258" duration="6103000" />
+      <workItem from="1600822336398" duration="1109000" />
+      <workItem from="1600863621045" duration="4226000" />
+      <workItem from="1600949623249" duration="3380000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1032" y="239" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598436328137">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="1032" y="239" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1598436328137" />
+    <state x="994" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1600865580403">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="1243" y="185" key="#com.intellij.ide.util.MemberChooser/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1598371671347" />
+    <state x="994" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1600865580403" />
+    <state x="499" y="220" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1598269749416">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="499" y="220" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.864@0.0.1536.864" timestamp="1598269749416" />
+    <state x="779" y="110" key="#检查" timestamp="1600688576842">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="779" y="110" key="#检查/0.0.1536.864@0.0.1536.864" timestamp="1600688576842" />
+    <state x="249" y="6" key="#项目结构" timestamp="1600693546844">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="249" y="6" key="#项目结构/0.0.1536.864@0.0.1536.864" timestamp="1600693546844" />
+    <state x="549" y="186" key="FileChooserDialogImpl" timestamp="1598269645974">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="186" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1598269645974" />
+    <state width="1493" height="275" key="GridCell.Tab.0.bottom" timestamp="1600953008818">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.0.bottom/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1598373258918" />
+    <state width="1493" height="275" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1600953008818" />
+    <state width="1493" height="275" key="GridCell.Tab.0.center" timestamp="1600953008817">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.0.center/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1598373258917" />
+    <state width="1493" height="275" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1600953008817" />
+    <state width="1493" height="275" key="GridCell.Tab.0.left" timestamp="1600953008817">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.0.left/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1598373258917" />
+    <state width="1493" height="275" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1600953008817" />
+    <state width="1493" height="275" key="GridCell.Tab.0.right" timestamp="1600953008818">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.0.right/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1598373258918" />
+    <state width="1493" height="275" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1600953008818" />
+    <state x="315" y="13" key="SettingsEditor" timestamp="1600690201445">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="315" y="13" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1600690201445" />
+    <state x="540" y="194" key="editAsTableFormatDialogDimension" timestamp="1598110915523">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="540" y="194" key="editAsTableFormatDialogDimension/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1598110915523" />
+    <state x="329" y="138" key="new project wizard" timestamp="1600949729942">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="329" y="138" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1600949729942" />
+    <state x="588" y="235" key="refactoring.ChangeSignatureDialog" timestamp="1600762775571">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="588" y="235" key="refactoring.ChangeSignatureDialog/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1600762775571" />
+    <state x="470" y="188" key="refactoring.ChangeSignatureDialog/0.0.1536.864@0.0.1536.864" timestamp="1600161260987" />
+    <state x="425" y="197" key="run.anything.popup" timestamp="1598346384317">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1598346384317" />
+    <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1598243157015">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="430" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1598243157015" />
+  </component>
+</project>

@@ -1,0 +1,914 @@
+今日内容:
+1) spring基本介绍
+2) spring的入门案例_全XML配置方式
+3) spring的基本使用_半xml和半注解的方式
+4) spring的基本使用_全注解的使用方案
+5) spring整合mybatis框架
+	整合方式一: 使用半xml和半注解的方式
+	整合方式二: 使用全注解的方式
+
+1) spring的基本介绍: 
+	spring是一个大集成者, 可以集成很多优秀第三方框架, 从而提升spring功能
+		spring自己本身也是 full-stack 全栈轻量级框架,
+		提供了二大核心操作:  IOC(控制反转) AOP(面向于切面编程) 
+2) spring的入门案例_全XML配置方式:  dao层操作
+	2.1: 在原有的shBigData23_parent 父工程创建了一个子工程: day02_spring_basic_xml
+	2.2: 导入相关的依赖:
+		<dependencies>
+	        <!-- 单元测试 -->
+	        <dependency>
+	            <groupId>junit</groupId>
+	            <artifactId>junit</artifactId>
+	            <scope>test</scope>
+	        </dependency>
+
+	        <!-- Spring -->
+	        <dependency>
+	            <groupId>org.springframework</groupId>
+	            <artifactId>spring-context</artifactId>
+	        </dependency>
+	        <!--spring的单元测试包-->
+	        <dependency>
+	            <groupId>org.springframework</groupId>
+	            <artifactId>spring-test</artifactId>
+	        </dependency>
+	    </dependencies>
+	2.3: 创建 dao层(com.itheima.dao), 并在其包下构建了一个AccountDao接口:
+		package com.itheima.dao;
+
+		public interface AccountDao {
+
+		    public void out(String username,Double money);
+		    public void in(String username,Double money);
+		}
+	2.4: 到dao层下创建一个 impl 包, 并在impl包下, 创建一个AccountDaoImpl实现类:
+		package com.itheima.dao.impl;
+
+		import com.itheima.dao.AccountDao;
+
+		public class AccountDaoImpl implements AccountDao {
+		    // 银行名称
+		    private  String bankName ;
+
+		    public void setBankName(String bankName) {
+		        this.bankName = bankName;
+		    }
+
+		    @Override
+		    public void out(String username, Double money) {
+		        System.out.println("出账操作: 在"+bankName+"下,"+username+" 转出:"+ money);
+		    }
+
+		    @Override
+		    public void in(String username, Double money) {
+		        System.out.println("入账操作: 在"+bankName+"下,"+username+" 转入:"+ money);
+		    }
+		}
+
+	2.5: 创建spring的配置文件: 
+		在resources目录下右键 -->new --> xml configuration file --> spring .... > 设置文件名称(applicationContext) --> 回车
+
+		在applicationContext.xml文件中, 添加一下内容: 
+			<?xml version="1.0" encoding="UTF-8"?>
+			<beans xmlns="http://www.springframework.org/schema/beans"
+			       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+			    <!--bean标签, 将相当于在代码 new AccountDaoImpl -->
+			    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
+
+			        <property name="bankName" value="招商银行"></property>
+
+			    </bean>
+
+			</beans>
+
+			说明:
+				<bean> 一个bean标签, 表示一个类, 用于将这个类放置spring的容器中
+					id属性: 唯一标识, 相当于是这个类的一个别名
+					class属性: 需要将那个类放置到spring容器中, 设置这个类的包名+类名
+
+					<property>子标签: 用于对类中成员属性进行设置值, 要求属性必须有set方法
+						name属性: 成员变量的名称
+						value属性: 设置具体的值
+						ref属性: 设置值(对象)
+	2.6 : 在test目录下, 编写测试类, 进行测试, spring是否可以进行构建对象, 并且成功注入使用: 
+		包结构: test / com.itheima.test
+		package com.itheima.test;
+
+		import com.itheima.dao.AccountDao;
+
+		import org.junit.Test;
+		import org.junit.runner.RunWith;
+		import org.springframework.beans.factory.annotation.Autowired;
+		import org.springframework.beans.factory.annotation.Qualifier;
+		import org.springframework.test.context.ContextConfiguration;
+		import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+		// 指定spring的测试运行环境: 
+		@RunWith(SpringJUnit4ClassRunner.class)
+		// 加载spring的配置文件
+		@ContextConfiguration("classpath:applicationContext.xml")  // 只有在加载了spring的配置后, 才会将spring容器构建好
+		public class SpringDaoTest {
+		    @Autowired // 自动注入
+		    //@Qualifier("accountDao") // 强制使用名称来注入
+		    private AccountDao accountDao;
+
+		    @Test
+		    public void test01(){
+		        accountDao.out("张三",500D);
+		        accountDao.in("李四",500D);
+		    }
+
+		}
+	2.7: 测试即可.如果能够正常的调用成功, 说明 spring创建对象, 以及注入对象是成功的
+
+3) spring的入门案例_全XML配置方式:  dao层之上添加service层
+	3.1: 创建service包(com.itheima.service) ,在包下, 创建一个AccountService接口
+		package com.itheima.service;
+
+		public interface AccountService {
+
+		    public  void zhuanZhang(String outUserName,String inUserName ,Double money);
+
+		}
+	3.2: 在service包下, 创建一个impl包,在impl包下创建AccountServiceImpl实现类
+		package com.itheima.service.impl;
+
+		import com.itheima.dao.AccountDao;
+		import com.itheima.service.AccountService;
+
+		public class AccountServiceImpl implements AccountService {
+
+		    private AccountDao accountDao;
+
+		    public void setAccountDao(AccountDao accountDao) {
+		        this.accountDao = accountDao;
+		    }
+
+		    @Override
+		    public void zhuanZhang(String outUserName, String inUserName, Double money) {
+		        accountDao.out(outUserName,money);
+		        accountDao.in(inUserName,money);
+		    }
+		}
+	3.3: 在applicationContext.xml中, 添加service类的相关配置信息:
+		<?xml version="1.0" encoding="UTF-8"?>
+		<beans xmlns="http://www.springframework.org/schema/beans"
+		       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+		    <!--bean标签, 将相当于在代码 new AccountDaoImpl -->
+		    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
+
+		        <property name="bankName" value="招商银行"></property>
+
+		    </bean>
+		    <!--主要添加以下内容 -->
+		    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl" >
+
+		        <property name="accountDao" ref="accountDao"></property>
+		        <!--注意: 不要使用value属性来注入-->
+		    </bean>
+
+		</beans>
+
+	3.4: 进行在test目录下进行测试即可: 
+		包结构: test / com.itheima.test
+
+		package com.itheima.test;
+
+		import com.itheima.service.AccountService;
+		import org.junit.Test;
+		import org.junit.runner.RunWith;
+		import org.springframework.beans.factory.annotation.Autowired;
+		import org.springframework.test.context.ContextConfiguration;
+		import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+		@RunWith(SpringJUnit4ClassRunner.class)
+		@ContextConfiguration("classpath:applicationContext.xml")
+		public class SpringServiceTest {
+		    @Autowired
+		    private AccountService accountService;
+
+		    @Test
+		    public void test01(){
+
+		        accountService.zhuanZhang("张三","李四",800D);
+		    }
+		}
+	3.5: 执行测试, 观察是否可以正常调用
+
+4) spring的基本使用_半xml和半注解的方式:
+	4.1: 创建了子项目: day02_spring_basic_xmlAndAnnotation
+	4.2: 导入相关的依赖: 与 day02_spring_basic_xml 一模一样
+	4.3: 创建dao包(com.itheima.dao), 在包下创建AccountDao接口:
+		package com.itheima.dao;
+
+		public interface AccountDao {
+
+		    public void out(String username,Double money);
+		    public void in(String username,Double money);
+		}
+	4.4: 在dao包下, 创建impl包, 在impl包下创建AccountDaoImpl实现类:
+		package com.itheima.dao.impl;
+
+		import com.itheima.dao.AccountDao;
+		import org.springframework.beans.factory.annotation.Value;
+		import org.springframework.stereotype.Repository;
+
+		@Repository  // 此注解功能用于将当前类创建对象, 然后放置spring的容器中  相当于Bean标签
+		public class AccountDaoImpl implements AccountDao {
+		    @Value("工商银行")
+		    private  String bankName;
+
+		    @Override
+		    public void out(String username, Double money) {
+		        System.out.println("出账操作: 在"+bankName+"下,"+username+" 转出:"+ money);
+		    }
+
+		    @Override
+		    public void in(String username, Double money) {
+		        System.out.println("入账操作: 在"+bankName+"下,"+username+" 转入:"+ money);
+		    }
+		}
+
+	4.5: 创建service包(com.itheima.service) ,在service包下创建AccountService接口
+		package com.itheima.service;
+
+		public interface AccountService {
+
+		    public void zhuanZhang(String outUserName ,String inUsername,Double money);
+		}
+
+	4.6: 在service包下, 构建impl包, 在impl包下 创建一个AccountServiceImpl实现类
+
+		package com.itheima.service.impl;
+
+		import com.itheima.dao.AccountDao;
+		import com.itheima.service.AccountService;
+		import org.springframework.beans.factory.annotation.Autowired;
+		import org.springframework.stereotype.Service;
+
+		@Service  // 此注解功能用于将当前类创建对象, 然后放置spring的容器中  相当于Bean标签
+		public class AccountServiceImpl implements AccountService {
+		    @Autowired
+		    private AccountDao accountDao;
+		    @Override
+		    public void zhuanZhang(String outUserName, String inUsername, Double money) {
+
+		        accountDao.out(outUserName,money);
+		        accountDao.in(inUsername,money);
+		    }
+		}
+
+	4.7: 为了能够让spring明确的知道, 对应的注解在那些地方使用了, 需要配置文件方式告知给spring, 注解使用的位置: 
+		在resources目录下右键 -->new --> xml configuration file --> spring .... > 设置文件名称(applicationContext) --> 回车
+
+		在applicationContext.xml文件中, 添加一下内容: 
+		<?xml version="1.0" encoding="UTF-8"?>
+		<beans xmlns="http://www.springframework.org/schema/beans"
+		       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		       xmlns:context="http://www.springframework.org/schema/context"
+		       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+		    <!--开启注解扫描: spring到指定的包下扫描spring相关的注解, 根据注解去构建相关对象和注入相关对象-->
+		    <context:component-scan base-package="com.itheima"></context:component-scan>
+		</beans>
+
+	4.8 : 编写测试类, 进行检测即可: 
+		包结构: test /  com.itheima.test
+		package com.itheima.test;
+
+		import com.itheima.service.AccountService;
+		import org.junit.Test;
+		import org.junit.runner.RunWith;
+		import org.springframework.beans.factory.annotation.Autowired;
+		import org.springframework.test.context.ContextConfiguration;
+		import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+		@RunWith(SpringJUnit4ClassRunner.class)
+		@ContextConfiguration("classpath:applicationContext.xml")
+		public class SpringTest {
+		    @Autowired
+		    private AccountService accountService;
+
+		    @Test
+		    public void test01(){
+		        accountService.zhuanZhang("张三","李四",1000D);
+		    }
+		}
+
+	4.9: 测试即可: 观察是否成功调用
+
+
+	
+
+5. spring的基本使用_全注解的使用方案
+	5.1: 创建一个子项目: day02_spring_basic_annotation
+	5.2: 将 day02_spring_basic_xmlAndAnnotation项目中除了xml以外 所有的java类以及相关依赖都拷贝到day02_spring_basic_annotation项目
+	5.3: 由于在全注解方式下, 不需要有spring的配置文件, 但是还需要spring的配置, 通过使用配置类的方式来解决:
+		5.3.1: 创建conf包(com.itheima.conf),在这个包下, 创建一个 SpringConf 普通类:
+			package com.itheima.conf;
+
+			import org.springframework.context.annotation.ComponentScan;
+			import org.springframework.context.annotation.Configuration;
+
+			@Configuration
+			@ComponentScan(basePackages = {"com.itheima.service","com.itheima.dao"})
+			public class SpringConf {
+			}
+		5.3.2: 在测试类中, 加载这个配置类:
+			package com.itheima.test;
+
+			import com.itheima.conf.SpringConf;
+			import com.itheima.service.AccountService;
+			import org.junit.Test;
+			import org.junit.runner.RunWith;
+			import org.springframework.beans.factory.annotation.Autowired;
+			import org.springframework.test.context.ContextConfiguration;
+			import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+			@RunWith(SpringJUnit4ClassRunner.class)
+			@ContextConfiguration(classes = SpringConf.class)  // 加载配置类
+			public class SpringTest {
+			    @Autowired
+			    private AccountService accountService;
+
+			    @Test
+			    public void test01(){
+			        accountService.zhuanZhang("张三","李四",1000D);
+			    }
+			}
+	5.4: 测试即可: 观察是否成功调用
+
+
+6. spring和mybatis的整合_半注解半XML
+	6.0: 准备工作: 
+		第一步: 在数据库中构建相关的库 和表 以及加载数据
+			CREATE DATABASE spring_db CHARACTER SET 'utf8';
+			USE spring_db;
+
+			CREATE TABLE tb_account(
+				id INT PRIMARY KEY AUTO_INCREMENT,
+				NAME VARCHAR(32),
+				money DOUBLE
+			);
+
+			INSERT INTO tb_account VALUES(NULL, 'aaa', 1000);
+			INSERT INTO tb_account VALUES(NULL, 'bbb', 1000);
+
+			SELECT * FROM tb_account;
+		第二步: 创建了子项目: day02_spring_mybatis_xmlAndAnnotation
+		第三步: 加载相关的依赖: 
+			<dependencies>
+		        <!-- 单元测试 -->
+		        <dependency>
+		            <groupId>junit</groupId>
+		            <artifactId>junit</artifactId>
+		            <scope>test</scope>
+		        </dependency>
+
+		        <!-- Spring -->
+		        <dependency>
+		            <groupId>org.springframework</groupId>
+		            <artifactId>spring-context</artifactId>
+		        </dependency>
+		        <dependency>
+		            <groupId>org.springframework</groupId>
+		            <artifactId>spring-jdbc</artifactId>
+		        </dependency>
+		        <dependency>
+		            <groupId>org.springframework</groupId>
+		            <artifactId>spring-aspects</artifactId>
+		        </dependency>
+		        <dependency>
+		            <groupId>org.springframework</groupId>
+		            <artifactId>spring-test</artifactId>
+		        </dependency>
+
+		        <!-- Mybatis -->
+		        <dependency>
+		            <groupId>org.mybatis</groupId>
+		            <artifactId>mybatis</artifactId>
+		        </dependency>
+		        <!--mybatis 整合spring的 jar包-->
+		        <dependency>
+		            <groupId>org.mybatis</groupId>
+		            <artifactId>mybatis-spring</artifactId>
+		        </dependency>
+
+		        <!-- MySql -->
+		        <dependency>
+		            <groupId>mysql</groupId>
+		            <artifactId>mysql-connector-java</artifactId>
+		        </dependency>
+
+		        <!-- 连接池 -->
+		        <!--阿里巴巴提供: 德鲁伊连接池-->
+		        <dependency>
+		            <groupId>com.alibaba</groupId>
+		            <artifactId>druid</artifactId>
+		        </dependency>
+
+		        <!--lombok-->
+		        <dependency>
+		            <groupId>org.projectlombok</groupId>
+		            <artifactId>lombok</artifactId>
+		            <scope>provided</scope>
+		        </dependency>
+
+		    </dependencies>
+
+	6.1: 将连接池 交给 spring管理: 
+		测试工作:  演示Druid连接池如何使用
+
+		第一步: 在resources目录下, 创建jdbc.properties,内容如下:
+			jdbc.driver=com.mysql.cj.jdbc.Driver
+			jdbc.url=jdbc:mysql:///spring_db?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
+			jdbc.username=root
+			jdbc.password=123456
+			注意: 不要随意的加空格
+		第二步: 在resources下面创建一个spring的配置文件: applicationContext.xml
+		第三步: 在配置文件中, 添加连接池的配置操作:
+			<?xml version="1.0" encoding="UTF-8"?>
+			<beans xmlns="http://www.springframework.org/schema/beans"
+			       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			       xmlns:context="http://www.springframework.org/schema/context"
+			       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+			    <context:property-placeholder location="classpath:jdbc.properties"></context:property-placeholder>
+
+			    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+			        <property name="driverClassName" value="${jdbc.driver}"></property>
+			        <property name="url" value="${jdbc.url}"></property>
+			        <property name="username" value="${jdbc.username}"></property>
+			        <property name="password" value="${jdbc.password}"></property>
+			    </bean>
+
+
+			</beans>
+
+		第四步:构建测试类.检测是否可以正常创建dataSource  类名: SpringJdbcTest 
+			包结构: test / com.itheima.test
+			package com.itheima.test;
+
+			import org.junit.Test;
+			import org.junit.runner.RunWith;
+			import org.springframework.beans.factory.annotation.Autowired;
+			import org.springframework.test.context.ContextConfiguration;
+			import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+			import javax.sql.DataSource;
+
+			@RunWith(SpringJUnit4ClassRunner.class)
+			@ContextConfiguration("classpath:applicationContext.xml")
+			public class SpringJdbcTest {
+			    @Autowired
+			    private DataSource dataSource;
+
+			    @Test
+			    public void test01(){
+
+			        System.out.println(dataSource);
+			    }
+			}
+
+	6.2: spring整合mybatis的操作:  
+		第一步: 构建pojo类(com.itheima.pojo) : 类名为 TbAccount	
+			package com.itheima.pojo;
+			import lombok.Data;
+			@Data
+			public class TbAccount {
+
+			    private Integer id;
+			    private String name;
+			    private Double money;
+			}
+		第二步: 构建mapper接口(com.itheima.mapper): 接口名称 TbAccountMapper
+			package com.itheima.mapper;
+
+			import com.itheima.pojo.TbAccount;
+
+			import java.util.List;
+
+			public interface TbAccountMapper {
+
+			    List<TbAccount> findAccountByAll();
+
+			    TbAccount findAccountById(int id);
+
+			}
+		第三步: 构建mapper的配置文件(resources/com/itheima/mapper) 文件名称: TbAccountMapper.xml
+			<?xml version="1.0" encoding="UTF-8" ?>
+			<!DOCTYPE mapper
+			        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+			        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+			<mapper namespace="com.itheima.mapper.TbAccountMapper">
+			    <select id="findAccountByAll" resultType="com.itheima.pojo.TbAccount">
+
+			        select * from tb_account;
+
+			    </select>
+
+			    <select id="findAccountById" resultType="com.itheima.pojo.TbAccount">
+
+			        select * from tb_account where id = #{id};
+
+			    </select>
+			</mapper>
+		第四步: 在spring的配置文件中, 集成mybatis的核心对象: 
+			<?xml version="1.0" encoding="UTF-8"?>
+			<beans xmlns="http://www.springframework.org/schema/beans"
+			       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			       xmlns:context="http://www.springframework.org/schema/context"
+			       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+			    <context:property-placeholder location="classpath:jdbc.properties"></context:property-placeholder>
+
+			    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+			        <property name="driverClassName" value="${jdbc.driver}"></property>
+			        <property name="url" value="${jdbc.url}"></property>
+			        <property name="username" value="${jdbc.username}"></property>
+			        <property name="password" value="${jdbc.password}"></property>
+			    </bean>
+
+
+			    <!--spring 整合 mybatis:  构建 sqlSessionFactory -->
+			    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+			        <property name="dataSource" ref="dataSource"></property>
+			    </bean>
+
+			    <!--spring 整合mybatis: 扫描mapper的操作-->
+			    <bean  class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+			        <property name="basePackage" value="com.itheima.mapper"></property>
+			    </bean>
+
+			</beans>
+		第五步: 编写测试类(), 进行在test目录下进行测试即可
+			包结构: test/ com.itheima.test
+			package com.itheima.test;
+
+			import com.itheima.mapper.TbAccountMapper;
+			import com.itheima.pojo.TbAccount;
+			import org.junit.Test;
+			import org.junit.runner.RunWith;
+			import org.springframework.beans.factory.annotation.Autowired;
+			import org.springframework.test.context.ContextConfiguration;
+			import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+			import java.util.List;
+
+			@RunWith(SpringJUnit4ClassRunner.class)
+			@ContextConfiguration("classpath:applicationContext.xml")
+			public class SpringDaoTest {
+			    @Autowired
+			    private TbAccountMapper accountMapper;
+
+			    @Test
+			    public void test01(){
+
+			        List<TbAccount> tbAccountList = accountMapper.findAccountByAll();
+			        System.out.println(tbAccountList);
+			    }
+
+			    @Test
+			    public void test02(){
+
+			        TbAccount account = accountMapper.findAccountById(1);
+			        System.out.println(account);
+			    }
+			}
+		第六步: 调用执行, 观察是否可以正常从数据库中读取数据
+
+
+	6.3: 事务操作的准备工作: 构建了一个转账环境
+		第一步: 在 TbAccountMapper中添加了两个用于转账方法: 
+			package com.itheima.mapper;
+
+			import com.itheima.pojo.TbAccount;
+			import org.apache.ibatis.annotations.Param;
+
+			import java.util.List;
+
+			public interface TbAccountMapper {
+
+				..........
+				// 出账
+			    void outMoney(@Param("name") String name, @Param("money") Double money);
+			    //入账
+			    void inMoney(@Param("name") String name, @Param("money") Double money);
+			}
+		第二步: 在 TbAccountMapper文件中, 添加SQL操作: 
+			<?xml version="1.0" encoding="UTF-8" ?>
+			<!DOCTYPE mapper
+			        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+			        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+			<mapper namespace="com.itheima.mapper.TbAccountMapper">
+			   	.............
+
+			    <update id="outMoney" >
+
+			        UPDATE tb_account SET  money = money-#{money} where name = #{name}
+
+			    </update>
+
+			    <update id="inMoney" >
+
+			        UPDATE tb_account SET  money = money+#{money} where name = #{name}
+
+			    </update>
+
+			</mapper>
+		第三步: 创建service包(com.itheima.service),在此包下, 创建TbAccountService接口
+			package com.itheima.service;
+
+			public interface TbAccountService {
+				// 用于指定转账的业务方法
+			    public void zhuanzhang(String outName,String inName, Double money);
+			}
+
+		第四步: 在service包下创建impl的包, 在impl包下, 创建 TbAccountServiceImpl实现类:
+			package com.itheima.service.impl;
+
+			import com.itheima.mapper.TbAccountMapper;
+			import com.itheima.service.TbAccountService;
+			import org.springframework.beans.factory.annotation.Autowired;
+			import org.springframework.stereotype.Service;
+
+			@Service
+			public class TbAccountServiceImpl implements TbAccountService {
+			    @Autowired
+			    private TbAccountMapper accountMapper;
+
+			    @Override
+			    public void zhuanzhang(String outName,String inName, Double money) {
+			        accountMapper.outMoney(outName,money);
+
+			        Integer d = 1/0; //除0异常
+
+			        accountMapper.inMoney(inName,money);
+
+			    }
+			}
+		第五步: 在spring的配置文件中, 添加用于扫描service层注解的配置:
+			在applicationContext.xml中添加如下配置: 
+			 <context:component-scan base-package="com.itheima.service"></context:component-scan>
+		第六步: 测试操作: test/ com.itheima.test  创建一个 SpringServiceTest 测试类
+			package com.itheima.test;
+
+			import com.itheima.service.TbAccountService;
+			import org.junit.Test;
+			import org.junit.runner.RunWith;
+			import org.springframework.beans.factory.annotation.Autowired;
+			import org.springframework.test.context.ContextConfiguration;
+			import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+			@RunWith(SpringJUnit4ClassRunner.class)
+			@ContextConfiguration("classpath:applicationContext.xml")
+			public class SpringServiceTest {
+			    @Autowired
+			    private TbAccountService accountService;
+
+			    @Test
+			    public  void  test01(){
+
+			        accountService.zhuanzhang("aaa","bbb",500D);
+
+			    }
+			}
+		第七步: 调用执行: 发现在没有事务情况下, 钱转丢了...
+
+
+		思考解决方案: 
+			应该在service层中, zhuanzhang方法上进行事务的控制, 因为在这个方法中执行多次操作数据库内容
+				而且需要保证这几次操作, 要么全部都成功, 要么全部都失败
+
+	6.4 :  事务处理操作:  
+		第一步: 在spring的配置文件中,配置事务相关内容:  
+			<context:component-scan base-package="com.itheima.service"></context:component-scan>
+			<!--事务的配置操作: 1) 构建事务的管理对象-->
+		    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+
+		        <property name="dataSource" ref="dataSource"></property>
+		    </bean>
+
+		    <!--事务的配置操作: 2) 开启注解事务配置-->
+		    <tx:annotation-driven transaction-manager="transactionManager"></tx:annotation-driven>
+		第二步: 在需要开启事务的方法上, 添加  @Transactional 事务注解
+
+		第三步: 调用执行测试类, 发现在添加事务后, 钱就不会丢了 事务生效了
+
+7. spring整合mybatis的操作: 全注解开发
+	7.1: 创建了子项目: day02_spring_mybatis_annotation
+	7.2: 将 day02_spring_basic_xmlAndAnnotation 的代码(src)以及pom文件 覆盖到 新的子项目中
+	7.3: 测试操作: 检测, 原有xml与注解开发的代码是否可用 (环境是否OK)
+	7.4: 改造配置: 将配置文件统一使用配置类来解决
+		7.4.1: 对mapper配置文件的改造: 只需要在mapper接口中, 使用注解方法编写SQL即可
+			package com.itheima.mapper;
+
+			import com.itheima.pojo.TbAccount;
+			import org.apache.ibatis.annotations.Param;
+			import org.apache.ibatis.annotations.Select;
+			import org.apache.ibatis.annotations.Update;
+			import org.springframework.stereotype.Service;
+
+			import java.util.List;
+
+			public interface TbAccountMapper {
+			    @Select("select * from tb_account;")
+			    List<TbAccount> findAccountByAll();
+			    @Select("select * from tb_account where id = #{id};")
+			    TbAccount findAccountById(int id);
+
+			    @Update("UPDATE tb_account SET  money = money-#{money} where name = #{name}")
+			    void outMoney(@Param("name") String name, @Param("money") Double money);
+			    @Update("UPDATE tb_account SET  money = money+#{money} where name = #{name}")
+			    void inMoney(@Param("name") String name, @Param("money") Double money);
+			}
+			注意: 改造后, 就可以将mapper文件给删除了.....
+		7.4.2: 对applicationContext.xml进行改造:拆解三个配置文件  dataSource配置  mybatis配置  spring配置
+			注意: 配置类统一放置于 com.itheima.conf
+			dataSource的配置类操作:  
+				package com.itheima.conf;
+
+				import com.alibaba.druid.pool.DruidDataSource;
+				import org.springframework.beans.factory.annotation.Value;
+				import org.springframework.context.annotation.Bean;
+				import org.springframework.context.annotation.Configuration;
+				import org.springframework.context.annotation.PropertySource;
+				import org.springframework.context.annotation.PropertySources;
+
+				import javax.sql.DataSource;
+
+				@Configuration
+				@PropertySource("classpath:jdbc.properties")
+				public class JdbcConf {
+				    @Value("${jdbc.driver}")
+				    private String driverClassName;
+				    @Value("${jdbc.url}")
+				    private String url;
+				    @Value("${jdbc.username}")
+				    private String username;
+				    @Value("${jdbc.password}")
+				    private String password;
+
+				    @Bean
+				    public DataSource getDataSource(){
+				        DruidDataSource dataSource = new DruidDataSource();
+
+				        dataSource.setDriverClassName(driverClassName);
+				        dataSource.setUrl(url);
+				        dataSource.setUsername(username);
+				        dataSource.setPassword(password);
+
+				        return dataSource;
+				    }
+
+
+				}
+			mybatis的配置类: 
+				package com.itheima.conf;
+
+				import org.mybatis.spring.SqlSessionFactoryBean;
+				import org.mybatis.spring.mapper.MapperScannerConfigurer;
+				import org.springframework.beans.factory.annotation.Autowired;
+				import org.springframework.context.annotation.Bean;
+				import org.springframework.context.annotation.Configuration;
+				import org.springframework.context.annotation.Import;
+
+				import javax.sql.DataSource;
+
+				@Configuration
+				@Import(JdbcConf.class)
+				public class MybatisConf {
+				    @Bean
+				    public SqlSessionFactoryBean getSqlSessionFactoryBean(@Autowired DataSource dataSource){
+				        SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
+
+				        sqlSessionFactoryBean.setDataSource(dataSource);
+
+				        return sqlSessionFactoryBean;
+				    }
+				    @Bean
+				    public MapperScannerConfigurer getMapperScannerConfigurer(){
+				        MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
+
+				        mapperScannerConfigurer.setBasePackage("com.itheima.mapper");
+				        return mapperScannerConfigurer;
+				    }
+				}
+			spring相关配置类: 
+				package com.itheima.conf;
+
+				import org.springframework.beans.factory.annotation.Autowired;
+				import org.springframework.context.annotation.Bean;
+				import org.springframework.context.annotation.ComponentScan;
+				import org.springframework.context.annotation.Configuration;
+				import org.springframework.context.annotation.Import;
+				import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+				import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+				import javax.sql.DataSource;
+
+				@Configuration
+				@Import(MybatisConf.class)
+				@ComponentScan(basePackages = "com.itheima.service")
+				@EnableTransactionManagement
+				public class SpringConf {
+				    @Bean
+				    public DataSourceTransactionManager getDataSourceTransactionManager(@Autowired DataSource dataSource){
+				        DataSourceTransactionManager dataSourceTransactionManager = new DataSourceTransactionManager();
+				        dataSourceTransactionManager.setDataSource(dataSource);
+
+				        return dataSourceTransactionManager;
+
+				    }
+				}
+
+			注意:以上三个配置类搞定后, 即可删除掉 applicationContext.xml
+
+		7.5: 编写测试类:  test /com.itheima.test  
+			@RunWith(SpringJUnit4ClassRunner.class)
+			@ContextConfiguration(classes = {SpringConf.class,MybatisConf.class}) // 导入配置类, 如果配置类有多个, 而且之间没有依赖, 需要都进行导入
+			public class SpringServiceTest {
+			    @Autowired
+			    private TbAccountService accountService;
+
+			    @Test
+			    public  void  test01(){
+
+			        accountService.zhuanzhang("aaa","bbb",500D);
+
+			    }
+			}
+			-----------------------------------
+			package com.itheima.test;
+
+			import com.itheima.conf.SpringConf;
+			import com.itheima.mapper.TbAccountMapper;
+			import com.itheima.pojo.TbAccount;
+			import org.junit.Test;
+			import org.junit.runner.RunWith;
+			import org.springframework.beans.factory.annotation.Autowired;
+			import org.springframework.test.context.ContextConfiguration;
+			import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+			import java.util.List;
+
+			@RunWith(SpringJUnit4ClassRunner.class)
+			@ContextConfiguration(classes = {SpringConf.class})
+			public class SpringDaoTest {
+			    @Autowired
+			    private TbAccountMapper accountMapper;
+
+			    @Test
+			    public void test01(){
+
+			        List<TbAccount> tbAccountList = accountMapper.findAccountByAll();
+			        System.out.println(tbAccountList);
+			    }
+
+			    @Test
+			    public void test02(){
+
+			        TbAccount account = accountMapper.findAccountById(1);
+			        System.out.println(account);
+			    }
+			}
+		7.6: 观察在全注解的模式下, 测试类是否依然正常使用
+
+
+
+
+总结相关的注解: 
+		并在这个类上, 添加spring相关的注解:  
+			用于将当前对象, 放置到spring容器中, 与xml中Bean标签作用是一致的:
+				@Repository (一般用于dao层实现类) | @Service (一般用于service层实现类) | @Controller (一般用于web层)
+
+				注意: 这三个主键, 其实可以在任意层使用,都可以, 只是人为规划而已
+
+		@Value : 此注解使用为类中成员变量进行注入的, 主要是用于在注入普通类型
+		@Autowired : 此注解使用为类中成员变量进行注入的,主要是和 @Repository  @Service  @Controller或者bean标签配合使用
+		@Qualifier : 此注解必须和@Autowired 配合使用, 用于进行强制使用名称的方式来注入实现类
+			使用场景: 一个接口下, 有多个实现类, 需要注入某个实现类的时候, 需要使用这个注解
+		在配置类中使用注解:
+			@Configuration : 用于标识当前这个类是一个配置类 
+			@ComponentScan: 用于在配置类中, 定义注解扫描的路径
+			@PropertySource("classpath:jdbc.properties") : 用于加载外部的配置文件
+			@Import(JdbcConf.class) : 此注解是用于将其他配置类, 导入到当前配置类中
+			@Bean: 此注解用于指定当前这个方法返回是一个bean对象, 并将这个Bean对象放置到spring容器中
+			@EnableTransactionManagement : 开启注解管理(注解扫描)
+		与测试相关的注解:
+			@RunWith(SpringJUnit4ClassRunner.class): 放置在测试类上, 用于标识spring的测试运行环境
+			@ContextConfiguration("classpath:applicationContext.xml"): 放置在测试类上, 用于加载spring配置文件
+
+常见错误:
+	 org.springframework.beans.factory.NoSuchBeanDefinitionException: 
+	 	No qualifying bean of type 'com.itheima.service.TbAccountService' available: 
+	 		expected at least 1 bean which qualifies as autowire candidate. 
+	 			Dependency annotations:
+	 				 {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+
+	错误说明:  'com.itheima.service.TbAccountService' 使用  Autowired 注入失败
+
+	错误原因: 这个类或者这个类的实现类 没有放置到spring的容器中
+		1) 这个类或者这个类的实现类没有添加 @Service  @Repository @Controller 或者 在xml没有配置Bean标签
+		2) 如果添加注解, 可能spring压根就扫描不到这个注解

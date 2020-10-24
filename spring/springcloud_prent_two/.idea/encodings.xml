@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/springcloud_consumer - feign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_eureka_server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_gateway_server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_geway_server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_geway_server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_user_server/src/main/java" charset="UTF-8" />
+  </component>
+</project>

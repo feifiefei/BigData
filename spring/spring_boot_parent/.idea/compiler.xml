@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot_05" />
+        <module name="springboot_04" />
+        <module name="springboot_03" />
+        <module name="springboot_02" />
+        <module name="springboot_01" />
+        <module name="springcloud_eureka-server" />
+        <module name="springcloud_user_service" />
+        <module name="springboot_data_jpa_010" />
+        <module name="springboot_datajpa_10" />
+        <module name="springboot_easy_code_09" />
+        <module name="springcloud_user_pruducer" />
+        <module name="springboot_rest_template_08" />
+        <module name="springcloud_consumer" />
+        <module name="springboot_wook" />
+        <module name="springboot_07" />
+        <module name="spring_boot_parent" />
+        <module name="springboot_06" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springboot_data_jpa_010" target="1.8" />
+      <module name="springboot_temprest" target="1.8" />
+      <module name="springcloud_user_produce" target="1.8" />
+      <module name="springcloud_user_pruducer" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot_04" options="-parameters" />
+      <module name="springboot_05" options="-parameters" />
+      <module name="springboot_06" options="-parameters" />
+      <module name="springboot_07" options="-parameters" />
+      <module name="springboot_data_jpa_010" options="-parameters" />
+      <module name="springboot_datajpa_10" options="-parameters" />
+      <module name="springboot_easy_code_09" options="-parameters" />
+      <module name="springboot_rest_template_08" options="-parameters" />
+      <module name="springboot_temprest" options="-parameters" />
+      <module name="springboot_wook" options="-parameters" />
+      <module name="springcloud_consumer" options="-parameters" />
+      <module name="springcloud_eureka-server" options="-parameters" />
+      <module name="springcloud_user_produce" options="-parameters" />
+      <module name="springcloud_user_pruducer" options="-parameters" />
+      <module name="springcloud_user_service" options="-parameters" />
+    </option>
+  </component>
+</project>

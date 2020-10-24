@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloud_consumer - feign" />
+        <module name="springcloud_user_server" />
+        <module name="springcloud_prent_two" />
+        <module name="springcloud_gateway_server" />
+        <module name="springcloud_consumer" />
+        <module name="springcloud_getway_server" />
+        <module name="springcloud_geway_server" />
+        <module name="springcloud_eureka_server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloud_getway_server" target="1.8" />
+      <module name="springcloud_user_producer" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springcloud_consumer" options="-parameters" />
+      <module name="springcloud_consumer - feign" options="-parameters" />
+      <module name="springcloud_eureka_server" options="-parameters" />
+      <module name="springcloud_gateway_server" options="-parameters" />
+      <module name="springcloud_getway_server" options="-parameters" />
+      <module name="springcloud_geway_server" options="-parameters" />
+      <module name="springcloud_user_producer" options="-parameters" />
+      <module name="springcloud_user_server" options="-parameters" />
+    </option>
+  </component>
+</project>

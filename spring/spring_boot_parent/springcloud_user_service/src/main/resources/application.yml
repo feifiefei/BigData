@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: user-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springcloud_db?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 123456
+
+server:
+  port: 9091
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+#指定注册中心的地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:8761/eureka,http://eureka2:8762/eureka
+#指定eureka的网页里显示本机网址
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}

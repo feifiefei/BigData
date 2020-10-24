@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>springboot_06</title>
+</head>
+<body>
+    <h1>有杀气</h1>
+    <fieldset>
+        <h3>需求1: 获取get方式表单的数据</h3>
+        <form action="/account/show01" method="get">
+            <input type="text" name="uid" placeholder="用户编号"/>
+            <input type="text" name="username" placeholder="请输入用户名"/>
+            <input type="text" name="isVIP" placeholder="是否是VIP: 1是 0不是"/> <br/>
+            <input type="submit" value="提交"/>
+        </form>
+    </fieldset>
+    <fieldset>
+        <h3>需求3: 获取路径中的参数</h3>
+        <a href="/account/show03/张三/李四/1000">测试</a>
+    </fieldset>
+    <fieldset>
+        <h3>需求5: 包装类的接收数据操作 queryVo</h3>
+        <a href="/account/show05?address=北京市&account.id=1001&account.name=lisi&account.money=1000">测试</a>
+    </fieldset>
+    <fieldset>
+        <h4>需求6: 绑定List集合包装pojo对象</h4>
+        <form action="/account/show06" method="get">
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>money</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="accountList[0].id" placeholder="请输入ID"></td>
+                    <td><input type="text" name="accountList[0].name" placeholder="请输入用户名"></td>
+                    <td><input type="text" name="accountList[0].money" placeholder="请输入余额"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="accountList[1].id" placeholder="请输入ID"></td>
+                    <td><input type="text" name="accountList[1].name" placeholder="请输入用户名"></td>
+                    <td><input type="text" name="accountList[1].money" placeholder="请输入余额"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="accountList[2].id" placeholder="请输入ID"></td>
+                    <td><input type="text" name="accountList[2].name" placeholder="请输入用户名"></td>
+                    <td><input type="text" name="accountList[2].money" placeholder="请输入余额"></td>
+                </tr>
+            </table>
+
+
+            <input type="submit" value="提交">
+        </form>
+    </fieldset>
+    <fieldset>
+        <h4>功能7: 绑定Map集合包装pojo对象</h4>
+        <form action="/account/show07" method="get">
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>sex</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="accountMap['account001'].id" placeholder="请输入ID"></td>
+                    <td><input type="text" name="accountMap['account001'].name" placeholder="请输入用户名"></td>
+                    <td><input type="text" name="accountMap['account001'].money" placeholder="请输入余额"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="accountMap['account002'].id" placeholder="请输入ID"></td>
+                    <td><input type="text" name="accountMap['account002'].name" placeholder="请输入用户名"></td>
+                    <td><input type="text" name="accountMap['account002'].money" placeholder="请输入余额"></td>
+                </tr>
+            </table>
+            <input type="submit" value="提交">
+        </form>
+    </fieldset>
+    <fieldset>
+        <h4>功能8: 根据key获取请求头参数，@RequestHeader注解</h4>
+        <a href="/account/show08">测试</a><br>
+    </fieldset>
+
+
+</body>
+</html>

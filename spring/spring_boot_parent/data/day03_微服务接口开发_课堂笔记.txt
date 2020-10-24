@@ -1,0 +1,500 @@
+今日内容:
+1) springboot基本介绍
+2) springboot快速入门(手动实现) ---了解
+3) springboot快速入门(模板开发) ----重点掌握
+4) springboot如何加载配置文件中各种数据
+5) spring和其他技术的集成操作: 
+	spring和springmvc的集成 ---无需集成, 直接就有了
+	springmvc和mybatis的基础 --- 暂定
+
+1) springboot的基本介绍: 
+	springboot出现主要目的是为了简化配置操作, 让程序员无需关系繁重配置, 将工作重心移回到
+		核心业务中
+	springboot将各种各样的功能, 都打包称为一些jar包, 程序员需要是用什么功能, 就导入什么jar包即可
+
+2) springboot快速入门_手动实现: 
+	2.1: 准备工作: 
+		第一步: 构建了一个新的父工程: shBigData23_springboot_parent
+			步骤:
+				file --> new --> project--> maven --> jdk1.8 -->next 
+					--> 包名(group.id里面定义为com.itheima)和项目名称(artifactID和name中定义为shBigData23_springboot_parent) --> finish
+		第二步: 将父工程中的src删除掉
+		第三步: 在父工程中构建子工程: day03_springboot_01
+			步骤:
+				选择父工程右键--> new --> module -->maven --> 删除parent设置为none -->设置项目名称 --> finish
+
+			注意:
+				在构建的时候, parent一定要选择none
+		第四步: 导入相关的依赖:
+			<!--指定父工程为 springboot项目 --> 
+			<parent>
+		        <groupId>org.springframework.boot</groupId>
+		        <artifactId>spring-boot-parent</artifactId>
+		        <version>2.1.14.RELEASE</version>
+		    </parent>
+
+		    <!--加载springboot的依赖-->
+		    <dependencies>
+		        <!--导入web项目依赖-->
+		        <dependency>
+		            <groupId>org.springframework.boot</groupId>
+		            <artifactId>spring-boot-starter-web</artifactId>
+		        </dependency>
+		    </dependencies>
+	2.2: 入门代码步骤:
+		第一步:在src/java下建一个包: com.itheima  在此包下, 创建一个springboot的引导类: 
+			package com.itheima;
+			import org.springframework.boot.SpringApplication;
+			import org.springframework.boot.autoconfigure.SpringBootApplication;
+			// 此注解用于标识, 当前类为springboot的引导类(启动类)
+			@SpringBootApplication
+			public class SpringBoot01Application {
+
+			    public static void main(String[] args) {
+
+			        SpringApplication.run(SpringBoot01Application.class,args);
+			    }
+
+			}
+
+		第二步: 在com.itheima下, 创建一个controller包, 然后在这个包下, 建立一个HelloController类:
+			package com.itheima.controller;
+
+			import org.springframework.web.bind.annotation.GetMapping;
+			import org.springframework.web.bind.annotation.RestController;
+
+			@RestController
+			public class HelloController {
+
+			    @GetMapping("/hello")
+			    public String hello(){
+
+			        return "hello spring boot .....";
+			    }
+
+			}
+
+			注意: 此类, 一定要构建在引导类的子包下, 只有这样引导类在启动的时候, 才可以加载到这个这些包中内容,对子包
+				中的类进行管理
+		第三步: 启动引导类,页面通过浏览器进行测试即可
+			在浏览器中输入:http://localhost:8080/hello  如果能够看到  hello spring boot .....  说明OK了
+
+
+		注意: 
+			错误信息: The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+			原因:
+				引导类启动多次, 导致端口号占用问题, 一个端口号下只能绑定一个服务
+			解决方案:
+				关闭其他的引导类, 然后启动当前引导类, 或者说 切换一个新的端口号
+
+				如果无法关闭, 或者找不到关闭按钮, 到任务管理器中, 将所有的java进程停止即可
+
+3. springboot的快速入门_模块开发 --必须掌握
+	前提: 电脑必须联网状态, 否则不能用
+	第一步: 创建了一个子项目: day03_springboot_02
+		选择父工程右键 -->new --> module--> spring initializr -->选择jdk为1.8 --> 选择custom-->设置为 http://start.aliyun.com
+			-->next --> 设置group 为 com.itheima -->设置Artifact为 day03_springboot_02 --> 设置package为com.itheima
+			-->next --> 设置springboot版本为2.1.14-->选择web项目-->选择spring web --> next-->finish结束
+		注意:
+			构建后, 要等待一会, 等待下载完成后, 在执行下列操作 
+				在idea中右下角有一个进度条, 执行完成后, 即可
+	第二步: 直接在引导类所在包下, 建立一个controller包, 在这个包下建一个HelloController类
+		package com.itheima.controller;
+
+		import org.springframework.web.bind.annotation.GetMapping;
+		import org.springframework.web.bind.annotation.RestController;
+
+		@RestController
+		public class HelloController {
+		    @GetMapping("/hello")
+		    public String hello(){
+
+		        return "你好啊: spring boot....";
+
+		    }
+		}
+	第三步: 启动引导类,页面通过浏览器进行测试即可
+			在浏览器中输入:http://localhost:8080/hello  如果能够看到  你好啊: spring boot....  说明OK了
+
+4. springboot如何加载配置文件中各种数据 :
+	4.1: springboot的默认配置文件
+		配置文件放置位置: 在项目的resources的根目录下
+		配置文件名称: application.properties | application.yml | application.yaml
+
+		注意优先级问题:
+			application.properties > application.yml | application.yaml
+
+			如果在properties和yaml文件中都配置了相同的配置, 才采用properties中配置的
+	4.2: 如何在yaml配置文件中自定义各种类型的数据:
+		# 定义对象
+		person:
+		  username: 李四
+		  password: 123456
+		  sex: 男
+		  address: 北京市
+		# 定义数组 或者 List集合 或者 set集合
+		hobby:
+		  - 爱学习
+		  - 爱打LOL
+		  - 爱睡觉
+		#定义map
+		books:
+		  - name: 红楼梦
+		    writer: 曹雪芹
+		  - name: 水浒传
+		    writer: 施耐庵
+		  - name: 西游记
+		    writer: 吴承恩
+		  - name: 三国演义
+		    writer: 罗贯中
+
+	4.3: 如何在java代码中读取配置文件中数据:
+		4.3.1: 普通类型:
+			直接在类中定义一个成员变量, 然后通过@Value("${key}")
+		4.3.2: 对于pojo 或者 数组 集合 map这种类型: 
+			需要先构建一个类, 然后在类中写上对应类型即可, 然后在需要使用这个数据地方, 通过@Autowired注入即可
+			例如: pojo操作: 
+				配置文件中内容: 
+					person:
+					  username: 李四
+					  password: 123456
+					  sex: 男
+					  address: 北京市
+				在java代码中: 
+					package com.itheima.pojo;
+
+					import lombok.Data;
+					import org.springframework.boot.context.properties.ConfigurationProperties;
+					import org.springframework.stereotype.Component;
+
+					import java.util.Map;
+					// 通过此注解, 加载配置文件中key对应的数据
+					@ConfigurationProperties(prefix = "person")
+					@Component // 和 @Controller @Service  ...
+					@Data
+					public class Person {
+					    private  String username;
+					    private String password;
+					    private String sex;
+					    private String address;
+					}
+
+			例如: 数组 或者 List set 集合
+				配置文件中内容: 
+					hobby:
+					  - 爱学习
+					  - 爱打LOL
+					  - 爱睡觉
+				在java代码中: 
+					package com.itheima.pojo;
+
+					import lombok.Data;
+					import org.springframework.boot.context.properties.ConfigurationProperties;
+					import org.springframework.stereotype.Component;
+
+					import java.util.Map;
+					// 通过此注解, 加载配置文件中key对应的数据
+					@ConfigurationProperties(prefix = "hobby")
+					@Component // 和 @Controller @Service  ...
+					@Data
+					public class Hobby {
+					    private String[] hobby;
+						//private List<String> hobby;
+						//private Set<String> hobby;
+					}
+			例如map类型数据: 
+				配置文件中内容: 
+					books:
+					  - name: 红楼梦
+					    writer: 曹雪芹
+					  - name: 水浒传
+					    writer: 施耐庵
+					  - name: 西游记
+					    writer: 吴承恩
+					  - name: 三国演义
+					    writer: 罗贯中
+				在java代码中:
+					package com.itheima.pojo;
+
+					import lombok.Data;
+					import org.springframework.boot.context.properties.ConfigurationProperties;
+					import org.springframework.stereotype.Component;
+
+					import java.util.Map;
+					// 通过此注解, 加载配置文件中key对应的数据
+					@ConfigurationProperties(prefix = "books")
+					@Component // 和 @Controller @Service  ...
+					@Data
+					public class Books {
+					    private Map<String,String> books;
+						
+					}
+
+	4.4: yml多配置文件方式: 
+		应用场景: 在不同的开发阶段, 可能有不同的环境准备, 可以通过对不同环境进行单独的配置, 产生多个配置文件
+			在运行的时候, 可以指定使用对应开发环境即可
+
+		使用操作:
+			在resources下, 创建多个配置文件: 
+				配置文件名称: application-xxx.yml
+			然后在resources通过application.yml来激活指定的配置文件:
+				spring:
+				  profiles:
+				    active: xxx
+		注意: 如果各个环境不同地方比较少,可以在一个文件中, 分隔文件即可:
+			server:
+			  port: 8000
+			spring:
+			  profiles: dev
+			  # --- 表示在一个文件中, 分隔出多个小片段
+			---
+
+			server:
+			  port: 8500
+			spring:
+			  profiles: test
+			---
+			server:
+			  port: 80
+			spring:
+			  profiles: prop
+			---
+			# 最后 来激活要使用的片段即可
+			spring:
+			  profiles:
+			    active: test
+
+5. springboot集成springmvc: 
+	5.1: 静态资源的加载
+		静态资源放置的位置: resources/static | resources/public
+		静态资源主要包含:  html文件 css文件 js文件 图片...
+
+		在访问html页面的时候: 项目默认会访问index.html
+			如果不是index.html, 应该通过:http://localhost:8080/资源名称
+
+		注意:
+			访问 http://localhost:8080  此时就相当于在访问resource/static|public目录下内容
+
+			所以:如果访问路径为: http://localhost:8080/demo/demo02.html 
+				相当于访问:
+					resource/static|public目录下的demo目录下的demo02.html
+
+	5.2: 使用springboot集成springmvc后, 如何接收前端的普通类型参数
+		第一步: 创建了一个子项目: day03_springboot_06
+		第二步: 在resources目录下的static目录中, 构建一个demo01.html
+			<!DOCTYPE html>
+			<html lang="en">
+			<head>
+			    <meta charset="UTF-8">
+			    <title>day03_springboot_06</title>
+			</head>
+			<body>
+
+			    <h1>day03 spring boot demo01.html 项目.....</h1>
+
+			    <fieldset>
+			        <h3>需求1: 获取get方式表单的数据</h3>
+			        <form action="/account/show01" method="get">
+			            <input type="text" name="uid" placeholder="用户编号"/>
+			            <input type="text" name="username" placeholder="请输入用户名"/>
+			            <input type="text" name="isVIP" placeholder="是否是VIP: 1是 0不是"/> <br/>
+			            <input type="submit" value="提交"/>
+			        </form>
+			    </fieldset>
+
+			</body>
+			</html>
+		第三步: 创建一个controller, 用于接收页面中表单传递过来的参数
+			放置包结构: com.itheima.controller   
+			类名: AccountController
+			package com.itheima.controller;
+
+			import org.springframework.web.bind.annotation.GetMapping;
+			import org.springframework.web.bind.annotation.RequestMapping;
+			import org.springframework.web.bind.annotation.RestController;
+
+			@RestController
+			@RequestMapping("/account")
+			public class AccountController {
+
+			    @GetMapping("/show01")
+			    //uid=02&username=lisi&isVIP=0
+			    public String accountShow(Integer uid,String username,Boolean isVIP){
+
+
+			        return "接收到的参数:"+uid+"--"+username+"--"+isVIP;
+			    }
+			}
+
+			注意: 
+				由于表单提交的请求路径为: /account/show01 并且提交的方式为 get请求, 
+					所以在controller类上, 添加了一个 @RequestMapping("/account")
+					然后在 对应接收请求的方法上, 添加 @GetMapping("/show01"),用于接收数据
+				表单提交过来数据可以直接在方法上, 定义key即可直接直接请求路径上参数数据
+
+			注意:
+				在方法上定义参数来接收URL请求参数时要注意, key的名称要一致, 类型也要吻合
+
+				如果后台的参数和前端参数的key对应不上, 默认情况下是接收不到参数, 如果要接收, 需要使用@RequestParam("URL请求参数key名称")
+					public String accountShow2(@RequestParam("uid") Integer id, @RequestParam("username") String name,@RequestParam("isVIP") Boolean flag){
+
+		第四步: 启动引导类,进行测试即可
+			在demo01.html页面中, 添加相关的内容, 然后点击提交, 查看是否可以接收到数据
+
+	5.3: 如何将请求路径作为参数的一部分, 接收到:  @PathVariable
+		比如请求路径:
+			http://localhost:8080/account/show03/张三/李四/1000
+		后台如何接收:
+			@RequestMapping("/account")
+			public class AccountController {
+				@GetMapping("/show03/{out}/{in}/{money}")
+			    public String accountShow3(
+			            @PathVariable("out") String out, @PathVariable("in")String in , @PathVariable("money")Double money ){
+
+
+			        return "接收到的参数:"+out+"--"+in+"--"+money;
+			    }
+			}
+
+	5.4: 使用 pojo类来接收请求参数:  
+		如果请求参数key 和 pojo中成员变量名称是一致的, 可以直接接收到, 不需要使用任何注解
+	5.5: 使用 包装类(将多个pojo或者对象放置在一起)来接收数据:
+		第一步: 构建要接收数据的 包装类: 
+			package com.itheima.pojo;
+			import lombok.Data;
+
+			@Data
+			public class QueryVo {
+			    private  Account account;
+			    private String address;
+			}
+		第二步: 在页面中定义路径: 通过包装类接收操作
+			    <fieldset>
+			        <h3>需求5: 包装类的接收数据操作 queryVo</h3>
+			        <a href="/account/show05?address=北京市&account.id=1001&account.name=lisi&account.money=1000">测试</a>
+			    </fieldset>
+
+			    注意: 赋值的时候, 是给对象里面的成员变量赋值
+		第三步: 编写controller, 接收请求参数
+			@GetMapping("/show05")
+		    // /account/show04/10021512454.html
+		    public String accountShow5(QueryVo queryVo){
+
+
+		        return "接收到的参数:"+queryVo;
+		    }
+		第四步: 启动引导类,测试即可
+
+	5.6: 对应请求参数中有多条数据的时候, 如何封装数据:  List 
+		第一步: 改造 包装类, 让其能够接收多条数据:
+			package com.itheima.pojo;
+
+			import lombok.Data;
+
+			import java.util.List;
+
+			@Data
+			public class QueryVo {
+			    private List<Account> accountList;
+			    private String address;
+			}
+		第二步: 页面在请求多条数据的时候, 也需要按照某种规范来操作: 
+			<fieldset>
+		        <h4>需求6: 绑定List集合包装pojo对象</h4>
+		        <form action="/account/show06" method="get">
+		            <table>
+		                <tr>
+		                    <th>id</th>
+		                    <th>name</th>
+		                    <th>money</th>
+		                </tr>
+		                <tr>
+		                    <td><input type="text" name="accountList[0].id" placeholder="请输入ID"></td>
+		                    <td><input type="text" name="accountList[0].name" placeholder="请输入用户名"></td>
+		                    <td><input type="text" name="accountList[0].money" placeholder="请输入余额"></td>
+		                </tr>
+		                <tr>
+		                    <td><input type="text" name="accountList[1].id" placeholder="请输入ID"></td>
+		                    <td><input type="text" name="accountList[1].name" placeholder="请输入用户名"></td>
+		                    <td><input type="text" name="accountList[1].money" placeholder="请输入余额"></td>
+		                </tr>
+		                <tr>
+		                    <td><input type="text" name="accountList[2].id" placeholder="请输入ID"></td>
+		                    <td><input type="text" name="accountList[2].name" placeholder="请输入用户名"></td>
+		                    <td><input type="text" name="accountList[2].money" placeholder="请输入余额"></td>
+		                </tr>
+		            </table>
+
+
+		            <input type="submit" value="提交">
+		        </form>
+		    </fieldset>
+
+		第三步: 编写controller. 接收请求参数
+			@GetMapping("/show06")
+		    public String accountShow6(QueryVo queryVo){
+
+
+		        return "接收到的参数:"+queryVo;
+		    }
+		第四步: 启动引导类.测试即可
+	5.7: 前端传递了多条数据, 如何使用map集合来接收数据: 
+		第一步: 改造 包装类, 让其能够接收多条数据:
+			package com.itheima.pojo;
+
+			import lombok.Data;
+
+			import java.util.List;
+			import java.util.Map;
+
+			@Data
+			public class QueryVo {
+			    //private Account account;
+			    // private List<Account> accountList;
+			    private Map<String,Account> accountMap;
+
+			    private String address;
+			}
+		第二步: 页面在请求多条数据的时候, 也需要按照某种规范来操作: 
+			<fieldset>
+		        <h4>功能7: 绑定Map集合包装pojo对象</h4>
+		        <form action="/account/show07" method="get">
+		            <table>
+		                <tr>
+		                    <th>id</th>
+		                    <th>name</th>
+		                    <th>sex</th>
+		                </tr>
+		                <tr>
+		                    <td><input type="text" name="accountMap['account001'].id" placeholder="请输入ID"></td>
+		                    <td><input type="text" name="accountMap['account001'].name" placeholder="请输入用户名"></td>
+		                    <td><input type="text" name="accountMap['account001'].money" placeholder="请输入余额"></td>
+		                </tr>
+		                <tr>
+		                    <td><input type="text" name="accountMap['account002'].id" placeholder="请输入ID"></td>
+		                    <td><input type="text" name="accountMap['account002'].name" placeholder="请输入用户名"></td>
+		                    <td><input type="text" name="accountMap['account002'].money" placeholder="请输入余额"></td>
+		                </tr>
+		            </table>
+		            <input type="submit" value="提交">
+		        </form>
+		    </fieldset>
+		第三步: 编写controller. 接收请求参数
+			@GetMapping("/show07")
+		    public QueryVo accountShow7(QueryVo queryVo){
+
+
+		        return queryVo;
+		    }
+		第四步: 启动引导类, 测试即可
+
+	5.8: 如何获取请求头的数据:  @RequestHeader 
+		在controller的方法参数上, 通过@RequestHeader 来获取指定的头信息
+			比如说: 获取 User-Agent
+				@GetMapping("/show08")
+			    public String accountShow8(@RequestHeader("User-Agent") String userAgent){
+
+
+			        return userAgent;
+			    }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_01/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_02/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_03/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_04/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_05/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_06/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_07/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_rest_template_08/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_easy_code_09/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_datajpa_10/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_wook/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud_consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud_user_service/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud_eureka-server/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

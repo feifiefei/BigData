@@ -1,0 +1,12 @@
+server:
+  port: 8761
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka2:8762/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    hostname: eureka1
+ #   fetch-registry: false # 是否抓取注册列表
+  #  register-with-eureka: false # 是否注册服务中心 Eureka
