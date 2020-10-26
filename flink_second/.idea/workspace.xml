@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d7392bf-0b56-440a-88bd-ba6309169224" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/datas/sql_scores.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/sql_students.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink_sql/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink_sql/src/main/java/com/fei/AyncReadMysqlDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink_sql/src/main/java/com/fei/BatchSqlDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink_sql/src/main/java/com/fei/BatchSqlReadText2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink_sql/src/main/java/com/fei/CheckpointDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink_sql/src/main/java/com/fei/ReadKafkaAndSinkKafkaDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink_sql/src/main/java/com/fei/StreamKafkaDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink_sql/src/main/java/com/fei/StreamSqlDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink_sql/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_action/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_action/src/main/java/com/fei/AutoCommentDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_action/src/main/java/com/fei/BigScreenDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_action/src/main/java/com/fei/BroadcastStateDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_action/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +47,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/datas" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/flink_action/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -70,11 +64,12 @@
       <recent name="com.fei" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_second\flink_action\src\main\resources" />
       <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_second\datas" />
       <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_second\flink_sql\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StreamSqlDemo">
+  <component name="RunManager" selected="Application.BigScreenDemo">
     <configuration name="BatchSqlDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fei.BatchSqlDemo" />
       <module name="flink_sql" />
@@ -91,6 +86,19 @@
     <configuration name="BatchSqlReadText2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fei.BatchSqlReadText2" />
       <module name="flink_sql" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BigScreenDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fei.BigScreenDemo" />
+      <module name="flink_action" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.fei.*" />
@@ -129,6 +137,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BigScreenDemo" />
         <item itemvalue="Application.StreamSqlDemo" />
         <item itemvalue="Application.BatchSqlReadText2" />
         <item itemvalue="Application.BatchSqlDemo" />
@@ -160,6 +169,8 @@
       <updated>1603607211419</updated>
       <workItem from="1603607214712" duration="19682000" />
       <workItem from="1603632491572" duration="37000" />
+      <workItem from="1603674521926" duration="3512000" />
+      <workItem from="1603713625690" duration="5885000" />
     </task>
     <servers />
   </component>
@@ -170,38 +181,38 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="958" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1603630525452">
+    <state x="958" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1603677562332">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="958" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1603630525452" />
+    <state x="958" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1603677562332" />
     <state x="361" y="90" key="#项目结构" timestamp="1603607461879">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="90" key="#项目结构/0.0.1536.864@0.0.1536.864" timestamp="1603607461879" />
-    <state width="1493" height="453" key="GridCell.Tab.0.bottom" timestamp="1603632466783">
+    <state width="1493" height="453" key="GridCell.Tab.0.bottom" timestamp="1603719957885">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="453" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1603632466783" />
-    <state width="1493" height="453" key="GridCell.Tab.0.center" timestamp="1603632466783">
+    <state width="1493" height="453" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1603719957885" />
+    <state width="1493" height="453" key="GridCell.Tab.0.center" timestamp="1603719957885">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="453" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1603632466783" />
-    <state width="1493" height="453" key="GridCell.Tab.0.left" timestamp="1603632466783">
+    <state width="1493" height="453" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1603719957885" />
+    <state width="1493" height="453" key="GridCell.Tab.0.left" timestamp="1603719957885">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="453" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1603632466783" />
-    <state width="1493" height="453" key="GridCell.Tab.0.right" timestamp="1603632466783">
+    <state width="1493" height="453" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1603719957885" />
+    <state width="1493" height="453" key="GridCell.Tab.0.right" timestamp="1603719957885">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="453" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1603632466783" />
+    <state width="1493" height="453" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1603719957885" />
     <state x="270" y="74" key="SettingsEditor" timestamp="1603607381540">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="270" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1603607381540" />
-    <state x="178" y="126" key="new project wizard" timestamp="1603607297753">
+    <state x="178" y="126" key="new project wizard" timestamp="1603675579806">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="178" y="126" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1603607297753" />
+    <state x="178" y="126" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1603675579806" />
     <state x="425" y="197" key="run.anything.popup" timestamp="1603625922222">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
