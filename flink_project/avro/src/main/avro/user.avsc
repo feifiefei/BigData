@@ -1,0 +1,9 @@
+{"namespace": "cn.fei.avro",
+ "type": "record",
+ "name": "User",
+ "fields": [
+     {"name": "name", "type": "string"},
+     {"name": "age",  "type": ["int", "null"]},
+     {"name": "address", "type": ["string", "null"]}
+ ]
+}

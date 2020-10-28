@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="59f194c8-1e87-445a-a407-01874d5aad29" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/avro/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/avro/src/main/avro/user.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/avro/src/main/java/cn/fei/avro/AvroTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/avro/src/main/java/cn/fei/avro/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/avro/target/avro-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/avro/target/classes/cn/fei/avro/AvroTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/avro/target/classes/cn/fei/avro/User$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/avro/target/classes/cn/fei/avro/User$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/avro/target/classes/cn/fei/avro/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/avro/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/avro/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/avro/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/avro/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/sse.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/szse-index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/szse-stock.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/avro/svse.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/avro/AvroSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/avro/SzseAvro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/kafka/KafkaPro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/szse/SocketClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/szse/SocketServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/com/fei/avro/AvroSerializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/com/fei/avro/SzseAvro$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/com/fei/avro/SzseAvro$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/com/fei/avro/SzseAvro.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/com/fei/kafka/KafkaPro.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/com/fei/szse/SocketClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/com/fei/szse/SocketServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/producer-1.0-SNAPSHOT.jar" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/biancheng/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\biancheng\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jUtJ5LJgH426upKGsdwJIUnBvJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/datas" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_project\datas" />
+      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_project\producer\src\main\resources" />
+      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_project\producer\src\main\java\com\fei\szse" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SocketClient">
+    <configuration name="AvroTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.avro.AvroTest" />
+      <module name="avro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.fei.avro.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SocketClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fei.szse.SocketClient" />
+      <module name="producer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fei.szse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SocketServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fei.szse.SocketServer" />
+      <module name="producer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fei.szse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SocketClient" />
+        <item itemvalue="Application.SocketServer" />
+        <item itemvalue="Application.AvroTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59f194c8-1e87-445a-a407-01874d5aad29" name="默认更改列表" comment="" />
+      <created>1603870423421</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603870423421</updated>
+      <workItem from="1603870426954" duration="15260000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="990" y="234" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603871043420">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="990" y="234" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1603871043420" />
+    <state x="958" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1603888434016">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="958" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1603888434016" />
+    <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603884406996">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1603884406996" />
+    <state x="883" y="178" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1603871897019">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="883" y="178" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.864@0.0.1536.864" timestamp="1603871897019" />
+    <state width="1493" height="222" key="GridCell.Tab.0.bottom" timestamp="1603892852628">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="222" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1603892852628" />
+    <state width="1493" height="222" key="GridCell.Tab.0.center" timestamp="1603892852628">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="222" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1603892852628" />
+    <state width="1493" height="222" key="GridCell.Tab.0.left" timestamp="1603892852628">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="222" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1603892852628" />
+    <state width="1493" height="222" key="GridCell.Tab.0.right" timestamp="1603892852628">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="222" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1603892852628" />
+    <state x="178" y="126" key="new project wizard" timestamp="1603871940845">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="178" y="126" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1603871940845" />
+    <state x="815" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1603871443732">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="815" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1603871443732" />
+  </component>
+</project>
