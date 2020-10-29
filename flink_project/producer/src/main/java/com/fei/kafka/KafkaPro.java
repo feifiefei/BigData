@@ -11,7 +11,7 @@ import java.util.Properties;
 import static java.lang.System.getProperties;
 
 /**
- * @description:
+ * @description:todo: kafka配置生产者
  * @author: 飞
  * @date: 2020/10/28 0028 17:13
  */

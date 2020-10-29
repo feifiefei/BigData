@@ -1,4 +1,15 @@
+com\fei\sse\SseServer.class
+com\fei\sse\SseQuotSource.class
 com\fei\avro\SzseAvro$1.class
-com\fei\avro\SzseAvro$Builder.class
+com\fei\avro\SseAvro.class
 com\fei\avro\SzseAvro.class
+com\fei\sse\SseQuotSource$1.class
+com\fei\avro\SseAvro$Builder.class
+com\fei\avro\AvroSerializer.class
+com\fei\util\DateTimeUtil.class
+com\fei\avro\SseAvro$1.class
+com\fei\avro\SzseAvro$Builder.class
+com\fei\szse\SocketServer.class
+com\fei\sse\SseQuotSource$AsyncTask.class
+com\fei\kafka\KafkaPro.class
 com\fei\szse\SocketClient.class

@@ -2,44 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59f194c8-1e87-445a-a407-01874d5aad29" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/avro/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/avro/src/main/avro/user.avsc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/avro/src/main/java/cn/fei/avro/AvroTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/avro/src/main/java/cn/fei/avro/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/avro/target/avro-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/avro/target/classes/cn/fei/avro/AvroTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/avro/target/classes/cn/fei/avro/User$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/avro/target/classes/cn/fei/avro/User$Builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/avro/target/classes/cn/fei/avro/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/avro/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/avro/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/avro/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/avro/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/sse.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/szse-index.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/szse-stock.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/avro/svse.avsc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/avro/AvroSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/avro/SzseAvro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/kafka/KafkaPro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/szse/SocketClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/szse/SocketServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/com/fei/avro/AvroSerializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/com/fei/avro/SzseAvro$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/com/fei/avro/SzseAvro$Builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/com/fei/avro/SzseAvro.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/com/fei/kafka/KafkaPro.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/com/fei/szse/SocketClient.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/com/fei/szse/SocketServer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/producer-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/dependency-reduced-pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/avro/SseAvro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/sse/SseQuotSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/sse/SseServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/util/DateTimeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/resources/sse-ftp-source.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/avro/target/avro-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/avro/target/classes/cn/fei/avro/AvroTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/avro/target/classes/cn/fei/avro/User$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/avro/target/classes/cn/fei/avro/User$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/avro/target/classes/cn/fei/avro/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/avro/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/avro/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/avro/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/avro/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/sse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/datas/sse.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/producer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/fei/kafka/KafkaPro.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/kafka/KafkaPro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/target/classes/com/fei/szse/SocketServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/producer/target/classes/com/fei/szse/SocketServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/producer/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/producer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/producer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/target/producer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/producer/target/producer-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +42,17 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="本地" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="本地" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -89,10 +84,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/datas" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/producer/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -103,9 +99,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_project\datas" />
       <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_project\producer\src\main\resources" />
-      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_project\producer\src\main\java\com\fei\szse" />
+      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_project\producer\src\main\java\com\fei\avro" />
+      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_project\producer\src\main\java\com\fei\util" />
+      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_project\producer\src\main\java\com\fei\sse" />
+      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_project\datas" />
     </key>
   </component>
   <component name="RunManager" selected="Application.SocketClient">
@@ -179,24 +177,45 @@
       <option name="presentableId" value="Default" />
       <updated>1603870423421</updated>
       <workItem from="1603870426954" duration="15260000" />
+      <workItem from="1603932033428" duration="5228000" />
+      <workItem from="1603960199587" duration="226000" />
+      <workItem from="1603964604925" duration="597000" />
+      <workItem from="1603965238114" duration="8051000" />
+      <workItem from="1603977699381" duration="1338000" />
+      <workItem from="1603979256430" duration="87000" />
+      <workItem from="1603979405038" duration="841000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="722" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603960257719">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="722" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1603960257719" />
     <state x="990" y="234" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603871043420">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="990" y="234" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1603871043420" />
-    <state x="958" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1603888434016">
+    <state x="958" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1603972468752">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="958" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1603888434016" />
+    <state x="958" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1603972468752" />
     <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603884406996">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -205,22 +224,26 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="883" y="178" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.864@0.0.1536.864" timestamp="1603871897019" />
-    <state width="1493" height="222" key="GridCell.Tab.0.bottom" timestamp="1603892852628">
+    <state x="93" y="93" width="1350" height="678" key="DiffContextDialog" timestamp="1603932072321">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1603892852628" />
-    <state width="1493" height="222" key="GridCell.Tab.0.center" timestamp="1603892852628">
+    <state x="93" y="93" width="1350" height="678" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1603932072321" />
+    <state width="1493" height="221" key="GridCell.Tab.0.bottom" timestamp="1603979072111">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1603892852628" />
-    <state width="1493" height="222" key="GridCell.Tab.0.left" timestamp="1603892852628">
+    <state width="1493" height="221" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1603979072111" />
+    <state width="1493" height="221" key="GridCell.Tab.0.center" timestamp="1603979072111">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1603892852628" />
-    <state width="1493" height="222" key="GridCell.Tab.0.right" timestamp="1603892852628">
+    <state width="1493" height="221" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1603979072111" />
+    <state width="1493" height="221" key="GridCell.Tab.0.left" timestamp="1603979072111">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1603892852628" />
+    <state width="1493" height="221" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1603979072111" />
+    <state width="1493" height="221" key="GridCell.Tab.0.right" timestamp="1603979072111">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="221" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1603979072111" />
     <state x="178" y="126" key="new project wizard" timestamp="1603871940845">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
