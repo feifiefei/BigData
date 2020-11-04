@@ -10,6 +10,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/avio_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/real_quot/pom.xml" />
       </set>
     </option>
   </component>

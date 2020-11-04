@@ -11,6 +11,7 @@
     <modules>
         <module>avro</module>
         <module>producer</module>
+        <module>flink_real_quot</module>
     </modules>
 
 

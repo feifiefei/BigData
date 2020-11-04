@@ -48,7 +48,7 @@ public class SocketServer {
         ArrayList<String> list = new ArrayList<>();
         try {
             //本地磁盘路径
-            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(new File("G:\\bianchengxuexi\\GitWarehouse\\BigData\\flink_project\\datas\\szse-stock.txt")),"UTF-8"));
+            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(new File("G:\\bianchengxuexi\\GitWarehouse\\BigData\\flink_project\\datas\\szse-index.txt")),"UTF-8"));
             //服务器磁盘路径
             //BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(new File("//export//servers//tmp//socket//szse-stock.txt")),"UTF-8"));
 

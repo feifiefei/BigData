@@ -48,6 +48,7 @@ public class SocketClient {
         while (true) {
             //读取每一条数据
             String str = dataInputStream.readUTF();
+//            System.out.println(str);
             //解析行数据，数据转换
             SzseAvro szseAvro = parseStr(str);
             //发送kafka
@@ -92,22 +93,22 @@ public class SocketClient {
         long tradeAmt = Double.valueOf(arr[4].trim()).longValue();
         //计算总成交量/金额
         Long totalVol = 0l;
-        Long totalAmt =0l;
+        Long totalAmt = 0l;
         Map<String, Long> amtVolMap = map.get(code);
-        if(amtVolMap == null){
+        if (amtVolMap == null) {
             totalVol = tradeVol;
             totalAmt = tradeAmt;
             //缓存总成交量和总成交金额
             HashMap<String, Long> mapCache = new HashMap<>();
-            mapCache.put("tradeAmt",totalAmt);
-            mapCache.put("tradeVol",totalVol);
-            map.put(code,mapCache);
-        }else{
+            mapCache.put("tradeAmt", totalAmt);
+            mapCache.put("tradeVol", totalVol);
+            map.put(code, mapCache);
+        } else {
 
             //从缓存里获取的
             Long tradeAmtTmp = amtVolMap.get("tradeAmt");
             Long tradeVolTmp = amtVolMap.get("tradeVol");
-            totalVol = tradeVolTmp +  randomVolumn; //总成交量
+            totalVol = tradeVolTmp + randomVolumn; //总成交量
             //总成交金额
             //总成交金额 ！= tradePrice * tradeVol
             //增量的成交金额 = 浮动成交量* 最新价
@@ -117,9 +118,9 @@ public class SocketClient {
 
             //缓存总成交量和总成交金额
             HashMap<String, Long> mapCache = new HashMap<>();
-            mapCache.put("tradeAmt",totalAmt);
-            mapCache.put("tradeVol",totalVol);
-            map.put(code,mapCache);
+            mapCache.put("tradeAmt", totalAmt);
+            mapCache.put("tradeVol", totalVol);
+            map.put(code, mapCache);
         }
 
 

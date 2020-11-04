@@ -2,29 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59f194c8-1e87-445a-a407-01874d5aad29" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/producer/dependency-reduced-pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/avro/SseAvro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/sse/SseQuotSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/sse/SseServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/util/DateTimeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/resources/sse-ftp-source.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/avro/target/avro-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/avro/target/classes/cn/fei/avro/AvroTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/avro/target/classes/cn/fei/avro/User$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/avro/target/classes/cn/fei/avro/User$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/avro/target/classes/cn/fei/avro/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/avro/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/avro/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/avro/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/avro/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/avro/AvroDeserializationSchema.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/avro/SseAvro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/avro/SzseAvro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/bean/CleanBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/bean/IndexBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/bean/StockBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/bean/StockIncrBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/config/QuotConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/constant/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/constant/KlineType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/function/KeyFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/function/MinStockWindowFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/function/SecStockHbaseFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/function/SecStockWindowFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/function/StockIncreWindowFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/inter/ProcessDataInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/job/StockStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/map/SseMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/map/StockKlineMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/map/StockPutHdfsMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/map/SzseMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/sink/SinkHbase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/sink/SinkMysql.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/task/StockIncrTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/task/StockKlineTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/task/StockMinHdfsTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/task/StockMinTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/task/StockSecTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/util/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/util/DbUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/util/HbaseUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/util/QuotUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/util/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/util/SpecialTimeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/resources/dev/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/main/resources/dev/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datas/sse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/datas/sse.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/producer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/fei/kafka/KafkaPro.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/kafka/KafkaPro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/fei/sse/SseServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/sse/SseServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/fei/szse/SocketClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/szse/SocketClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/fei/szse/SocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/fei/szse/SocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/target/classes/com/fei/szse/SocketClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/producer/target/classes/com/fei/szse/SocketClient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/producer/target/classes/com/fei/szse/SocketServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/producer/target/classes/com/fei/szse/SocketServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/producer/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/producer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/producer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/target/producer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/producer/target/producer-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/target/original-producer-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/target/producer-1.0-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +85,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -88,31 +116,42 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/producer/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/flink_real_quot/src/main/java/com/fei/util" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.24300441" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_project\producer\src\main\resources" />
-      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_project\producer\src\main\java\com\fei\avro" />
-      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_project\producer\src\main\java\com\fei\util" />
-      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_project\producer\src\main\java\com\fei\sse" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_project\datas" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_project\flink_real_quot\src\main\java\com\fei\util" />
+      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_project\flink_real_quot\src\main\java\com\fei\bean" />
+      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_project\flink_real_quot\src\main\java\com\fei\avro" />
+      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_project\flink_real_quot\src\main\java\com\fei\map" />
+      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\flink_project\flink_real_quot\src\main\java\com\fei\job" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.SocketClient">
-    <configuration name="AvroTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.fei.avro.AvroTest" />
-      <module name="avro" />
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="cmd" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.StockStream">
+    <configuration name="HbaseUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fei.util.HbaseUtil" />
+      <module name="flink_real_quot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.fei.avro.*" />
+          <option name="PATTERN" value="com.fei.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,11 +185,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SseServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fei.sse.SseServer" />
+      <module name="producer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fei.sse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StockStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fei.job.StockStream" />
+      <module name="flink_real_quot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fei.job.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StockStream" />
         <item itemvalue="Application.SocketClient" />
         <item itemvalue="Application.SocketServer" />
-        <item itemvalue="Application.AvroTest" />
+        <item itemvalue="Application.HbaseUtil" />
+        <item itemvalue="Application.SseServer" />
       </list>
     </recent_temporary>
   </component>
@@ -184,6 +251,19 @@
       <workItem from="1603977699381" duration="1338000" />
       <workItem from="1603979256430" duration="87000" />
       <workItem from="1603979405038" duration="841000" />
+      <workItem from="1604143801502" duration="153000" />
+      <workItem from="1604144437059" duration="826000" />
+      <workItem from="1604145297371" duration="940000" />
+      <workItem from="1604148127247" duration="251000" />
+      <workItem from="1604148412296" duration="2393000" />
+      <workItem from="1604194026550" duration="2611000" />
+      <workItem from="1604223491138" duration="13811000" />
+      <workItem from="1604284465346" duration="3487000" />
+      <workItem from="1604302024316" duration="9260000" />
+      <workItem from="1604322999523" duration="7814000" />
+      <workItem from="1604366252301" duration="1728000" />
+      <workItem from="1604395502640" duration="5429000" />
+      <workItem from="1604403922659" duration="7851000" />
     </task>
     <servers />
   </component>
@@ -212,42 +292,63 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="990" y="234" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1603871043420" />
-    <state x="958" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1603972468752">
+    <state x="958" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1604407244531">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="958" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1603972468752" />
-    <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603884406996">
+    <state x="1198" y="176" key="#com.intellij.ide.util.MemberChooser/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1604310859406" />
+    <state x="958" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1604407244531" />
+    <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604229718392">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1603884406996" />
+    <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1604229718392" />
     <state x="883" y="178" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1603871897019">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="883" y="178" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.864@0.0.1536.864" timestamp="1603871897019" />
+    <state x="361" y="90" key="#项目结构" timestamp="1604148874565">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="90" key="#项目结构/0.0.1536.864@0.0.1536.864" timestamp="1604148874565" />
     <state x="93" y="93" width="1350" height="678" key="DiffContextDialog" timestamp="1603932072321">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="93" y="93" width="1350" height="678" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1603932072321" />
-    <state width="1493" height="221" key="GridCell.Tab.0.bottom" timestamp="1603979072111">
+    <state width="1493" height="382" key="GridCell.Tab.0.bottom" timestamp="1604411831339">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="221" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1603979072111" />
-    <state width="1493" height="221" key="GridCell.Tab.0.center" timestamp="1603979072111">
+    <state width="1877" height="409" key="GridCell.Tab.0.bottom/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1604332204834" />
+    <state width="1493" height="382" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1604411831339" />
+    <state width="1493" height="382" key="GridCell.Tab.0.center" timestamp="1604411831339">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="221" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1603979072111" />
-    <state width="1493" height="221" key="GridCell.Tab.0.left" timestamp="1603979072111">
+    <state width="1877" height="409" key="GridCell.Tab.0.center/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1604332204834" />
+    <state width="1493" height="382" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1604411831339" />
+    <state width="1493" height="382" key="GridCell.Tab.0.left" timestamp="1604411831338">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="221" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1603979072111" />
-    <state width="1493" height="221" key="GridCell.Tab.0.right" timestamp="1603979072111">
+    <state width="1877" height="409" key="GridCell.Tab.0.left/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1604332204834" />
+    <state width="1493" height="382" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1604411831338" />
+    <state width="1493" height="382" key="GridCell.Tab.0.right" timestamp="1604411831339">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="221" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1603979072111" />
-    <state x="178" y="126" key="new project wizard" timestamp="1603871940845">
+    <state width="1877" height="409" key="GridCell.Tab.0.right/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1604332204834" />
+    <state width="1493" height="382" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1604411831339" />
+    <state x="802" y="145" key="RollbackChangesDialog" timestamp="1604410101609">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="178" y="126" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1603871940845" />
+    <state x="802" y="145" key="RollbackChangesDialog/0.0.1536.864@0.0.1536.864" timestamp="1604410101609" />
+    <state x="178" y="126" key="new project wizard" timestamp="1604148176222">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="178" y="126" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1604148176222" />
+    <state x="470" y="59" key="refactoring.ChangeSignatureDialog" timestamp="1604237919207">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="470" y="59" key="refactoring.ChangeSignatureDialog/0.0.1536.864@0.0.1536.864" timestamp="1604237919207" />
+    <state x="425" y="197" width="672" height="677" key="run.anything.popup" timestamp="1604236542485">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="197" width="672" height="677" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1604236542485" />
     <state x="815" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1603871443732">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

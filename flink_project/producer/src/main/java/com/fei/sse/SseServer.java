@@ -25,9 +25,9 @@ public class SseServer {
     public static void main(String[] args) throws IOException {
         SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss:SSS");
         //服务器
-        String path = "//export//servers//tmp//socket//sse.txt";
+       String path = "//export//servers//tmp//socket//sse.txt";
         //本地
-//        String path = "E:\\export\\servers\\tmp\\socket\\sse\\sse.txt";
+//      String path = "G:\\bianchengxuexi\\GitWarehouse\\BigData\\flink_project\\datas\\sse.txt";
 
         //解析文件缓存成交量和成交金额
         map = parseLocalFileToMap();
@@ -198,7 +198,7 @@ public class SseServer {
             //服务端
             BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(new File("//export//servers//tmp//socket//sseQuot.txt")), "UTF-8"));
             //本地
-//            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(new File("E:\\export\\servers\\tmp\\socket\\sse\\sseQuot.txt")),"UTF-8"));
+//           BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(new File("G:\\bianchengxuexi\\GitWarehouse\\BigData\\flink_project\\datas\\sse.txt")),"UTF-8"));
 
             String lineTxt = null;
             while ((lineTxt = br.readLine()) != null) {
@@ -220,7 +220,7 @@ public class SseServer {
             //服务器
             BufferedReader brSzseStock = new BufferedReader(new InputStreamReader(new FileInputStream(new File("//export//servers//tmp//socket//sseQuot.txt")), "UTF-8"));
             //本地
-//            BufferedReader brSzseStock = new BufferedReader(new InputStreamReader(new FileInputStream(new File("E:\\export\\servers\\tmp\\socket\\sse\\sseQuot.txt")), "UTF-8"));
+//            BufferedReader brSzseStock = new BufferedReader(new InputStreamReader(new FileInputStream(new File("G:\\bianchengxuexi\\GitWarehouse\\BigData\\flink_project\\datas\\sse.txt")), "UTF-8"));
 
             String lineTxtStock = null;
             while ((lineTxtStock = brSzseStock.readLine()) != null) {
