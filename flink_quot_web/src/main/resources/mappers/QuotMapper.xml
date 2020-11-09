@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.fei.mapper.QuotMapper">
+
+    <select id="query" resultType="java.util.HashMap">
+        SELECT * FROM bdp_quot_external_index
+    </select>
+
+    <select id="externalQuery" resultType="java.util.HashMap">
+        SELECT name,tradePrice,upDown,amplitude FROM  bdp_quot_external_index
+    </select>
+
+    <!-- #{} :'bdp_quot_stock_kline_month' :表示字符串数据;${}:表示占位符，传进来什么数据，就是什么数据 bdp_quot_stock_kline_month}-->
+    <select id="dklineQuery" resultType="java.util.HashMap">
+
+        SELECT
+            sec_code AS code,
+            sec_name AS name,
+            trade_date AS date,
+            open_price AS openPrice,
+            close_price AS closePrice,
+            high_price AS highPrice,
+            low_price AS lowPrice ,
+            trade_amt AS tradeAmt,
+            trade_vol AS tradeVol,
+            avgprice AS avgPrice,
+            pre_close_price AS preClosePrice
+        FROM bdp_quot_stock_kline_day
+        WHERE sec_code = #{code}
+        ORDER BY trade_date DESC
+            LIMIT 30
+
+    </select>
+
+    <select id="stockDesc" resultType="java.util.HashMap">
+        SELECT
+            sec_code AS code,
+            sec_name AS name,
+            business,
+            sector_name AS trade
+        FROM
+          bdp_quot_business
+        WHERE  sec_code = #{code}
+    </select>
+
+    <select id="queryTccDate" resultType="java.util.HashMap">
+        SELECT * FROM tcc_date WHERE trade_date = CURDATE()
+    </select>
+
+    <!-- 周，月K线数据查询 -->
+    <select id="queryKline" resultType="java.util.HashMap">
+
+        SELECT
+            *
+        FROM
+            ${tableName}
+        WHERE
+            trade_date BETWEEN #{firstTxdate} AND #{tradeDate}
+
+    </select>
+
+    <update id="updateKline">
+          UPDATE ${tableName} SET trade_date = CURDATE() where trade_date BETWEEN #{firstTxdate} AND #{tradeDate}
+    </update>
+
+
+</mapper>

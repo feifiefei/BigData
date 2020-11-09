@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59f194c8-1e87-445a-a407-01874d5aad29" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/test/java/com/fei/ConditionDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/test/java/com/fei/ConsecutiveDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/test/java/com/fei/LoginFailDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/test/java/com/fei/MaliceUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/test/java/com/fei/bean/LoginEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/test/java/com/fei/bean/LoginUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/test/java/com/fei/bean/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink_real_quot/src/test/java/com/fei/bean/Product.java" afterDir="false" />
-    </list>
+    <list default="true" id="59f194c8-1e87-445a-a407-01874d5aad29" name="默认更改列表" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -227,6 +218,7 @@
       <workItem from="1604403922659" duration="7851000" />
       <workItem from="1604479403595" duration="14918000" />
       <workItem from="1604554591660" duration="2278000" />
+      <workItem from="1604917050403" duration="243000" />
     </task>
     <servers />
   </component>
