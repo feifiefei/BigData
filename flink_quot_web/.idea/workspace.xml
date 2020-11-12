@@ -7,6 +7,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -35,6 +38,9 @@
         <option name="userSettingsFile" value="D:\biancheng\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1k3EGreCcFxxMoM23Bnb7oEEDPP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -197,6 +203,7 @@
       <workItem from="1605001784307" duration="365000" />
       <workItem from="1605014057105" duration="1963000" />
       <workItem from="1605082338769" duration="165000" />
+      <workItem from="1605190152470" duration="25000" />
     </task>
     <servers />
   </component>
@@ -240,10 +247,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="373" y="90" key="#项目结构/0.0.1536.864@0.0.1536.864" timestamp="1604922795896" />
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1605014076155">
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1605190175222">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1605014076155" />
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1605190175222" />
     <state width="1493" height="352" key="GridCell.Tab.0.bottom" timestamp="1604928928004">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

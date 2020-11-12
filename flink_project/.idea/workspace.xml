@@ -7,6 +7,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_DATA_SOURCES" value="true" />
@@ -49,6 +52,9 @@
         <option name="userSettingsFile" value="D:\biancheng\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1jUtJ5LJgH426upKGsdwJIUnBvJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -220,6 +226,7 @@
       <workItem from="1604554591660" duration="2278000" />
       <workItem from="1604917050403" duration="243000" />
       <workItem from="1605014085272" duration="609000" />
+      <workItem from="1605189526299" duration="1683000" />
     </task>
     <servers />
   </component>
@@ -273,6 +280,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="93" y="93" width="1350" height="678" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1603932072321" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1605190144221">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1605190144221" />
     <state width="1493" height="321" key="GridCell.Tab.0.bottom" timestamp="1604497659538">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
