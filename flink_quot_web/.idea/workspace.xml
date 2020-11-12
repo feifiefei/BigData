@@ -37,7 +37,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1k3EGreCcFxxMoM23Bnb7oEEDPP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -65,7 +67,7 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -190,7 +192,11 @@
       <workItem from="1604754586925" duration="18991000" />
       <workItem from="1604882729077" duration="22588000" />
       <workItem from="1604920787728" duration="864000" />
-      <workItem from="1604921756106" duration="3629000" />
+      <workItem from="1604921756106" duration="7100000" />
+      <workItem from="1604929231111" duration="76000" />
+      <workItem from="1605001784307" duration="365000" />
+      <workItem from="1605014057105" duration="1963000" />
+      <workItem from="1605082338769" duration="165000" />
     </task>
     <servers />
   </component>
@@ -234,29 +240,34 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="373" y="90" key="#项目结构/0.0.1536.864@0.0.1536.864" timestamp="1604922795896" />
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1604920818155">
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1605014076155">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1604920818155" />
-    <state width="1493" height="352" key="GridCell.Tab.0.bottom" timestamp="1604922073662">
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1605014076155" />
+    <state width="1493" height="352" key="GridCell.Tab.0.bottom" timestamp="1604928928004">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="352" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1604922073662" />
-    <state width="1493" height="352" key="GridCell.Tab.0.center" timestamp="1604922073662">
+    <state width="1493" height="352" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1604928928004" />
+    <state width="1493" height="352" key="GridCell.Tab.0.center" timestamp="1604928928004">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="352" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1604922073662" />
-    <state width="1493" height="352" key="GridCell.Tab.0.left" timestamp="1604922073662">
+    <state width="1493" height="352" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1604928928004" />
+    <state width="1493" height="352" key="GridCell.Tab.0.left" timestamp="1604928928004">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="352" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1604922073662" />
-    <state width="1493" height="352" key="GridCell.Tab.0.right" timestamp="1604922073662">
+    <state width="1493" height="352" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1604928928004" />
+    <state width="1493" height="352" key="GridCell.Tab.0.right" timestamp="1604928928004">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="352" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1604922073662" />
-    <state x="270" y="13" key="SettingsEditor" timestamp="1604921660948">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1493" height="352" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1604928928004" />
+    <state x="338" y="16" key="SettingsEditor" timestamp="1605082504853">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="338" y="16" key="SettingsEditor/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1605082504853" />
     <state x="270" y="13" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1604921660948" />
+    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1604928708171">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1604928708171" />
   </component>
 </project>
