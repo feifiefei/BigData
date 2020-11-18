@@ -2,16 +2,115 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b90aff5c-a6a0-4c14-aa02-9bfa9784685f" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/ArrayDemo01.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/BreakDemo01.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/Day01Test.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/ForDemo1.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/ForDemo2.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/ForDemo3.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/FuncDemo01.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/MethodDemo01.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/MethodDemo02.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/ScalaHello.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flink_quot/producer/target/classes/cn/fei/avro/AvroSerializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flink_quot/producer/target/classes/cn/fei/avro/SseAvro$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flink_quot/producer/target/classes/cn/fei/avro/SseAvro$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flink_quot/producer/target/classes/cn/fei/avro/SseAvro.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flink_quot/producer/target/classes/cn/fei/avro/SzseAvro$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flink_quot/producer/target/classes/cn/fei/avro/SzseAvro$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flink_quot/producer/target/classes/cn/fei/avro/SzseAvro.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flink_quot/producer/target/classes/cn/fei/kafka/KafkaPro.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flink_quot/producer/target/classes/cn/fei/sse/SseQuotSource$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flink_quot/producer/target/classes/cn/fei/sse/SseQuotSource$AsyncTask.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flink_quot/producer/target/classes/cn/fei/sse/SseQuotSource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flink_quot/producer/target/classes/cn/fei/sse/SseServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flink_quot/producer/target/classes/cn/fei/szse/SocketClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flink_quot/producer/target/classes/cn/fei/szse/SocketServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flink_quot/producer/target/classes/cn/fei/util/DateTimeUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D001/ArrayDemo01.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D001/Day01Test.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D001/ForDemo1.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D001/ForDemo2.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D001/ForDemo3.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D001/MethodDemo01.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D001/MethodDemo02.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D001/ScalaHello.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D002/IteratorT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D002/LIstT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D002/MapT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D002/SetT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D002/TupleT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D002/func/FunctionT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D002/func/FunctionT2.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D002/func/OperatorT1.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D002/oop/demo01/ClassT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D002/oop/demo02/ClassT02.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D002/oop/demo02/ClassT03.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D002/oop/demo02/MainT01.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D002/oop/demo02/NightT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D002/oop/demo02/ObjectT01.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D002/oop/demo02/ObjectT02.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D003/ApplyD001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D003/ExceptionD001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D003/FunctionD001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D003/GenericD001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D003/Match001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D003/Match002.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D003/Match003.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D003/Match004.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D003/Math005.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D003/OopD0006.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D003/OopD001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D003/OopD003.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D003/OopD004.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D003/OopD005.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D003/OopD007.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D003/OopD008.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D003/Option001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D003/RegexD001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/D003/T001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/Doo4/Func/FuncD001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/Doo4/actor/HelloActor.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/Doo4/actor/RpcActor.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/Doo4/advance/ImplicitD001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/Doo4/advance/ImplicitD002.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/Doo4/advance/ImplicitD003.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/fei/scala/Doo4/wc/ScalaWordCount.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/ArrayDemo01$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/ArrayDemo01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/BreakDemo01$$anonfun$main$1$$anonfun$apply$mcV$sp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/BreakDemo01$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/BreakDemo01$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/BreakDemo01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/Day01Test$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/Day01Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/ForDemo1$$anonfun$main$1$$anonfun$apply$mcVI$sp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/ForDemo1$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/ForDemo1$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/ForDemo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/ForDemo2$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/ForDemo2$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/ForDemo2$$anonfun$main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/ForDemo2$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/ForDemo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/ForDemo3$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/ForDemo3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/FuncDemo01$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/FuncDemo01$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/FuncDemo01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/MethodDemo01$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/MethodDemo01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/MethodDemo02$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/MethodDemo02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/ScalaHello$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala_study/cn/fei/scala/ScalaHello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/fei/scala/ArrayDemo01.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/fei/scala/BreakDemo01.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/fei/scala/Day01Test.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/fei/scala/ForDemo1.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/fei/scala/ForDemo2.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/fei/scala/ForDemo3.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/fei/scala/FuncDemo01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/fei/scala/D001/FuncDemo01.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/fei/scala/MethodDemo01.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/fei/scala/MethodDemo02.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/fei/scala/ScalaHello.scala" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,19 +120,31 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Scala Object" />
+        <option value="Class" />
         <option value="Package Object" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://scala-decompiled/Predef.decompiled.java" root0="SKIP_HIGHLIGHTING" />
-    <setting file="dummy://scala-decompiled/Array.decompiled.java" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -56,10 +167,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="F:/桌面/杂类/大数据阶段五/scala_day01_20201112/07_资料" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/cn/fei/scala/Doo4/advance" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -69,20 +181,29 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.fei.scala.D002.func" />
       <recent name="cn.fei.scala" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\scala_study\src\cn\fei\scala\Doo4\advance" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Day01Test">
-    <configuration name="ArrayDemo01" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="cn.fei.scala.ArrayDemo01" />
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="powershell" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.RpcActor">
+    <configuration name="HelloActor" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.scala.Doo4.actor.HelloActor" />
       <module name="scala_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.fei.scala.*" />
+          <option name="PATTERN" value="cn.fei.scala.Doo4.actor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +211,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BreakDemo01" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="cn.fei.scala.BreakDemo01" />
+    <configuration name="ImplicitD001" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.scala.Doo4.advance.ImplicitD001" />
       <module name="scala_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.fei.scala.*" />
+          <option name="PATTERN" value="cn.fei.scala.Doo4.advance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +224,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day01Test" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="cn.fei.scala.Day01Test" />
+    <configuration name="ImplicitD002" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.scala.Doo4.advance.ImplicitD002" />
       <module name="scala_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.fei.scala.*" />
+          <option name="PATTERN" value="cn.fei.scala.Doo4.advance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,12 +237,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MethodDemo01" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="cn.fei.scala.MethodDemo01" />
+    <configuration name="ImplicitD003" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.scala.Doo4.advance.ImplicitD003" />
       <module name="scala_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.fei.scala.*" />
+          <option name="PATTERN" value="cn.fei.scala.Doo4.advance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,12 +250,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MethodDemo02" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="cn.fei.scala.MethodDemo02" />
+    <configuration name="RpcActor" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.scala.Doo4.actor.RpcActor" />
       <module name="scala_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.fei.scala.*" />
+          <option name="PATTERN" value="cn.fei.scala.Doo4.actor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +265,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Day01Test" />
-        <item itemvalue="Application.ArrayDemo01" />
-        <item itemvalue="Application.MethodDemo02" />
-        <item itemvalue="Application.MethodDemo01" />
-        <item itemvalue="Application.BreakDemo01" />
+        <item itemvalue="Application.RpcActor" />
+        <item itemvalue="Application.HelloActor" />
+        <item itemvalue="Application.ImplicitD003" />
+        <item itemvalue="Application.ImplicitD001" />
+        <item itemvalue="Application.ImplicitD002" />
       </list>
     </recent_temporary>
   </component>
@@ -177,40 +298,122 @@
       <workItem from="1605082793159" duration="3664000" />
       <workItem from="1605143018860" duration="4290000" />
       <workItem from="1605163124657" duration="19020000" />
+      <workItem from="1605229745500" duration="10342000" />
+      <workItem from="1605248765221" duration="13154000" />
+      <workItem from="1605265388028" duration="4544000" />
+      <workItem from="1605320411148" duration="2435000" />
+      <workItem from="1605326249658" duration="1680000" />
+      <workItem from="1605358296030" duration="2259000" />
+      <workItem from="1605364008192" duration="1455000" />
+      <workItem from="1605402377534" duration="9920000" />
+      <workItem from="1605421895591" duration="15529000" />
+      <workItem from="1605489536756" duration="8048000" />
+      <workItem from="1605508021402" duration="3506000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1605179834581">
+    <state x="971" y="190" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1605439285345">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1605179834581" />
-    <state width="723" height="223" key="GridCell.Tab.0.bottom" timestamp="1605184018963">
+    <state x="971" y="190" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.864@0.0.1536.864" timestamp="1605439285345" />
+    <state x="447" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605412952224">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1605088203405" />
-    <state width="723" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1605184018963" />
-    <state width="723" height="223" key="GridCell.Tab.0.center" timestamp="1605184018963">
+    <state x="447" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1605412952224" />
+    <state x="1076" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1605510667027">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.center/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1605088203405" />
-    <state width="723" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1605184018963" />
-    <state width="723" height="223" key="GridCell.Tab.0.left" timestamp="1605184018963">
+    <state x="1076" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1605510667027" />
+    <state x="603" y="316" width="329" height="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605435131774">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.left/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1605088203405" />
-    <state width="723" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1605184018963" />
-    <state width="723" height="223" key="GridCell.Tab.0.right" timestamp="1605184018963">
+    <state x="603" y="316" width="329" height="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1605435131774" />
+    <state x="962" y="298" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1605424195086">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.right/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1605088203405" />
-    <state width="723" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1605184018963" />
-    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1605183458392">
+    <state x="962" y="298" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.864@0.0.1536.864" timestamp="1605424195086" />
+    <state x="988" y="150" key="DetectedRootsChooserDialog" timestamp="1605236099572">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1605183458392" />
+    <state x="988" y="150" key="DetectedRootsChooserDialog/0.0.1536.864@0.0.1536.864" timestamp="1605236099572" />
+    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1605261750815">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1605261750815" />
+    <state width="550" height="141" key="GridCell.Tab.0.bottom" timestamp="1605513500825">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1877" height="291" key="GridCell.Tab.0.bottom/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1605362839037" />
+    <state width="550" height="141" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1605513500825" />
+    <state width="550" height="141" key="GridCell.Tab.0.center" timestamp="1605513500825">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1877" height="291" key="GridCell.Tab.0.center/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1605362839036" />
+    <state width="550" height="141" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1605513500825" />
+    <state width="550" height="141" key="GridCell.Tab.0.left" timestamp="1605513500825">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1877" height="291" key="GridCell.Tab.0.left/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1605362839036" />
+    <state width="550" height="141" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1605513500825" />
+    <state width="550" height="141" key="GridCell.Tab.0.right" timestamp="1605513500825">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1877" height="291" key="GridCell.Tab.0.right/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1605362839036" />
+    <state width="550" height="141" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1605513500825" />
+    <state width="550" height="273" key="GridCell.Tab.1.bottom" timestamp="1605499804273">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="550" height="273" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1605499804273" />
+    <state width="550" height="273" key="GridCell.Tab.1.center" timestamp="1605499804272">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="550" height="273" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1605499804272" />
+    <state width="550" height="273" key="GridCell.Tab.1.left" timestamp="1605499804272">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="550" height="273" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1605499804272" />
+    <state width="550" height="273" key="GridCell.Tab.1.right" timestamp="1605499804273">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="550" height="273" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1605499804273" />
+    <state x="118" y="104" key="SettingsEditor" timestamp="1605428599009">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="118" y="104" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1605428599009" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1605429034550">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.864@0.0.1536.864" timestamp="1605429034550" />
+    <state x="674" y="194" width="349" height="670" maximized="true" key="dock-window-1" timestamp="1605430557108">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="674" y="194" width="349" height="670" maximized="true" key="dock-window-1/0.0.1536.864@0.0.1536.864" timestamp="1605430557108" />
+    <state x="1094" y="100" width="349" height="670" key="dock-window-2" timestamp="1605430557108">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="1094" y="100" width="349" height="670" key="dock-window-2/0.0.1536.864@0.0.1536.864" timestamp="1605430557108" />
+    <state x="1094" y="100" width="349" height="670" key="dock-window-3" timestamp="1605430557109">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="1094" y="100" width="349" height="670" key="dock-window-3/0.0.1536.864@0.0.1536.864" timestamp="1605430557109" />
+    <state x="501" y="211" width="349" height="670" key="dock-window-4" timestamp="1605430557109">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="501" y="211" width="349" height="670" key="dock-window-4/0.0.1536.864@0.0.1536.864" timestamp="1605430557109" />
+    <state x="425" y="197" width="672" height="677" key="run.anything.popup" timestamp="1605260949547">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="197" width="672" height="677" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1605260949547" />
+    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1605492766354">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1605492766354" />
   </component>
 </project>

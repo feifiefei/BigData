@@ -1,7 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59f194c8-1e87-445a-a407-01874d5aad29" name="默认更改列表" comment="" />
+    <list default="true" id="59f194c8-1e87-445a-a407-01874d5aad29" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/ArrayDemo01.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/Day01Test.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/ForDemo1.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/ForDemo2.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/ForDemo3.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/MethodDemo01.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/MethodDemo02.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/ScalaHello.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/IteratorT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/LIstT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/MapT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/SetT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/TupleT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/func/FunctionT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/func/FunctionT2.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/func/OperatorT1.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/oop/demo01/ClassT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/oop/demo02/ClassT02.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/oop/demo02/ClassT03.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/oop/demo02/MainT01.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/oop/demo02/ObjectT01.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/oop/demo02/ObjectT02.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ArrayDemo01$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ArrayDemo01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/BreakDemo01$$anonfun$main$1$$anonfun$apply$mcV$sp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/BreakDemo01$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/BreakDemo01$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/BreakDemo01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo1$$anonfun$main$1$$anonfun$apply$mcVI$sp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo1$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo1$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo2$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo2$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo2$$anonfun$main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo2$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo3$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/FuncDemo01$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/FuncDemo01$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/FuncDemo01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/MethodDemo01$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/MethodDemo01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/MethodDemo02$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/MethodDemo02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ScalaHello$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ScalaHello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/ArrayDemo01.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/BreakDemo01.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/Day01Test.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/ForDemo1.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/ForDemo2.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/ForDemo3.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/FuncDemo01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/FuncDemo01.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/MethodDemo01.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/MethodDemo02.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/ScalaHello.scala" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -227,6 +295,8 @@
       <workItem from="1604917050403" duration="243000" />
       <workItem from="1605014085272" duration="609000" />
       <workItem from="1605189526299" duration="1683000" />
+      <workItem from="1605229732004" duration="16000" />
+      <workItem from="1605261563437" duration="10000" />
     </task>
     <servers />
   </component>
@@ -280,10 +350,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="93" y="93" width="1350" height="678" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1603932072321" />
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1605190144221">
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1605229738756">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1605190144221" />
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1605229738756" />
     <state width="1493" height="321" key="GridCell.Tab.0.bottom" timestamp="1604497659538">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

@@ -1,0 +1,12 @@
+{
+"namespace":"cn.itcast.avro",
+"name":"User",
+"type":"record",
+"fields":[
+    {"name":"name","type":["string","null"]},
+    {"name":"age","type":["int","null"]},
+    {"name":"address","type":["string","null"]}
+]
+}
+
+

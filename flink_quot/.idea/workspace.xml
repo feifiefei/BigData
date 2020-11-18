@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9dca6de2-fffe-4aa6-bbd5-941ce14cfc30" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/avro/AvroSerializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/avro/SseAvro$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/avro/SseAvro$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/avro/SseAvro.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/avro/SzseAvro$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/avro/SzseAvro$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/avro/SzseAvro.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/kafka/KafkaPro.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/sse/SseQuotSource$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/sse/SseQuotSource$AsyncTask.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/sse/SseQuotSource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/sse/SseServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/szse/SocketClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/szse/SocketServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/util/DateTimeUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mevem_akka/src/main/scala/saedfdsafds.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/ArrayDemo01.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/Day01Test.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/ForDemo1.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/ForDemo2.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/ForDemo3.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/MethodDemo01.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/MethodDemo02.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/ScalaHello.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/IteratorT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/LIstT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/MapT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/SetT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/TupleT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/func/FunctionT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/func/FunctionT2.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/func/OperatorT1.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/oop/demo01/ClassT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/oop/demo02/ClassT02.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/oop/demo02/ClassT03.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/oop/demo02/MainT01.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/oop/demo02/NightT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/oop/demo02/ObjectT01.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/oop/demo02/ObjectT02.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/ApplyD001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/ExceptionD001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/FunctionD001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/GenericD001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/Match001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/Match002.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/Match003.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/Match004.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/Math005.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/OopD0006.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/OopD001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/OopD003.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/OopD004.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/OopD005.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/OopD007.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/OopD008.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/Option001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/RegexD001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/T001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/Doo4/Func/FuncD001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/Doo4/actor/HelloActor.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/Doo4/actor/RpcActor.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/Doo4/advance/ImplicitD001.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/Doo4/advance/ImplicitD002.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/Doo4/advance/ImplicitD003.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/Doo4/wc/ScalaWordCount.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ArrayDemo01$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ArrayDemo01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/BreakDemo01$$anonfun$main$1$$anonfun$apply$mcV$sp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/BreakDemo01$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/BreakDemo01$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/BreakDemo01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo1$$anonfun$main$1$$anonfun$apply$mcVI$sp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo1$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo1$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo2$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo2$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo2$$anonfun$main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo2$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo3$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/FuncDemo01$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/FuncDemo01$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/FuncDemo01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/MethodDemo01$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/MethodDemo01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/MethodDemo02$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/MethodDemo02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ScalaHello$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ScalaHello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/ArrayDemo01.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/BreakDemo01.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/Day01Test.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/ForDemo1.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/ForDemo2.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/ForDemo3.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/FuncDemo01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/FuncDemo01.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/MethodDemo01.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/MethodDemo02.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/ScalaHello.scala" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>index.hbase.table.name</find>
+      <find>mysql.driver</find>
+      <find>kafka</find>
+      <find>FastDateFormat</find>
+      <find>index.sec.hdfs.path</find>
+      <find>map</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/biancheng/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\biancheng\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1kENNSPLdka15l7t11iegy6dqPL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1604993339954" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.itcast.job" />
+      <recent name="cn.itcast.inter" />
+      <recent name="cn.itcast.task" />
+      <recent name="cn.itcast.warn" />
+      <recent name="cn.itcast" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace-realquot\quot-1028\itcast_real_quot\src\test\java\cn\itcast\warn" />
+      <recent name="E:\workspace-realquot\quot-1028\itcast_real_quot\src\main\java\cn\itcast\job\teset" />
+      <recent name="E:\workspace-realquot\quot-1028\itcast_real_quot\src\main\java\cn\itcast\mail" />
+      <recent name="E:\workspace-realquot\quot-1028\itcast_real_quot\src\main\java\cn\itcast\warn" />
+      <recent name="E:\workspace-realquot\quot-1028\itcast_real_quot\src\main\java\cn\itcast\bean" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.IndexStream">
+    <configuration default="true" type="lua.app" factoryName="Lua Application">
+      <option name="program" value="lua.exe" />
+      <option name="file" value="" />
+      <option name="workingDir" value="$PROJECT_DIR$/src/main/java" />
+      <option name="debuggerType" value="1" />
+      <option name="params" value="" />
+      <option name="charset" value="UTF-8" />
+      <option name="showConsole" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="IndexStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.job.IndexStream" />
+      <module name="itcast_real_quot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.fei.job.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KylinTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.KylinTest" />
+      <module name="kylin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.fei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderTimeoutDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.OrderTimeoutDemo" />
+      <module name="itcast_real_quot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.fei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RackWarn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.warn.RackWarn" />
+      <module name="itcast_real_quot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.fei.warn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SseServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.sse.SseServer" />
+      <module name="producer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.fei.sse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.OrderTimeoutDemo" />
+      <item itemvalue="Application.RackWarn" />
+      <item itemvalue="Application.KylinTest" />
+      <item itemvalue="Application.SseServer" />
+      <item itemvalue="Application.IndexStream" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.IndexStream" />
+        <item itemvalue="Application.SseServer" />
+        <item itemvalue="Application.KylinTest" />
+        <item itemvalue="Application.RackWarn" />
+        <item itemvalue="Application.OrderTimeoutDemo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9dca6de2-fffe-4aa6-bbd5-941ce14cfc30" name="Default Changelist" comment="" />
+      <created>1603870398489</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603870398489</updated>
+      <workItem from="1603870401179" duration="10189000" />
+      <workItem from="1603890907116" duration="3461000" />
+      <workItem from="1603932269034" duration="14085000" />
+      <workItem from="1603977496993" duration="18785000" />
+      <workItem from="1604104761602" duration="20392000" />
+      <workItem from="1604150959444" duration="1537000" />
+      <workItem from="1604191337862" duration="27663000" />
+      <workItem from="1604235929028" duration="35988000" />
+      <workItem from="1604334952925" duration="929000" />
+      <workItem from="1604364202299" duration="25272000" />
+      <workItem from="1604408399638" duration="6433000" />
+      <workItem from="1604450497169" duration="19908000" />
+      <workItem from="1604494275433" duration="10145000" />
+      <workItem from="1604623573605" duration="12662000" />
+      <workItem from="1604657317759" duration="167000" />
+      <workItem from="1604709865459" duration="7000" />
+      <workItem from="1604709911511" duration="3394000" />
+      <workItem from="1604754615546" duration="2169000" />
+      <workItem from="1604825936910" duration="612000" />
+      <workItem from="1604883069727" duration="618000" />
+      <workItem from="1604887231223" duration="66000" />
+      <workItem from="1604889279909" duration="26000" />
+      <workItem from="1604904081436" duration="27000" />
+      <workItem from="1604911403749" duration="106000" />
+      <workItem from="1604929999055" duration="660000" />
+      <workItem from="1604968941655" duration="4127000" />
+      <workItem from="1604994528437" duration="2549000" />
+      <workItem from="1605261752993" duration="766000" />
+      <workItem from="1605262596713" duration="1688000" />
+      <workItem from="1605270684097" duration="5188000" />
+      <workItem from="1605320338476" duration="50000" />
+      <workItem from="1605321617611" duration="894000" />
+      <workItem from="1605339856414" duration="4701000" />
+      <workItem from="1605440156226" duration="2704000" />
+      <workItem from="1605531037983" duration="780000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1605261789100">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1605261789100" />
+    <state width="1493" height="527" key="GridCell.Tab.0.bottom" timestamp="1605264290621">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="527" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1605264290621" />
+    <state width="1493" height="527" key="GridCell.Tab.0.center" timestamp="1605264290621">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="527" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1605264290621" />
+    <state width="1493" height="527" key="GridCell.Tab.0.left" timestamp="1605264290620">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="527" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1605264290620" />
+    <state width="1493" height="527" key="GridCell.Tab.0.right" timestamp="1605264290621">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="527" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1605264290621" />
+    <state x="270" y="74" key="SettingsEditor" timestamp="1605261800751">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="270" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1605261800751" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/itcast_real_quot/src/main/java/cn/fei/function/MinPutHbaseWindowFunction.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/itcast_real_quot/src/main/java/cn/fei/sector/kline/IndexKlineMap.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/itcast_real_quot/src/main/java/cn/fei/sector/kline/IndexKlineMap.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/itcast_real_quot/src/main/java/cn/fei/sector/kline/IndexKlineMap.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Bundled Protobuf Distribution</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>avro</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.101tec:zkclient:0.10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
