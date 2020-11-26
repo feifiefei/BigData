@@ -33,7 +33,7 @@ public class SectorStream {
      * 2.获取流处理执行环境
      * 3.设置事件时间、并行度
      * 4.设置检查点机制
-     * 5.设置重启机制
+     * 5.设置重启11机制
      * 6.整合Kafka(新建反序列化类)
      * 7.数据过滤（时间和null字段）
      * 8.数据转换、合并
@@ -134,7 +134,7 @@ public class SectorStream {
         //2.分时行情（60s）
         new SectorMinTask().process(waterData);
         //3.分时行情备份
-        //new SectorMinHdfsTask().process(waterData);
+        new SectorMinHdfsTask().process(waterData);
 
         //4.板块K线
         new SectorKlineTask().process(waterData);

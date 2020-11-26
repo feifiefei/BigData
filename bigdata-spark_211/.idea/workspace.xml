@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1111f0e2-bc83-472a-955f-fd414aec7464" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/datas/SogouQ.sample" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/ratings.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/resources/employees.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/resources/full_user.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/resources/kv1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/resources/people.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/resources/people.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/resources/u.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/resources/u.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/resources/user.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/resources/users.avro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/resources/users.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/wordcount.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/ip2region.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/pmt.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_001/src/main/resources/core-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_001/src/main/resources/hdfs-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_001/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_001/src/main/scala/com/fei/wct/WordCountTWO.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_001/src/main/scala/com/fei/wct/WordcountT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_002/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_002/src/main/scala/com/fei/wct/Funtic.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_002/src/main/scala/com/fei/wct/WCT003.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_002/src/main/scala/com/fei/wct/WordCountTWO.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_003/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_003/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_003/src/main/scala/cn/fei/hbase/sink/SparkWriteHBase.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_003/src/main/scala/cn/fei/hbase/source/SparkReadHBase.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_003/src/main/scala/cn/fei/mysql/SparkWriteMySQL.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_003/src/main/scala/cn/fei/query/SogouQueryAnalysis.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_003/src/main/scala/cn/fei/sougou/SogouRecord.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_003/src/test/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_004/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/bean/MovieRating.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/convert/SparkRDDInferring.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/convert/SparkRDDSchema.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/convert/SparkSQLToDF.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/hive/SparkSQLHive.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/parquet/SparkSQLCsv.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/parquet/SparkSQLJson.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/parquet/SparkSQLMysql.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/parquet/SparkSQLParquet.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/process/SparkTop10M0vie.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/udf/SparkUdfTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/wcSession/WDCDSL.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_005_p/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/config/ApplicationConfig.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/etl/PmtEtlRunner.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/etl/Region.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/report/AdsRegionAnalysisReport.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/report/PmtReportRunner.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/report/RegionStateReport.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/report/ReportSQLConstant.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/utils/DateUtils.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/utils/IpUtils.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/utils/SparkUtils.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_005_p/src/test/scala/com/fei/ip/ConverIpTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_streaming/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/resources/core-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/resources/hdfs-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/StreamingDStreamUnion.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/StreamingKafkaDirect.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/StreamingMapWithState.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/StreamingOutputRDD.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/StreamingSourceKafka.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/StreamingTransformRDD.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/StreamingUpdateState.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/StreamingWordCount.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/util/StreamingContextUtils.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/window/StreamingReduceWindow.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/window/StreamingWindow.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink_quot/itcast_real_quot/src/main/java/cn/fei/function/SectorHbaseListWindowFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../flink_quot/itcast_real_quot/src/main/java/cn/fei/function/SectorHbaseListWindowFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink_quot/itcast_real_quot/src/main/java/cn/fei/job/SectorStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/../flink_quot/itcast_real_quot/src/main/java/cn/fei/job/SectorStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink_quot/itcast_real_quot/src/main/java/cn/fei/map/SectorPutHdfsMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../flink_quot/itcast_real_quot/src/main/java/cn/fei/map/SectorPutHdfsMap.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mysql" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mysql" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mysql" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="db_test: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="bigdata-spark_211" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Package Object" />
+        <option value="Scala Object" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\biancheng\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1kSKAG42876SjDYfvYhzwWLctfv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql&#10;hive" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.语言默认值" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.fei" />
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.fei" />
+      <recent name="com.fei.wct" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\bigdata-spark_211\spark_streaming\src\main\scala\cn\fei" />
+      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\bigdata-spark_211\spark_streaming\src\main\resources" />
+      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\bigdata-spark_211\spark_005_p\src\main\scala\com\fei\report" />
+      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\bigdata-spark_211" />
+      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\bigdata-spark_211\datas\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.StreamingOutputRDD">
+    <configuration name="StreamingDStreamUnion" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.StreamingDStreamUnion" />
+      <module name="spark_streaming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.fei.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamingKafkaDirect" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.StreamingKafkaDirect" />
+      <module name="spark_streaming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.fei.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamingOutputRDD" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.StreamingOutputRDD" />
+      <module name="spark_streaming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.fei.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamingSourceKafka" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.StreamingSourceKafka" />
+      <module name="spark_streaming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.fei.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamingTransformRDD" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.StreamingTransformRDD" />
+      <module name="spark_streaming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.fei.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StreamingOutputRDD" />
+        <item itemvalue="Application.StreamingSourceKafka" />
+        <item itemvalue="Application.StreamingKafkaDirect" />
+        <item itemvalue="Application.StreamingTransformRDD" />
+        <item itemvalue="Application.StreamingDStreamUnion" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1111f0e2-bc83-472a-955f-fd414aec7464" name="默认更改列表" comment="" />
+      <created>1605688407273</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605688407273</updated>
+      <workItem from="1605688411041" duration="2296000" />
+      <workItem from="1605691127901" duration="5498000" />
+      <workItem from="1605706383974" duration="313000" />
+      <workItem from="1605706916925" duration="676000" />
+      <workItem from="1605767993039" duration="9261000" />
+      <workItem from="1605859937405" duration="4320000" />
+      <workItem from="1605925223587" duration="603000" />
+      <workItem from="1605954810024" duration="1046000" />
+      <workItem from="1605955895078" duration="10347000" />
+      <workItem from="1606006046502" duration="9701000" />
+      <workItem from="1606026369531" duration="18290000" />
+      <workItem from="1606107370793" duration="7535000" />
+      <workItem from="1606125094160" duration="143000" />
+      <workItem from="1606125506772" duration="1180000" />
+      <workItem from="1606186733567" duration="5487000" />
+      <workItem from="1606199225114" duration="17994000" />
+      <workItem from="1606226399856" duration="66000" />
+      <workItem from="1606273952937" duration="1776000" />
+      <workItem from="1606285507109" duration="9924000" />
+      <workItem from="1606355945158" duration="4298000" />
+      <workItem from="1606373036774" duration="4790000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="90" key="#Deployment" timestamp="1605703296197">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="90" key="#Deployment/0.0.1536.864@0.0.1536.864" timestamp="1605703296197" />
+    <state x="499" y="187" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1606202836488">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="499" y="187" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.864@0.0.1536.864" timestamp="1606202836488" />
+    <state x="361" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606374069015">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1606374069015" />
+    <state x="720" y="235" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606016628517">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="720" y="235" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1606016628517" />
+    <state x="1085" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1606201764433">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="1085" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1606201764433" />
+    <state x="778" y="187" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1605688463524">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="778" y="187" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.864@0.0.1536.864" timestamp="1605688463524" />
+    <state x="321" y="357" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1605768898698">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="321" y="357" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.864@0.0.1536.864" timestamp="1605768898698" />
+    <state x="717" y="311" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1605768900218">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="717" y="311" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.864@0.0.1536.864" timestamp="1605768900218" />
+    <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606357332764">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1606357332764" />
+    <state x="361" y="90" key="#项目结构" timestamp="1605956181560">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="90" key="#项目结构/0.0.1536.864@0.0.1536.864" timestamp="1605956181560" />
+    <state x="2660" y="294" key="FileChooserDialogImpl" timestamp="1606109073226">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2660" y="294" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1606109073226" />
+    <state width="725" height="226" key="GridCell.Tab.0.bottom" timestamp="1606381569855">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1877" height="476" key="GridCell.Tab.0.bottom/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1605876727158" />
+    <state width="1877" height="392" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1606115161666" />
+    <state width="725" height="226" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606381569855" />
+    <state width="725" height="226" key="GridCell.Tab.0.center" timestamp="1606381569855">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1877" height="476" key="GridCell.Tab.0.center/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1605876727158" />
+    <state width="1877" height="392" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1606115161666" />
+    <state width="725" height="226" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1606381569855" />
+    <state width="725" height="226" key="GridCell.Tab.0.left" timestamp="1606381569855">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1877" height="476" key="GridCell.Tab.0.left/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1605876727158" />
+    <state width="1877" height="392" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1606115161666" />
+    <state width="725" height="226" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1606381569855" />
+    <state width="725" height="226" key="GridCell.Tab.0.right" timestamp="1606381569855">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1877" height="476" key="GridCell.Tab.0.right/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1605876727158" />
+    <state width="1877" height="392" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1606115161666" />
+    <state width="725" height="226" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1606381569855" />
+    <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1605964706812">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="212" height="477" key="HiddenNamespacesPopup/0.0.1536.864@0.0.1536.864" timestamp="1605964706812" />
+    <state x="498" y="13" key="SettingsEditor" timestamp="1606310478841">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="2231" y="8" key="SettingsEditor/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1606112256338" />
+    <state x="498" y="13" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1606310478841" />
+    <state x="623" y="330" key="WebDeployment.AddServerDialog.v.1" timestamp="1605703275577">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="623" y="330" key="WebDeployment.AddServerDialog.v.1/0.0.1536.864@0.0.1536.864" timestamp="1605703275577" />
+    <state x="283" y="98" width="986" height="721" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605964864824">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="283" y="98" width="986" height="721" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.864@0.0.1536.864" timestamp="1605964864824" />
+    <state x="609" y="120" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1605964715179">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="609" y="120" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1536.864@0.0.1536.864" timestamp="1605964715179" />
+    <state x="237" y="205" key="new project wizard" timestamp="1606274013311">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="237" y="205" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1606274013311" />
+    <state x="425" y="197" key="run.anything.popup" timestamp="1606191635520">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1606191635520" />
+    <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1606359504376">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="539" y="226" width="840" height="848" key="search.everywhere.popup/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1605875438029" />
+    <state x="2459" y="226" width="840" height="848" key="search.everywhere.popup/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1606110268643" />
+    <state x="430" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1606359504376" />
+  </component>
+</project>

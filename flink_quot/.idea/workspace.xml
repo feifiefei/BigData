@@ -2,116 +2,119 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dca6de2-fffe-4aa6-bbd5-941ce14cfc30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/avro/AvroSerializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/avro/SseAvro$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/avro/SseAvro$Builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/avro/SseAvro.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/avro/SzseAvro$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/avro/SzseAvro$Builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/avro/SzseAvro.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/kafka/KafkaPro.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/sse/SseQuotSource$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/sse/SseQuotSource$AsyncTask.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/sse/SseQuotSource.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/sse/SseServer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/szse/SocketClient.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/szse/SocketServer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/target/classes/cn/fei/util/DateTimeUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mevem_akka/src/main/scala/saedfdsafds.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/ArrayDemo01.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/Day01Test.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/ForDemo1.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/ForDemo2.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/ForDemo3.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/MethodDemo01.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/MethodDemo02.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/ScalaHello.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/IteratorT.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/LIstT.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/MapT.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/SetT.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/TupleT.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/func/FunctionT.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/func/FunctionT2.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/func/OperatorT1.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/oop/demo01/ClassT.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/oop/demo02/ClassT02.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/oop/demo02/ClassT03.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/oop/demo02/MainT01.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/oop/demo02/NightT.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/oop/demo02/ObjectT01.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D002/oop/demo02/ObjectT02.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/ApplyD001.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/ExceptionD001.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/FunctionD001.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/GenericD001.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/Match001.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/Match002.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/Match003.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/Match004.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/Math005.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/OopD0006.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/OopD001.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/OopD003.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/OopD004.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/OopD005.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/OopD007.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/OopD008.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/Option001.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/RegexD001.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D003/T001.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/Doo4/Func/FuncD001.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/Doo4/actor/HelloActor.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/Doo4/actor/RpcActor.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/Doo4/advance/ImplicitD001.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/Doo4/advance/ImplicitD002.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/Doo4/advance/ImplicitD003.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/Doo4/wc/ScalaWordCount.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ArrayDemo01$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ArrayDemo01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/BreakDemo01$$anonfun$main$1$$anonfun$apply$mcV$sp$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/BreakDemo01$$anonfun$main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/BreakDemo01$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/BreakDemo01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$$anonfun$main$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/Day01Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo1$$anonfun$main$1$$anonfun$apply$mcVI$sp$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo1$$anonfun$main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo1$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo2$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo2$$anonfun$main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo2$$anonfun$main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo2$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo3$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ForDemo3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/FuncDemo01$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/FuncDemo01$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/FuncDemo01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/MethodDemo01$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/MethodDemo01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/MethodDemo02$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/MethodDemo02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ScalaHello$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/out/production/scala_study/cn/fei/scala/ScalaHello.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/ArrayDemo01.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/BreakDemo01.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/Day01Test.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/ForDemo1.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/ForDemo2.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/ForDemo3.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/FuncDemo01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/D001/FuncDemo01.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/MethodDemo01.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/MethodDemo02.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scala_study/src/cn/fei/scala/ScalaHello.scala" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00004" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00005" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00006" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00007" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00008" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00009" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00010" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00011" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00012" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00013" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00014" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00015" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00016" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00017" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00018" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00019" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00020" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00021" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00022" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00023" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00024" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00025" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00026" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00027" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00028" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00029" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00030" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00031" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00032" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00033" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00034" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00035" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00036" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00037" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00038" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00039" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00040" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00041" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00042" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00043" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00044" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00045" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00046" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00047" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00048" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00049" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00050" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00051" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00052" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00053" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00054" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00055" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00056" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00057" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00058" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00059" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00060" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00061" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00062" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00063" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00064" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00065" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00066" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00067" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00068" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00069" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00070" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00071" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00072" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00073" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00074" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00075" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00076" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00077" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00078" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00079" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00080" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00081" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00082" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00083" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00084" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00085" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00086" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00087" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00088" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00089" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00090" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00091" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00092" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00093" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00094" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00095" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00096" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00097" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00098" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00099" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/wordcount.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/spark_001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/spark_001/src/main/resources/core-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/spark_001/src/main/resources/hdfs-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/spark_001/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/spark_001/src/main/scala/com/fei/wct/WordCountTWO.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/spark_001/src/main/scala/com/fei/wct/WordcountT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/spark_002/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/spark_002/src/main/scala/com/fei/wct/WCT003.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/spark_002/src/main/scala/com/fei/wct/WordCountTWO.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itcast_real_quot/src/main/java/cn/fei/function/SectorHbaseListWindowFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/itcast_real_quot/src/main/java/cn/fei/function/SectorHbaseListWindowFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itcast_real_quot/src/main/java/cn/fei/job/SectorStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/itcast_real_quot/src/main/java/cn/fei/job/SectorStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itcast_real_quot/src/main/java/cn/fei/map/SectorPutHdfsMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/itcast_real_quot/src/main/java/cn/fei/map/SectorPutHdfsMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -359,6 +362,7 @@
       <workItem from="1605339856414" duration="4701000" />
       <workItem from="1605440156226" duration="2704000" />
       <workItem from="1605531037983" duration="780000" />
+      <workItem from="1605848809331" duration="2494000" />
     </task>
     <servers />
   </component>
@@ -386,10 +390,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="527" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1605264290621" />
-    <state x="270" y="74" key="SettingsEditor" timestamp="1605261800751">
+    <state x="270" y="74" key="SettingsEditor" timestamp="1605851784834">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="270" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1605261800751" />
+    <state x="270" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1605851784834" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

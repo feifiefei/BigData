@@ -21,8 +21,8 @@ public class SectorPutHdfsMap implements MapFunction<SectorBean,String> {
          * 1.定义字符串字段分隔符
          * 2.日期转换和截取：date类型
          * 3.新建字符串缓存对象
-         * 4.封装字符串数据
-         * 字符串拼装字段顺序：
+         * 4.封装字符串数据装字段顺序
+         *          * 字符串拼：
          * Timestamp|date|sectorCode|sectorName|preClosePrice|openPirce|highPrice|
          * lowPrice|closePrice|tradeVol|tradeAmt|tradeVolDay|tradeAmtDay
          */

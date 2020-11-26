@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * @Date 2020/11/3
  */
-public class SectorHbaseListWindowFunction extends RichAllWindowFunction<SectorBean, List<Put>, TimeWindow> {
+public class 1SectorHbaseListWindowFunction extends RichAllWindowFunction<SectorBean, List<Put>, TimeWindow> {
     @Override
     public void apply(TimeWindow window, Iterable<SectorBean> values, Collector<List<Put>> out) throws Exception {
 
