@@ -11,10 +11,12 @@
     <modules>
         <module>spark_001</module>
         <module>spark_002</module>
-        <module>spark_003</module>
-        <module>spark_004</module>
-        <module>spark_005_p</module>
+        <module>spark_lixian</module>
+        <module>spark_sore</module>
+        <module>spark_sql</module>
         <module>spark_streaming</module>
+        <module>structured_streaming</module>
+        <module>sparkshishi</module>
     </modules>
 
 

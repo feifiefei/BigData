@@ -2,84 +2,169 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1111f0e2-bc83-472a-955f-fd414aec7464" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/datas/SogouQ.sample" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/ratings.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/resources/employees.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/resources/full_user.avsc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/resources/kv1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/resources/people.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/resources/people.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/resources/u.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/resources/u.data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/resources/user.avsc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/resources/users.avro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/resources/users.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datas/wordcount.data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/ip2region.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/pmt.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_001/src/main/resources/core-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_001/src/main/resources/hdfs-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_001/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_001/src/main/scala/com/fei/wct/WordCountTWO.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_001/src/main/scala/com/fei/wct/WordcountT.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_002/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_002/src/main/scala/com/fei/wct/Funtic.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_002/src/main/scala/com/fei/wct/WCT003.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_002/src/main/scala/com/fei/wct/WordCountTWO.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_003/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_003/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_003/src/main/scala/cn/fei/hbase/sink/SparkWriteHBase.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_003/src/main/scala/cn/fei/hbase/source/SparkReadHBase.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_003/src/main/scala/cn/fei/mysql/SparkWriteMySQL.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_003/src/main/scala/cn/fei/query/SogouQueryAnalysis.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_003/src/main/scala/cn/fei/sougou/SogouRecord.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_003/src/test/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_004/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/bean/MovieRating.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/convert/SparkRDDInferring.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/convert/SparkRDDSchema.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/convert/SparkSQLToDF.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/hive/SparkSQLHive.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/parquet/SparkSQLCsv.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/parquet/SparkSQLJson.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/parquet/SparkSQLMysql.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/parquet/SparkSQLParquet.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/process/SparkTop10M0vie.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/udf/SparkUdfTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/wcSession/WDCDSL.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_005_p/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/config/ApplicationConfig.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/etl/PmtEtlRunner.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/etl/Region.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/report/AdsRegionAnalysisReport.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/report/PmtReportRunner.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/report/RegionStateReport.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/report/ReportSQLConstant.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/utils/DateUtils.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/utils/IpUtils.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/utils/SparkUtils.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_005_p/src/test/scala/com/fei/ip/ConverIpTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_streaming/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/resources/core-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/resources/hdfs-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/StreamingDStreamUnion.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/StreamingKafkaDirect.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/StreamingMapWithState.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/StreamingOutputRDD.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/StreamingSourceKafka.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/StreamingTransformRDD.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/StreamingUpdateState.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/StreamingWordCount.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/util/StreamingContextUtils.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/window/StreamingReduceWindow.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei/window/StreamingWindow.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flink_quot/itcast_real_quot/src/main/java/cn/fei/function/SectorHbaseListWindowFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../flink_quot/itcast_real_quot/src/main/java/cn/fei/function/SectorHbaseListWindowFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flink_quot/itcast_real_quot/src/main/java/cn/fei/job/SectorStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/../flink_quot/itcast_real_quot/src/main/java/cn/fei/job/SectorStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flink_quot/itcast_real_quot/src/main/java/cn/fei/map/SectorPutHdfsMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../flink_quot/itcast_real_quot/src/main/java/cn/fei/map/SectorPutHdfsMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/structured/ckpt-1001/commits/..1.06dd8978-7165-47b3-bfb5-846d95a0fbc8.tmp.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/structured/ckpt-1001/commits/.1.06dd8978-7165-47b3-bfb5-846d95a0fbc8.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/structured/ckpt-1001/commits/0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/structured/ckpt-1001/metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/structured/ckpt-1001/offsets/0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/structured/ckpt-1001/offsets/1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/structured/ckpt-1001/state/0/0/1.delta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/structured/ckpt-1001/state/0/0/2.delta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/structured/ckpt-1001/state/0/1/1.delta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/structured/ckpt-1001/state/0/1/2.delta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkshishi/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkshishi/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkshishi/src/main/scala/cn/fei/config/ApplicationConfig.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkshishi/src/main/scala/cn/fei/etl/streamingProcess.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkshishi/src/main/scala/cn/fei/mock/MockOrderProducer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkshishi/src/main/scala/cn/fei/mock/OrderRecord.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkshishi/src/main/scala/cn/fei/report/DailyRealTimeOrderReport.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkshishi/src/main/scala/cn/fei/report/RealTimeOrderReport.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkshishi/src/main/scala/cn/fei/store/RealTimeOrderToHBase.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkshishi/src/main/scala/cn/fei/store/es/RealTimeOrder2Es.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkshishi/src/main/scala/cn/fei/store/hbase/HBaseDao.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkshishi/src/main/scala/cn/fei/store/hbase/RealTimeOrder.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkshishi/src/main/scala/cn/fei/store/hbase/ZkOffsetsUtils.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkshishi/src/main/scala/cn/fei/utils/JedisUtils.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkshishi/src/main/scala/cn/fei/utils/SparkUtils.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkshishi/src/main/scala/cn/fei/utils/StreamingUtils.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structured_streaming/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structured_streaming/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structured_streaming/src/main/scala/cn/fei/foreach/MySQLForeachWriter.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structured_streaming/src/main/scala/cn/fei/foreach/StructuredForeachBatch.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structured_streaming/src/main/scala/cn/fei/foreach/StructuredMySQLSink.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structured_streaming/src/main/scala/cn/fei/wordcount/StructuredFileSource.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structured_streaming/src/main/scala/cn/fei/wordcount/StructuredQueryOutput.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structured_streaming/src/main/scala/cn/fei/wordcount/StructuredRateSource.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structured_streaming/src/main/scala/cn/fei/wordcount/StructuredWordCount.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/SogouQ.sample" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/ratings.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/resources/employees.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/resources/full_user.avsc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/resources/kv1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/resources/people.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/resources/people.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/resources/u.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/resources/u.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/resources/user.avsc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/resources/users.avro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/resources/users.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/wordcount.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/src/main/scala/cn/fei/hbase/sink/SparkWriteHBase.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/src/main/scala/cn/fei/hbase/sink/SparkWriteHBase.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/src/main/scala/cn/fei/hbase/source/SparkReadHBase.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/src/main/scala/cn/fei/hbase/source/SparkReadHBase.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/src/main/scala/cn/fei/mysql/SparkWriteMySQL.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/src/main/scala/cn/fei/mysql/SparkWriteMySQL.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/src/main/scala/cn/fei/query/SogouQueryAnalysis.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/src/main/scala/cn/fei/query/SogouQueryAnalysis.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/src/main/scala/cn/fei/sougou/SogouRecord.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/src/main/scala/cn/fei/sougou/SogouRecord.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/src/test/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/src/test/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/hbase/sink/SparkWriteHBase$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/hbase/sink/SparkWriteHBase$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/hbase/sink/SparkWriteHBase$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/hbase/sink/SparkWriteHBase$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/hbase/sink/SparkWriteHBase$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/hbase/sink/SparkWriteHBase$$anonfun$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/hbase/sink/SparkWriteHBase$$anonfun$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/hbase/sink/SparkWriteHBase$$anonfun$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/hbase/sink/SparkWriteHBase$.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/hbase/sink/SparkWriteHBase$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/hbase/sink/SparkWriteHBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/hbase/sink/SparkWriteHBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/hbase/source/SparkReadHBase$$anonfun$main$1$$anonfun$apply$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/hbase/source/SparkReadHBase$$anonfun$main$1$$anonfun$apply$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/hbase/source/SparkReadHBase$$anonfun$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/hbase/source/SparkReadHBase$$anonfun$main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/hbase/source/SparkReadHBase$.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/hbase/source/SparkReadHBase$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/hbase/source/SparkReadHBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/hbase/source/SparkReadHBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/mysql/SparkWriteMySQL$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/mysql/SparkWriteMySQL$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/mysql/SparkWriteMySQL$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/mysql/SparkWriteMySQL$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/mysql/SparkWriteMySQL$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/mysql/SparkWriteMySQL$$anonfun$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/mysql/SparkWriteMySQL$$anonfun$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/mysql/SparkWriteMySQL$$anonfun$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/mysql/SparkWriteMySQL$$anonfun$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/mysql/SparkWriteMySQL$$anonfun$main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/mysql/SparkWriteMySQL$$anonfun$saveToMySQLV1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/mysql/SparkWriteMySQL$$anonfun$saveToMySQLV1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/mysql/SparkWriteMySQL$$anonfun$saveToMySQLV2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/mysql/SparkWriteMySQL$$anonfun$saveToMySQLV2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/mysql/SparkWriteMySQL$.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/mysql/SparkWriteMySQL$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/mysql/SparkWriteMySQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/mysql/SparkWriteMySQL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/query/SogouQueryAnalysis$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/query/SogouQueryAnalysis$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/query/SogouQueryAnalysis$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/query/SogouQueryAnalysis$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/query/SogouQueryAnalysis$$anonfun$3$$anonfun$apply$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/query/SogouQueryAnalysis$$anonfun$3$$anonfun$apply$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/query/SogouQueryAnalysis$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/query/SogouQueryAnalysis$$anonfun$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/query/SogouQueryAnalysis$$anonfun$4$$anonfun$apply$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/query/SogouQueryAnalysis$$anonfun$4$$anonfun$apply$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/query/SogouQueryAnalysis$$anonfun$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/query/SogouQueryAnalysis$$anonfun$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/query/SogouQueryAnalysis$$anonfun$5$$anonfun$apply$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/query/SogouQueryAnalysis$$anonfun$5$$anonfun$apply$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/query/SogouQueryAnalysis$$anonfun$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/query/SogouQueryAnalysis$$anonfun$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/query/SogouQueryAnalysis$$anonfun$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/query/SogouQueryAnalysis$$anonfun$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/query/SogouQueryAnalysis$$anonfun$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/query/SogouQueryAnalysis$$anonfun$main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/query/SogouQueryAnalysis$.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/query/SogouQueryAnalysis$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/query/SogouQueryAnalysis.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/query/SogouQueryAnalysis.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/sougou/SogouRecord$.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/sougou/SogouRecord$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/cn/fei/sougou/SogouRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/cn/fei/sougou/SogouRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_003/target/test-classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sore/target/test-classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/bean/MovieRating.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/src/main/scala/cn/fei/bean/MovieRating.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/convert/SparkRDDInferring.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/src/main/scala/cn/fei/convert/SparkRDDInferring.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/convert/SparkRDDSchema.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/src/main/scala/cn/fei/convert/SparkRDDSchema.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/convert/SparkSQLToDF.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/src/main/scala/cn/fei/convert/SparkSQLToDF.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/hive/SparkSQLHive.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/src/main/scala/cn/fei/hive/SparkSQLHive.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/parquet/SparkSQLCsv.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/src/main/scala/cn/fei/parquet/SparkSQLCsv.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/parquet/SparkSQLJson.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/src/main/scala/cn/fei/parquet/SparkSQLJson.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/parquet/SparkSQLMysql.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/src/main/scala/cn/fei/parquet/SparkSQLMysql.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/parquet/SparkSQLParquet.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/src/main/scala/cn/fei/parquet/SparkSQLParquet.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/process/SparkTop10M0vie.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/src/main/scala/cn/fei/process/SparkTop10M0vie.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/udf/SparkUdfTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/src/main/scala/cn/fei/udf/SparkUdfTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/src/main/scala/cn/fei/wcSession/WDCDSL.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/src/main/scala/cn/fei/wcSession/WDCDSL.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/META-INF/spark_004.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/META-INF/spark_004.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/bean/MovieRating$.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/bean/MovieRating$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/bean/MovieRating.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/bean/MovieRating.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/convert/SparkRDDInferring$$anonfun$1$$anonfun$apply$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/convert/SparkRDDInferring$$anonfun$1$$anonfun$apply$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/convert/SparkRDDInferring$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/convert/SparkRDDInferring$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/convert/SparkRDDInferring$$typecreator5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/convert/SparkRDDInferring$$typecreator5$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/convert/SparkRDDInferring$.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/convert/SparkRDDInferring$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/convert/SparkRDDInferring.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/convert/SparkRDDInferring.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/convert/SparkRDDSchema$$anonfun$1$$anonfun$apply$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/convert/SparkRDDSchema$$anonfun$1$$anonfun$apply$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/convert/SparkRDDSchema$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/convert/SparkRDDSchema$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/convert/SparkRDDSchema$.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/convert/SparkRDDSchema$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/convert/SparkRDDSchema.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/convert/SparkRDDSchema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/convert/SparkSQLToDF$$typecreator13$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/convert/SparkSQLToDF$$typecreator13$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/convert/SparkSQLToDF$$typecreator5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/convert/SparkSQLToDF$$typecreator5$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/convert/SparkSQLToDF$.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/convert/SparkSQLToDF$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/convert/SparkSQLToDF.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/convert/SparkSQLToDF.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/hive/SparkSQLHive$.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/hive/SparkSQLHive$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/hive/SparkSQLHive.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/hive/SparkSQLHive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/parquet/SparkSQLCsv$.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/parquet/SparkSQLCsv$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/parquet/SparkSQLCsv.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/parquet/SparkSQLCsv.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/parquet/SparkSQLJson$.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/parquet/SparkSQLJson$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/parquet/SparkSQLJson.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/parquet/SparkSQLJson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/parquet/SparkSQLMysql$.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/parquet/SparkSQLMysql$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/parquet/SparkSQLMysql.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/parquet/SparkSQLMysql.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/parquet/SparkSQLParquet$.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/parquet/SparkSQLParquet$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/parquet/SparkSQLParquet.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/parquet/SparkSQLParquet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/process/SparkTop10M0vie$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/process/SparkTop10M0vie$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/process/SparkTop10M0vie$$anonfun$2$$anonfun$apply$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/process/SparkTop10M0vie$$anonfun$2$$anonfun$apply$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/process/SparkTop10M0vie$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/process/SparkTop10M0vie$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/process/SparkTop10M0vie$$typecreator5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/process/SparkTop10M0vie$$typecreator5$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/process/SparkTop10M0vie$.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/process/SparkTop10M0vie$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/process/SparkTop10M0vie.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/process/SparkTop10M0vie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/udf/SparkUdfTest$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/udf/SparkUdfTest$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/udf/SparkUdfTest$$anonfun$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/udf/SparkUdfTest$$anonfun$main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/udf/SparkUdfTest$$typecreator1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/udf/SparkUdfTest$$typecreator1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/udf/SparkUdfTest$$typecreator2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/udf/SparkUdfTest$$typecreator2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/udf/SparkUdfTest$$typecreator3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/udf/SparkUdfTest$$typecreator3$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/udf/SparkUdfTest$$typecreator4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/udf/SparkUdfTest$$typecreator4$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/udf/SparkUdfTest$.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/udf/SparkUdfTest$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/udf/SparkUdfTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/udf/SparkUdfTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/wcSession/WDCDSL$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/wcSession/WDCDSL$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/wcSession/WDCDSL$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/wcSession/WDCDSL$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/wcSession/WDCDSL$.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/wcSession/WDCDSL$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_004/target/classes/cn/fei/wcSession/WDCDSL.class" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql/target/classes/cn/fei/wcSession/WDCDSL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_005_p/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark_lixian/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_005_p/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spark_lixian/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_005_p/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spark_lixian/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/config/ApplicationConfig.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_lixian/src/main/scala/com/fei/config/ApplicationConfig.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/etl/PmtEtlRunner.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_lixian/src/main/scala/com/fei/etl/PmtEtlRunner.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/etl/Region.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_lixian/src/main/scala/com/fei/etl/Region.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/report/AdsRegionAnalysisReport.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_lixian/src/main/scala/com/fei/report/AdsRegionAnalysisReport.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/report/PmtReportRunner.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_lixian/src/main/scala/com/fei/report/PmtReportRunner.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/report/RegionStateReport.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_lixian/src/main/scala/com/fei/report/RegionStateReport.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/report/ReportSQLConstant.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_lixian/src/main/scala/com/fei/report/ReportSQLConstant.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/utils/DateUtils.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_lixian/src/main/scala/com/fei/utils/DateUtils.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/utils/IpUtils.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_lixian/src/main/scala/com/fei/utils/IpUtils.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_005_p/src/main/scala/com/fei/utils/SparkUtils.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_lixian/src/main/scala/com/fei/utils/SparkUtils.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_005_p/src/test/scala/com/fei/ip/ConverIpTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_lixian/src/test/scala/com/fei/ip/ConverIpTest.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +199,12 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="mysql" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="db_spark: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mysql" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="db_test: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
     </expand>
@@ -125,8 +216,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Package Object" />
         <option value="Scala Object" />
+        <option value="Package Object" />
       </list>
     </option>
   </component>
@@ -163,7 +254,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/spark_streaming/src/main/scala/cn/fei" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/structured_streaming/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -185,20 +276,20 @@
       <recent name="com.fei.wct" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\bigdata-spark_211\structured_streaming\src\main\resources" />
       <recent name="G:\bianchengxuexi\GitWarehouse\BigData\bigdata-spark_211\spark_streaming\src\main\scala\cn\fei" />
       <recent name="G:\bianchengxuexi\GitWarehouse\BigData\bigdata-spark_211\spark_streaming\src\main\resources" />
       <recent name="G:\bianchengxuexi\GitWarehouse\BigData\bigdata-spark_211\spark_005_p\src\main\scala\com\fei\report" />
       <recent name="G:\bianchengxuexi\GitWarehouse\BigData\bigdata-spark_211" />
-      <recent name="G:\bianchengxuexi\GitWarehouse\BigData\bigdata-spark_211\datas\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StreamingOutputRDD">
-    <configuration name="StreamingDStreamUnion" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="cn.fei.StreamingDStreamUnion" />
-      <module name="spark_streaming" />
+  <component name="RunManager" selected="Application.StructuredForeachBatch">
+    <configuration name="StructuredFileSource" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.wordcount.StructuredFileSource" />
+      <module name="structured_streaming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.fei.util.*" />
+          <option name="PATTERN" value="cn.fei.wordcount.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -206,12 +297,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamingKafkaDirect" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="cn.fei.StreamingKafkaDirect" />
-      <module name="spark_streaming" />
+    <configuration name="StructuredForeachBatch" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.foreach.StructuredForeachBatch" />
+      <module name="structured_streaming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.fei.util.*" />
+          <option name="PATTERN" value="cn.fei.foreach.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -219,12 +310,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamingOutputRDD" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="cn.fei.StreamingOutputRDD" />
-      <module name="spark_streaming" />
+    <configuration name="StructuredMySQLSink" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.foreach.StructuredMySQLSink" />
+      <module name="structured_streaming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.fei.util.*" />
+          <option name="PATTERN" value="cn.fei.foreach.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -232,12 +323,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamingSourceKafka" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="cn.fei.StreamingSourceKafka" />
-      <module name="spark_streaming" />
+    <configuration name="StructuredQueryOutput" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.wordcount.StructuredQueryOutput" />
+      <module name="structured_streaming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.fei.util.*" />
+          <option name="PATTERN" value="cn.fei.wordcount.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -245,12 +336,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamingTransformRDD" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="cn.fei.StreamingTransformRDD" />
-      <module name="spark_streaming" />
+    <configuration name="StructuredWordCount" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cn.fei.wordcount.StructuredWordCount" />
+      <module name="structured_streaming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.fei.util.*" />
+          <option name="PATTERN" value="cn.fei.wordcount.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -260,11 +351,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StreamingOutputRDD" />
-        <item itemvalue="Application.StreamingSourceKafka" />
-        <item itemvalue="Application.StreamingKafkaDirect" />
-        <item itemvalue="Application.StreamingTransformRDD" />
-        <item itemvalue="Application.StreamingDStreamUnion" />
+        <item itemvalue="Application.StructuredForeachBatch" />
+        <item itemvalue="Application.StructuredMySQLSink" />
+        <item itemvalue="Application.StructuredQueryOutput" />
+        <item itemvalue="Application.StructuredFileSource" />
+        <item itemvalue="Application.StructuredWordCount" />
       </list>
     </recent_temporary>
   </component>
@@ -311,6 +402,9 @@
       <workItem from="1606285507109" duration="9924000" />
       <workItem from="1606355945158" duration="4298000" />
       <workItem from="1606373036774" duration="4790000" />
+      <workItem from="1606477389045" duration="387000" />
+      <workItem from="1606477812883" duration="5923000" />
+      <workItem from="1606487619768" duration="3530000" />
     </task>
     <servers />
   </component>
@@ -325,10 +419,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="90" key="#Deployment/0.0.1536.864@0.0.1536.864" timestamp="1605703296197" />
-    <state x="499" y="187" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1606202836488">
+    <state x="499" y="187" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1606483550400">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="499" y="187" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.864@0.0.1536.864" timestamp="1606202836488" />
+    <state x="499" y="187" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.864@0.0.1536.864" timestamp="1606483550400" />
     <state x="361" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606374069015">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -337,10 +431,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="720" y="235" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1606016628517" />
-    <state x="1085" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1606201764433">
+    <state x="1085" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1606483088614">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="1085" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1606201764433" />
+    <state x="1085" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1606483088614" />
     <state x="778" y="187" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1605688463524">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -357,47 +451,47 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1606357332764" />
-    <state x="361" y="90" key="#项目结构" timestamp="1605956181560">
+    <state x="299" y="82" key="#项目结构" timestamp="1606477960641">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="90" key="#项目结构/0.0.1536.864@0.0.1536.864" timestamp="1605956181560" />
+    <state x="299" y="82" key="#项目结构/0.0.1536.864@0.0.1536.864" timestamp="1606477960641" />
     <state x="2660" y="294" key="FileChooserDialogImpl" timestamp="1606109073226">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2660" y="294" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1606109073226" />
-    <state width="725" height="226" key="GridCell.Tab.0.bottom" timestamp="1606381569855">
+    <state width="724" height="297" key="GridCell.Tab.0.bottom" timestamp="1606483835879">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1877" height="476" key="GridCell.Tab.0.bottom/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1605876727158" />
     <state width="1877" height="392" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1606115161666" />
-    <state width="725" height="226" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606381569855" />
-    <state width="725" height="226" key="GridCell.Tab.0.center" timestamp="1606381569855">
+    <state width="724" height="297" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606483835879" />
+    <state width="724" height="297" key="GridCell.Tab.0.center" timestamp="1606483835878">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1877" height="476" key="GridCell.Tab.0.center/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1605876727158" />
     <state width="1877" height="392" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1606115161666" />
-    <state width="725" height="226" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1606381569855" />
-    <state width="725" height="226" key="GridCell.Tab.0.left" timestamp="1606381569855">
+    <state width="724" height="297" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1606483835878" />
+    <state width="724" height="297" key="GridCell.Tab.0.left" timestamp="1606483835878">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1877" height="476" key="GridCell.Tab.0.left/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1605876727158" />
     <state width="1877" height="392" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1606115161666" />
-    <state width="725" height="226" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1606381569855" />
-    <state width="725" height="226" key="GridCell.Tab.0.right" timestamp="1606381569855">
+    <state width="724" height="297" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1606483835878" />
+    <state width="724" height="297" key="GridCell.Tab.0.right" timestamp="1606483835878">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1877" height="476" key="GridCell.Tab.0.right/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1605876727158" />
     <state width="1877" height="392" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1606115161666" />
-    <state width="725" height="226" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1606381569855" />
+    <state width="724" height="297" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1606483835878" />
     <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1605964706812">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="212" height="477" key="HiddenNamespacesPopup/0.0.1536.864@0.0.1536.864" timestamp="1605964706812" />
-    <state x="498" y="13" key="SettingsEditor" timestamp="1606310478841">
+    <state x="57" y="13" key="SettingsEditor" timestamp="1606477997970">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="2231" y="8" key="SettingsEditor/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1606112256338" />
-    <state x="498" y="13" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1606310478841" />
+    <state x="57" y="13" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1606477997970" />
     <state x="623" y="330" key="WebDeployment.AddServerDialog.v.1" timestamp="1605703275577">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -410,10 +504,11 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="609" y="120" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1536.864@0.0.1536.864" timestamp="1605964715179" />
-    <state x="237" y="205" key="new project wizard" timestamp="1606274013311">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="326" y="316" key="new project wizard" timestamp="1606487981778">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="237" y="205" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1606274013311" />
+    <state x="261" y="253" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1606477546956" />
+    <state x="326" y="316" key="new project wizard/0.0.1920.1080/1920.0.1536.864@0.0.1920.1080" timestamp="1606487981778" />
     <state x="425" y="197" key="run.anything.popup" timestamp="1606191635520">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
