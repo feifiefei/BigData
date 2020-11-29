@@ -3,9 +3,9 @@ package cn.fei.store.hbase
 import cn.fei.config.ApplicationConfig
 import com.alibaba.fastjson.{JSON, JSONObject}
 import org.apache.hadoop.conf.Configuration
-import org.apache.hadoop.hbase.{HBaseConfiguration, TableName}
 import org.apache.hadoop.hbase.client._
 import org.apache.hadoop.hbase.util.Bytes
+import org.apache.hadoop.hbase.{HBaseConfiguration, TableName}
 
 /**
  * 操作HBase数据中的表，主要插入数据到表中

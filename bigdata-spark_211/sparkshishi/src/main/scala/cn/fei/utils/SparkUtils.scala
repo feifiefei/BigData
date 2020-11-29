@@ -2,7 +2,6 @@ package cn.fei.utils
 import cn.fei.config.ApplicationConfig
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
-import org.apache.spark.streaming.{Seconds, StreamingContext}
 /**
  * @description:工具类：构建SparkSession和StreamingContext实例对象
  * @author: 飞

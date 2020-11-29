@@ -9,10 +9,10 @@
         <module name="structured_streaming" />
         <module name="spark_sql" />
         <module name="spark_streaming" />
-        <module name="spark_002" />
-        <module name="spark_001" />
         <module name="sparkshishi" />
+        <module name="spark_001" />
         <module name="spark_sore" />
+        <module name="spark_002" />
         <module name="spark_lixian" />
       </profile>
     </annotationProcessing>
