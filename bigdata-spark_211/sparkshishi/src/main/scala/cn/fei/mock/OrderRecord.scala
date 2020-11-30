@@ -1,11 +1,6 @@
 package cn.fei.mock
 
 /**
- * @description:
- * @author: 飞
- * @date: 2020/11/27 0027 22:51
- */
-/**
  * 订单实体类（Case Class） * @param orderId 订单ID
  * @param userId 用户ID
  * @param orderTime 订单日期时间
