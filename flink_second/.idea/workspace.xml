@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d7392bf-0b56-440a-88bd-ba6309169224" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/flink_action/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink_action/src/main/java/com/fei/AutoCommentDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink_action/src/main/java/com/fei/BigScreenDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink_action/src/main/java/com/fei/BroadcastStateDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink_action/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink_quot/itcast_real_quot/src/main/java/cn/fei/job/IndexStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/../flink_quot/itcast_real_quot/src/main/java/cn/fei/job/IndexStream.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -31,6 +29,9 @@
         <option name="userSettingsFile" value="D:\biancheng\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1jMHnvCaVRiIfXnoecFUMsedgxZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -171,6 +172,8 @@
       <workItem from="1603632491572" duration="37000" />
       <workItem from="1603674521926" duration="3512000" />
       <workItem from="1603713625690" duration="5885000" />
+      <workItem from="1606872274859" duration="990000" />
+      <workItem from="1606911169011" duration="1358000" />
     </task>
     <servers />
   </component>

@@ -2,119 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dca6de2-fffe-4aa6-bbd5-941ce14cfc30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00002" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00003" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00004" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00005" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00006" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00007" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00008" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00009" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00010" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00011" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00012" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00013" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00014" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00015" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00016" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00017" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00018" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00019" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00020" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00021" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00022" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00023" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00024" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00025" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00026" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00027" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00028" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00029" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00030" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00031" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00032" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00033" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00034" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00035" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00036" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00037" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00038" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00039" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00040" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00041" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00042" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00043" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00044" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00045" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00046" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00047" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00048" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00049" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00050" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00051" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00052" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00053" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00054" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00055" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00056" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00057" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00058" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00059" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00060" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00061" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00062" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00063" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00064" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00065" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00066" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00067" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00068" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00069" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00070" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00071" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00072" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00073" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00074" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00075" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00076" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00077" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00078" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00079" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00080" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00081" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00082" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00083" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00084" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00085" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00086" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00087" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00088" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00089" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00090" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00091" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00092" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00093" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00094" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00095" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00096" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00097" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00098" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/ratings100/part-00099" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/datas/wordcount.data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/spark_001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/spark_001/src/main/resources/core-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/spark_001/src/main/resources/hdfs-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/spark_001/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/spark_001/src/main/scala/com/fei/wct/WordCountTWO.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/spark_001/src/main/scala/com/fei/wct/WordcountT.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/spark_002/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/spark_002/src/main/scala/com/fei/wct/WCT003.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bigdata-spark_211/spark_002/src/main/scala/com/fei/wct/WordCountTWO.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itcast_real_quot/src/main/java/cn/fei/function/SectorHbaseListWindowFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/itcast_real_quot/src/main/java/cn/fei/function/SectorHbaseListWindowFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itcast_real_quot/src/main/java/cn/fei/job/SectorStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/itcast_real_quot/src/main/java/cn/fei/job/SectorStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itcast_real_quot/src/main/java/cn/fei/map/SectorPutHdfsMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/itcast_real_quot/src/main/java/cn/fei/map/SectorPutHdfsMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kylin/src/test/java/com/fei/to01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_demo/kudu_demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_demo/kudu_demo/src/main/java/com/fei/table/KuduTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_demo/kudu_spark_demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wuhaha/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wuhaha/wuha/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wuhaha/wuha/src/main/java/com/fei/config/QuotConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wuhaha/wuha/src/main/java/com/fei/job/SprakStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itcast_real_quot/src/main/java/cn/fei/job/IndexStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/itcast_real_quot/src/main/java/cn/fei/job/IndexStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itcast_real_quot/src/main/java/cn/fei/job/StockStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/itcast_real_quot/src/main/java/cn/fei/job/StockStream.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +68,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1kENNSPLdka15l7t11iegy6dqPL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -363,6 +262,14 @@
       <workItem from="1605440156226" duration="2704000" />
       <workItem from="1605531037983" duration="780000" />
       <workItem from="1605848809331" duration="2494000" />
+      <workItem from="1606911820615" duration="1485000" />
+      <workItem from="1606978400036" duration="1568000" />
+      <workItem from="1607083382101" duration="944000" />
+      <workItem from="1607158025876" duration="859000" />
+      <workItem from="1607175020831" duration="1284000" />
+      <workItem from="1607333731103" duration="160000" />
+      <workItem from="1607409264497" duration="21000" />
+      <workItem from="1607494691574" duration="3462000" />
     </task>
     <servers />
   </component>
@@ -394,6 +301,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="270" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1605851784834" />
+    <state x="470" y="261" key="new project wizard" timestamp="1607498639608">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="470" y="261" key="new project wizard/0.0.1920.1080/1920.0.1536.864@1920.0.1536.864" timestamp="1607498639608" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

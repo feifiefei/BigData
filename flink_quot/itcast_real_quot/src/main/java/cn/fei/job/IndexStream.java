@@ -8,6 +8,8 @@ import cn.fei.config.QuotConfig;
 import cn.fei.map.SseMap;
 import cn.fei.map.SzseMap;
 import cn.fei.task.IndexKlineTask;
+import cn.fei.task.IndexMinHdfsTask;
+import cn.fei.task.IndexSecTask;
 import cn.fei.util.QuotUtil;
 import org.apache.flink.api.common.functions.FilterFunction;
 import org.apache.flink.streaming.api.TimeCharacteristic;
@@ -130,14 +132,14 @@ public class IndexStream {
          * 3.分时行情备份（了解）
          */
 //        //1.秒级行情(5s)
-//        new IndexSecTask().process(waterData);
+        new IndexSecTask().process(waterData);
 //        //2.分时行情（60s）
 //        new IndexMinTask().process(waterData);
 //        //3.指数分时行情备份
-//        new IndexMinHdfsTask().process(waterData);
+        new IndexMinHdfsTask().process(waterData);
 
         //4.指数K线
-//        new IndexKlineTask().process(waterData);
+        new IndexKlineTask().process(waterData);
 
         //触发执行
         env.execute("index stream");
