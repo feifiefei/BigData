@@ -66,11 +66,12 @@ public class StockStream {
 //        // 5.设置重启机制
 //        env.setRestartStrategy(RestartStrategies.fixedDelayRestart(3, Time.seconds(5)));
 
-
         //6.整合Kafka(新建反序列化类)
         Properties properties = new Properties();
         properties.setProperty("bootstrap.servers", QuotConfig.config.getProperty("bootstrap.servers"));
         properties.setProperty("group.id", QuotConfig.config.getProperty("group.id"));
+        //消费kafka时自动发现新增的分区，设置时间为30s
+       // properties.setProperty("flink.partition-discovery.interval-millis", "30000")
 
         //新建消费对象
         //沪市：sse

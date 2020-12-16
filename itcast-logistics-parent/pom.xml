@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.itcast.logistics</groupId>
+    <artifactId>itcast-logistics-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+    <modules>
+        <module>logistics-common</module>
+        <module>logistics-etl</module>
+        <module>logistics-offline</module>
+        <module>logistics-generate</module>
+    </modules>
+
+    <repositories>
+        <repository>
+            <id>aliyun</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+        <repository>
+            <id>cloudera</id>
+            <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
+        </repository>
+        <repository>
+            <id>jboss</id>
+            <url>http://repository.jboss.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>mvnrepository</id>
+            <url>https://mvnrepository.com/</url>
+            <!--<layout>default</layout>-->
+        </repository>
+        <repository>
+            <id>elastic.co</id>
+            <url>https://artifacts.elastic.co/maven</url>
+        </repository>
+    </repositories>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- SDK -->
+        <java.version>1.8</java.version>
+        <scala.version>2.11</scala.version>
+        <!-- Junit -->
+        <junit.version>4.12</junit.version>
+        <!-- HTTP Version -->
+        <http.version>4.5.11</http.version>
+        <!-- Hadoop -->
+        <hadoop.version>3.0.0-cdh6.2.1</hadoop.version>
+        <!-- Spark -->
+        <!--<spark.version>2.4.0-cdh6.2.1</spark.version>-->
+        <spark.version>2.4.0</spark.version>
+        <!-- Spark Graph Visual -->
+        <gs.version>1.3</gs.version>
+        <breeze.version>1.0</breeze.version>
+        <jfreechart.version>1.5.0</jfreechart.version>
+        <!-- Parquet -->
+        <parquet.version>1.9.0-cdh6.2.1</parquet.version>
+        <!-- Kudu -->
+        <kudu.version>1.9.0-cdh6.2.1</kudu.version>
+        <!-- Hive -->
+        <hive.version>2.1.1-cdh6.2.1</hive.version>
+        <!-- Kafka -->
+        <!--<kafka.version>2.1.0-cdh6.2.1</kafka.version>-->
+        <kafka.version>2.1.0</kafka.version>
+        <!-- ClickHouse -->
+        <clickhouse.version>0.2.2</clickhouse.version>
+        <!-- ElasticSearch -->
+        <es.version>7.6.1</es.version>
+        <!-- JSON Version -->
+        <fastjson.version>1.2.62</fastjson.version>
+        <!-- Apache Commons Version -->
+        <commons-io.version>2.6</commons-io.version>
+        <commons-lang3.version>3.10</commons-lang3.version>
+        <commons-beanutils.version>1.9.4</commons-beanutils.version>
+        <!-- JDBC Drivers Version-->
+        <ojdbc.version>12.2.0.1</ojdbc.version>
+        <mysql.version>5.1.44</mysql.version>
+        <!-- Other -->
+        <jtuple.version>1.2</jtuple.version>
+        <!-- Maven Plugins Version -->
+        <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
+        <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
+        <maven-shade-plugin.version>3.2.1</maven-shade-plugin.version>
+    </properties>
+
+    <dependencyManagement>
+
+        <dependencies>
+            <!-- Scala -->
+            <dependency>
+                <groupId>org.scala-lang</groupId>
+                <artifactId>scala-library</artifactId>
+                <version>2.11.12</version>
+            </dependency>
+            <!-- Test -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <!-- JDBC -->
+            <dependency>
+                <groupId>com.oracle.jdbc</groupId>
+                <artifactId>ojdbc8</artifactId>
+                <version>${ojdbc.version}</version>
+                <systemPath>G:/bianchengxuexi/oracle驱动/ojdbc8-12.2.0.1.jar</systemPath>
+                <scope>system</scope>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+            <!-- Http -->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${http.version}</version>
+            </dependency>
+            <!-- Apache Kafka -->
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka_${scala.version}</artifactId>
+                <version>${kafka.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.fasterxml.jackson.core</groupId>
+                        <artifactId>jackson-core</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <!-- Spark -->
+            <dependency>
+                <groupId>org.apache.spark</groupId>
+                <artifactId>spark-sql_${scala.version}</artifactId>
+                <version>${spark.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.spark</groupId>
+                <artifactId>spark-sql-kafka-0-10_2.11</artifactId>
+                <version>${spark.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.parquet</groupId>
+                <artifactId>parquet-common</artifactId>
+                <version>${parquet.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.jpountz.lz4</groupId>
+                <artifactId>lz4</artifactId>
+                <version>1.3.0</version>
+            </dependency>
+            <!-- Graph Visual -->
+            <dependency>
+                <groupId>org.graphstream</groupId>
+                <artifactId>gs-core</artifactId>
+                <version>${gs.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.graphstream</groupId>
+                <artifactId>gs-ui</artifactId>
+                <version>${gs.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.scalanlp</groupId>
+                <artifactId>breeze_${scala.version}</artifactId>
+                <version>${breeze.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.scalanlp</groupId>
+                <artifactId>breeze-viz_${scala.version}</artifactId>
+                <version>${breeze.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jfree</groupId>
+                <artifactId>jfreechart</artifactId>
+                <version>${jfreechart.version}</version>
+            </dependency>
+            <!-- JSON -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <!-- Kudu -->
+            <dependency>
+                <groupId>org.apache.kudu</groupId>
+                <artifactId>kudu-client</artifactId>
+                <version>${kudu.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.kudu</groupId>
+                <artifactId>kudu-spark2_2.11</artifactId>
+                <version>${kudu.version}</version>
+            </dependency>
+            <!-- Hive -->
+            <dependency>
+                <groupId>org.apache.hive</groupId>
+                <artifactId>hive-jdbc</artifactId>
+                <version>${hive.version}</version>
+            </dependency>
+            <!-- Clickhouse -->
+            <dependency>
+                <groupId>ru.yandex.clickhouse</groupId>
+                <artifactId>clickhouse-jdbc</artifactId>
+                <version>${clickhouse.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.fasterxml.jackson.core</groupId>
+                        <artifactId>jackson-databind</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.fasterxml.jackson.core</groupId>
+                        <artifactId>jackson-core</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <!-- ElasticSearch -->
+            <dependency>
+                <groupId>org.elasticsearch</groupId>
+                <artifactId>elasticsearch</artifactId>
+                <version>${es.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.elasticsearch.client</groupId>
+                <artifactId>elasticsearch-rest-high-level-client</artifactId>
+                <version>${es.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.elasticsearch.plugin</groupId>
+                <artifactId>x-pack-sql-jdbc</artifactId>
+                <version>${es.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.elasticsearch</groupId>
+                <artifactId>elasticsearch-spark-20_2.11</artifactId>
+                <version>${es.version}</version>
+            </dependency>
+            <!-- Alibaba Json -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <!-- Apache Commons -->
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-beanutils</groupId>
+                <artifactId>commons-beanutils</artifactId>
+                <version>${commons-beanutils.version}</version>
+            </dependency>
+            <!-- Other -->
+            <dependency>
+                <groupId>org.javatuples</groupId>
+                <artifactId>javatuples</artifactId>
+                <version>${jtuple.version}</version>
+            </dependency>
+            <!--<dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>4.5.3</version>
+            </dependency>-->
+            <dependency>
+                <groupId>commons-httpclient</groupId>
+                <artifactId>commons-httpclient</artifactId>
+                <version>3.0.1</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>
