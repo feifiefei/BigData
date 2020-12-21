@@ -35,7 +35,7 @@ public class TurnoverRateTask implements ProcessDataInterface {
          * 1.创建bean对象
          * 2.数据转换process
          *   (1)加载mysql流通股本数据
-         *   (2)封装bean对象数据
+         *   (2)封装 bean对象数据
          * 3.加载redis换手率数据
          * 4.模式匹配
          * 5.查询数据

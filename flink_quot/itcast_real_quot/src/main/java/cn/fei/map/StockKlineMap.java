@@ -57,7 +57,7 @@ public class StockKlineMap extends RichMapFunction<StockBean, Row> {
 
         //4.获取K(周、月)线下的汇总表数据（高、低、成交量、金额）
         String sqlKline = "SELECT sec_code ,MAX(high_price) AS high_price,MIN(low_price) AS low_price ,SUM(trade_amt) AS trade_amt,\n" +
-                "SUM(trade_vol) AS trade_vol FROM bdp_quot_stock_kline_day \n" +
+        "SUM(trade_vol) AS trade_vol FROM bdp_quot_stock_kline_day \n" +
                 "WHERE trade_date BETWEEN " + firstTradeDate + " AND " + tradeDate + " \n" +
                 "GROUP BY 1";
 

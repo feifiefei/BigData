@@ -75,7 +75,7 @@ public class SectorStream {
         FlinkKafkaConsumer011<SseAvro> sseKafkaConsumer = new FlinkKafkaConsumer011<SseAvro>(QuotConfig.config.getProperty("sse.topic"), new AvroDeserializationSchema(QuotConfig.config.getProperty("sse.topic")), properties);
         //深市：szse
 //        FlinkKafkaConsumer011<SzseAvro> szseKafkaConsumer = new FlinkKafkaConsumer011<SzseAvro>(QuotConfig.config.getProperty("szse.topic"), new AvroDeserializationSchema(QuotConfig.config.getProperty("szse.topic")), properties);
-
+        //设置消费的点
         sseKafkaConsumer.setStartFromEarliest();
 //        szseKafkaConsumer.setStartFromEarliest();
 
@@ -105,6 +105,7 @@ public class SectorStream {
         // 8.数据转换、合并
         //使用union需要保证类型一致
         //DataStream<CleanBean> unionData = sseFilterData.map(new SseMap()).union(szseFilterData.map(new SzseMap()));
+        //DataStream<CleanBean> Data = sseFilterData.map(new SseMap()).union(sseFilterData.map(new SseMap()));
         SingleOutputStreamOperator<CleanBean> mapData = sseFilterData.map(new SseMap());
 
         //9.过滤个股数据
