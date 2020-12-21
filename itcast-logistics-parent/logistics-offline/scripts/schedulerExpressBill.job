@@ -1,0 +1,3 @@
+#command
+type=command
+command=sh /export/services/logistics/bin/scheduler.sh ExpressBill
